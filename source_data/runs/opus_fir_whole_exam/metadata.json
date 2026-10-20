@@ -1,0 +1,88 @@
+{
+  "run_name": "fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z",
+  "created_utc": "20260723T133406Z",
+  "provider": "Anthropic Claude",
+  "interface": "API",
+  "api_endpoint": "Messages API with forced client-side tool schema",
+  "model_requested": "claude-opus-4-8",
+  "condition": "whole_text_images_answers_only",
+  "prompt_template_version": "fir2024_whole_text_images_examlike_blank_answers_only_tool_schema_v1",
+  "script_version": "fir2024_claude_opus48_whole_text_images_answers_only_tool_schema_no_sampling_params_v1",
+  "generation_parameters": {
+    "temperature": "not_sent",
+    "top_p": "not_sent",
+    "max_tokens": 10000,
+    "structured_output": "forced_tool_use_input_schema",
+    "rationales_requested": false,
+    "stream": false,
+    "external_tools_enabled": false,
+    "web_search_enabled": false,
+    "file_input_enabled": false,
+    "image_input_enabled": true,
+    "image_transport": "base64_via_messages_image_block",
+    "reasoning_effort": "not_sent"
+  },
+  "answer_tool_schema": {
+    "name": "record_all_answers",
+    "description": "Record all answers to a multiple-choice examination.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "answers": {
+          "type": "array",
+          "minItems": 210,
+          "maxItems": 210,
+          "items": {
+            "type": "object",
+            "properties": {
+              "question_number": {
+                "type": "integer"
+              },
+              "answer": {
+                "type": "string",
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "blank"
+                ]
+              }
+            },
+            "required": [
+              "question_number",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "answers"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "n_replicates": 2,
+  "n_questions_attempted": 210,
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "questions_file_sha256": "30e469a1c741af42ea980e16c6e9b56f6476d81c0c2809e9631c1809cec9b175",
+  "answer_key_file_sha256": "b4e4732364103cffedae8ddb1aee12bdb7185650138cf4c8b0e389392c5da587",
+  "prompt_log_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_prompt_log.txt",
+  "prompt_hash_sha256": "94fb918775270265e76a9a7e39ad11e484b626296a9b403e66fe08daca83418f",
+  "image_root": "images\\fir",
+  "image_manifest_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_image_manifest.csv",
+  "tools_or_web_search_provided_to_model": false,
+  "claude_sampling_note": "Claude Opus evaluated as Anthropic-specific exploratory condition. temperature and top_p are not sent because Anthropic API rejected simultaneous specification.",
+  "completed_utc": "20260723T133509Z",
+  "outputs": {
+    "raw_outputs_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_raw_outputs.jsonl",
+    "scored_results_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_scored_results.csv",
+    "summary_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_summary_by_replicate.csv",
+    "summary_by_image_status_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_summary_by_image_status.csv",
+    "metadata_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_run_metadata.json",
+    "prompt_log_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_prompt_log.txt",
+    "image_manifest_file": "outputs\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z\\fir2024_claude_opus_4_8_wholetext_images_ansonly_TOOL_2runs_20260723T133406Z_image_manifest.csv"
+  }
+}

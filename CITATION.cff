@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the approved archived version of this reproducibility package. This review build has not been assigned a DOI."
+title: "Benchmarking Open- and Closed-Weight Large Language Models on Spanish Specialized Health Examinations: Reproducibility Package"
+type: software
+version: "0.3.0-rc"
+date-released: "2026-10-12"
+authors:
+  - family-names: "Calvera-Rayo"
+    given-names: "Alejandro"
+  - family-names: "Verdú"
+    given-names: "Gonzalo"
+  - family-names: "Morales-Ruiz"
+    given-names: "Manuel"
+  - family-names: "Fabregat-Bolufer"
+    given-names: "Aleix B."
+abstract: "Source API logs, prompts, examination inputs, scoring audit and offline reanalysis for a replicated FIR/BIR 2024 benchmark. Release candidate pending licensing and public deposition."
+keywords:
+  - large language models
+  - benchmarking
+  - FIR
+  - BIR
+  - reproducibility

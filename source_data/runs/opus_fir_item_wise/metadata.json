@@ -1,0 +1,72 @@
+{
+  "run_name": "fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z",
+  "created_utc": "20260723T125354Z",
+  "provider": "Anthropic Claude",
+  "interface": "API",
+  "api_endpoint": "Messages API with forced client-side tool schema",
+  "model_requested": "claude-opus-4-8",
+  "prompt_template_version": "fir2024_text_image_itemwise_examlike_blank_tool_schema_short_rationale_v1",
+  "script_version": "fir2024_claude_opus48_itemwise_tool_schema_no_sampling_params_v1",
+  "generation_parameters": {
+    "temperature": "not_sent",
+    "top_p": "not_sent",
+    "max_tokens": 300,
+    "structured_output": "forced_tool_use_input_schema",
+    "rationale_max_chars": 160,
+    "stream": false,
+    "external_tools_enabled": false,
+    "web_search_enabled": false,
+    "file_input_enabled": false,
+    "image_input_enabled": true,
+    "image_transport": "base64_via_messages_image_block",
+    "reasoning_effort": "not_sent"
+  },
+  "answer_tool_schema": {
+    "name": "record_answer",
+    "description": "Record the answer to a multiple-choice examination question.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "blank"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "answer",
+        "rationale"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "n_replicates": 2,
+  "n_questions_attempted": 210,
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "questions_file_sha256": "30e469a1c741af42ea980e16c6e9b56f6476d81c0c2809e9631c1809cec9b175",
+  "answer_key_file_sha256": "b4e4732364103cffedae8ddb1aee12bdb7185650138cf4c8b0e389392c5da587",
+  "image_root": "images\\fir",
+  "image_manifest_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_image_manifest.csv",
+  "tools_or_web_search_provided_to_model": false,
+  "structured_output_note": "A forced client-side tool schema is used only to obtain structured output. No external tools, web search, file access, or answer key are provided.",
+  "claude_sampling_note": "Claude Opus evaluated as Anthropic-specific exploratory condition. temperature and top_p are not sent because Anthropic API rejected simultaneous specification.",
+  "completed_utc": "20260723T131431Z",
+  "outputs": {
+    "raw_outputs_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_raw_outputs.jsonl",
+    "scored_results_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_scored_results.csv",
+    "summary_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_summary_by_replicate.csv",
+    "summary_by_image_status_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_summary_by_image_status.csv",
+    "image_manifest_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_image_manifest.csv",
+    "metadata_file": "outputs\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z\\fir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T125354Z_run_metadata.json"
+  }
+}

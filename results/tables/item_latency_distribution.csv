@@ -1,0 +1,13 @@
+condition_id,model,exam,n_requests,pooling,q1_seconds,median_seconds,q3_seconds,iqr_seconds
+deepseek_bir_item_wise,DeepSeek V4 Pro,BIR,420,420 final requests; two replicates pooled; includes reserves,1.5208612250025908,1.661493600004178,1.882665724991966,0.36180449998937525
+deepseek_fir_item_wise,DeepSeek V4 Pro,FIR,420,420 final requests; two replicates pooled; includes reserves,1.6735600500105647,1.9000332499854262,2.169108925008914,0.4955488749983492
+gpt52_bir_item_wise,GPT-5.2,BIR,420,420 final requests; two replicates pooled; includes reserves,1.770425474998774,2.098003349994542,2.471524899996439,0.7010994249976652
+gpt52_fir_item_wise,GPT-5.2,FIR,420,420 final requests; two replicates pooled; includes reserves,1.6350289250112837,1.8944787500076927,2.2707435000193072,0.6357145750080235
+grok_bir_item_wise,Grok 4.3,BIR,420,420 final requests; two replicates pooled; includes reserves,0.8753847250191029,0.9479561999323778,1.054383524984587,0.17899879996548407
+grok_fir_item_wise,Grok 4.3,FIR,420,420 final requests; two replicates pooled; includes reserves,0.8866142749902792,0.9601991000236012,1.0659323000581935,0.17931802506791428
+kimi_bir_item_wise,Kimi K2.6,BIR,420,420 final requests; two replicates pooled; includes reserves,2.163526749936864,2.425620850000996,2.806720549997408,0.6431938000605442
+kimi_fir_item_wise,Kimi K2.6,FIR,420,420 final requests; two replicates pooled; includes reserves,2.2147998999571428,2.498879550024867,2.8638287000067066,0.6490288000495639
+opus_bir_item_wise,Claude Opus 4.8,BIR,420,420 final requests; two replicates pooled; includes reserves,2.234254350005358,2.45443840000371,2.6616498500006855,0.42739549999532755
+opus_fir_item_wise,Claude Opus 4.8,FIR,420,420 final requests; two replicates pooled; includes reserves,2.2524158249943866,2.5596179999993183,3.1723812249911134,0.9199653999967268
+qwen_bir_item_wise,Qwen3-VL-235B-A22B-Instruct,BIR,420,420 final requests; two replicates pooled; includes reserves,1.730170726776123,2.0152581930160522,2.4786803126335144,0.7485095858573914
+qwen_fir_item_wise,Qwen3-VL-235B-A22B-Instruct,FIR,420,420 final requests; two replicates pooled; includes reserves,2.0082251429557805,2.364145874977112,3.0197036862373348,1.0114785432815543

@@ -1,0 +1,17 @@
+test_published_costs (test_costs.Costs.test_published_costs) ... ok
+test_missing_and_corrupt_image_fail (test_integrity_failures.Integrity.test_missing_and_corrupt_image_fail) ... ok
+test_auxiliary_truncation (test_reproduction.Tests.test_auxiliary_truncation) ... ok
+test_deepseek_decomposition (test_reproduction.Tests.test_deepseek_decomposition) ... ok
+test_images (test_reproduction.Tests.test_images) ... ok
+test_inputs (test_reproduction.Tests.test_inputs) ... ok
+test_multi_option_scored_as_blank (test_reproduction.Tests.test_multi_option_scored_as_blank) ... ok
+test_normalization (test_reproduction.Tests.test_normalization) ... ok
+test_recovery_counts (test_reproduction.Tests.test_recovery_counts) ... ok
+test_refuse_unsupported_extraction (test_reproduction.Tests.test_refuse_unsupported_extraction) ... ok
+test_size_and_uniqueness (test_reproduction.Tests.test_size_and_uniqueness) ... ok
+test_text_stratum (test_reproduction.Tests.test_text_stratum) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.119s
+
+OK

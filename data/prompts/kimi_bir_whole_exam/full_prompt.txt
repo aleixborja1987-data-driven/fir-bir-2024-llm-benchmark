@@ -1,0 +1,2340 @@
+You are taking the Spanish BIR examination for Biology residency access.
+
+This is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct.
+
+Scoring rule:
+- Correct answer: +1 point.
+- Incorrect answer: -1/3 points.
+- Blank answer: 0 points.
+
+Act as a human candidate trying to maximize the final score. Answer from your own knowledge only. Do not use web search, external tools, files, images, retrieval, or any answer key.
+
+You will receive the complete exam text in a single message.
+
+Return only valid JSON matching the required schema:
+{
+  "answers": [
+    {"question_number": 1, "answer": "1|2|3|4|blank"},
+    {"question_number": 2, "answer": "1|2|3|4|blank"}
+  ]
+}
+
+Output rules:
+- Return exactly one answer object for every question included in the input.
+- Use the integer question number shown in the input.
+- Preserve the same question order as in the input.
+- The answer must be exactly "1", "2", "3", "4", or "blank".
+- Do not return multiple options.
+- If you cannot choose one single best option, return "blank".
+- Do not include rationales, explanations, comments, markdown, or extra fields.
+
+
+FULL EXAM TEXT:
+
+Question 1:
+La barrera hematoencefálica:
+
+Options:
+1. Es permeable a todas las sustancias presentes en el plasma.
+2. Es permeable al O2 y al CO2.
+3. Es impermeable al etanol.
+4. Es impermeable al agua.
+
+---
+
+Question 2:
+El espacio subaracnoideo se encuentra:
+
+Options:
+1. Entre la aracnoides y la duramadre.
+2. Entre la aracnoides y la piamadre.
+3. Lleno de sangre.
+4. En el sistema nervioso periférico.
+
+---
+
+Question 3:
+La endolinfa:
+
+Options:
+1. Rellena el laberinto óseo del oído interno.
+2. Contiene baja concentración de K+.
+3. Rellena el laberinto membranoso del oído interno.
+4. Contiene alta concentración de Na+.
+
+---
+
+Question 4:
+Las células olfatorias humanas:
+
+Options:
+1. Son células nerviosas bipolares.
+2. Son células nerviosas multipolares.
+3. Son células nerviosas unipolares.
+4. Son células epiteliales.
+
+---
+
+Question 5:
+La esclerosis múltiple es una patología que se caracteriza por:
+
+Options:
+1. Hipermielinización de los axones con pérdida del control motor y déficit sensitivos.
+2. Desmielinización de los axones con pérdida del control motor y déficit sensitivos.
+3. Incremento en la resistencia eléctrica axonal.
+4. Reducción en la capacitancia axonal.
+
+---
+
+Question 6:
+¿La hormona oxitocina es?:
+
+Options:
+1. Un péptido.
+2. Una amina.
+3. Un esteroide.
+4. Un glúcido.
+
+---
+
+Question 7:
+De las siguientes moléculas, ¿cuál actúa como señal anorexigénica?:
+
+Options:
+1. Neuropéptido Y.
+2. Grelina.
+3. Leptina.
+4. Proteína relacionada con agutí (AGRP).
+
+---
+
+Question 8:
+La insulina:
+
+Options:
+1. Aumenta la lipolisis.
+2. Disminuye la síntesis de proteínas.
+3. Disminuye la formación de glucógeno.
+4. Disminuye la gluconeogénesis.
+
+---
+
+Question 9:
+La secreción de glucagón es inhibida por:
+
+Options:
+1. Somatostatina.
+2. Aumento de aminoácidos en sangre.
+3. Disminución de glucosa en sangre.
+4. Ejercicio físico.
+
+---
+
+Question 10:
+En la homeostasis del calcio y el fosfato interaccionan estrechamente dos hormonas:
+
+Options:
+1. Cortisol y vasopresina.
+2. Hormona estimulante del tiroides y aldosterona.
+3. Hormona paratiroidea y vitamina D.
+4. Hormona antidiurética y calcitonina.
+
+---
+
+Question 11:
+La gonadotropina coriónica:
+
+Options:
+1. Es un esteroide.
+2. Se secreta por la corteza suprarrenal fetal.
+3. Estimula la secreción de progesterona y estrógenos.
+4. Comienza a ser secretada tras la involución del cuerpo lúteo.
+
+---
+
+Question 12:
+En la fase de despolarización rápida (fase 0) del potencial de acción cardíaco, el principal ion que entra a la célula es:
+
+Options:
+1. Ca2+.
+2. K+.
+3. Na+.
+4. Mg2+.
+
+---
+
+Question 13:
+¿Cuál es la secuencia correcta del potencial de acción en el corazón?:
+
+Options:
+1. Nodo sinoauricular → Haz de His → Nodo auriculoventricular → Fibras de Purkinje.
+2. Nodo sinoauricular → Nodo auriculoventricular → Haz de His → Fibras de Purkinje.
+3. Nodo auriculoventricular → Nodo sinoauricular → Haz de His → Fibras de Purkinje.
+4. Nodo sinoauricular → Fibras de Purkinje → Haz de His → Nodo auriculoventricular.
+
+---
+
+Question 14:
+¿Qué parte del sistema cardiovascular tiene la mayor capacidad de almacenar sangre?:
+
+Options:
+1. Arteriolas.
+2. Capilares.
+3. Arterias.
+4. Venas.
+
+---
+
+Question 15:
+¿Qué genera la onda 'a' en el registro del pulso venoso?:
+
+Options:
+1. Contracción auricular.
+2. Contracción ventricular.
+3. Cierre válvula mitral.
+4. Cierre válvula tricúspide.
+
+---
+
+Question 16:
+La hormona liberadora de gonadotropinas (GnRH) es:
+
+Options:
+1. Una amina de bajo peso molecular.
+2. Secretada en la neurohipófisis.
+3. Estimuladora de la secreción de la hormona luteinizante (LH).
+4. Secretada en un único pico diario.
+
+---
+
+Question 17:
+En el epidídimo:
+
+Options:
+1. Maduran los espermatozoides.
+2. Se produce la espermatogénesis.
+3. Se secreta la mayoría de las prostaglandinas del semen.
+4. Tiene lugar la capacitación del espermatozoide.
+
+---
+
+Question 18:
+Los estrógenos:
+
+Options:
+1. Estimulan el desarrollo de los genitales internos femeninos.
+2. Producen natriuresis y diuresis.
+3. Promueven la osteoporosis.
+4. Inhiben el cierre de las placas epifisarias.
+
+---
+
+Question 19:
+En el inicio de la fase lútea ovárica:
+
+Options:
+1. El folículo se transforma en cuerpo albicans.
+2. Las células luteinizadas secretan progesterona.
+3. El endometrio comienza su proliferación.
+4. Se estimula la ovulación.
+
+---
+
+Question 20:
+En la mujer, durante el embarazo, disminuye:
+
+Options:
+1. La volemia.
+2. La contractilidad uterina.
+3. La secreción de aldosterona.
+4. El metabolismo basal.
+
+---
+
+Question 21:
+Lesiones en el hipotálamo ventromedial provocan:
+
+Options:
+1. Afagia y pérdida de peso.
+2. Ingesta excesiva y obesidad.
+3. Disminución de la ingesta hídrica.
+4. Caquexia.
+
+---
+
+Question 22:
+Sobre la deglución, es cierto que:
+
+Options:
+1. El bolo alimenticio es enviado a la orofaringe de forma involuntaria.
+2. El paso del alimento de la faringe al esófago es un acto voluntario.
+3. Su control nervioso (centro de la deglución) se sitúa en el bulbo raquídeo y parte inferior de la protuberancia.
+4. Durante la fase faríngea la respiración se estimula momentáneamente.
+
+---
+
+Question 23:
+Sobre la salivación, podemos afirmar que:
+
+Options:
+1. Es la única secreción digestiva que está bajo doble control, nervioso y hormonal.
+2. Es estimulada vía parasimpática a través de los nervios facial (VII) y glosofaríngeo (IX).
+3. Simpático y parasimpático la regulan siempre de forma antagónica.
+4. Es inhibida por IP3/Ca2+ vía parasimpática.
+
+---
+
+Question 24:
+La circulación enterohepática se refiere a:
+
+Options:
+1. La velocidad de vaciamiento del intestino delgado y al grado de contracción del esfínter de Oddi.
+2. El flujo de secreciones pancreáticas al duodeno.
+3. El reflujo del contenido del intestino grueso al intestino delgado.
+4. La reabsorción ileal de sales de ácidos biliares.
+
+---
+
+Question 25:
+Necesita para su absorción intestinal el factor intrínseco secretado por las células parietales u oxínticas del estómago:
+
+Options:
+1. Vitamina B9 o ácido fólico.
+2. Vitamina C o ácido ascórbico.
+3. Vitamina D (D2 o ergocalciferol y D3 o colecalciferol).
+4. Vitamina B12 o cobalamina.
+
+---
+
+Question 26:
+Las estructuras implicadas en el mecanismo de filtración glomerular renal son:
+
+Options:
+1. Células endoteliales, membrana basal y podocitos.
+2. Células epiteliales del túbulo proximal, cápsula de Bowman y células mesangiales.
+3. Tejido conjuntivo, células mesangiales, y cápsula de Bowman.
+4. Vasa recta, células mesangiales y cápsula de Bowman.
+
+---
+
+Question 27:
+Respecto a la reabsorción renal de bicarbonato en el túbulo proximal es FALSO que:
+
+Options:
+1. Implica un trasportador a través de la membrana apical, y otro en la membrana basolateral.
+2. Implica un transportador a través de la membrana basolateral.
+3. Procede del bicarbonato filtrado en una proporción 1:1.
+4. Necesita de la actividad de la anhidrasa carbónica.
+
+---
+
+Question 28:
+En relación con el manejo renal del Na+ es FALSO que:
+
+Options:
+1. El aumento de la presión coloidosmótica glomerular favorece la filtración de Na+.
+2. La filtración glomerular de Na+ es favorecida por la menor resistencia en la arteriola aferente que en la eferente.
+3. El mayor porcentaje del Na+ filtrado se reabsorbe en el túbulo proximal de la nefrona.
+4. La aldosterona regula la concentración plasmática de Na+ actuando a nivel del túbulo distal y colector.
+
+---
+
+Question 29:
+La estimulación de la actividad simpática provoca:
+
+Options:
+1. Aumento de la resistencia arteriolar aferente y disminución del flujo sanguíneo glomerular.
+2. Aumento de la presión hidrostática en la cápsula de Bowman y de la filtración glomerular.
+3. Aumento de la presión coloidosmótica en capilares glomerulares y de la filtración glomerular.
+4. Disminución de la resistencia arteriolar aferente y aumento de la presión hidrostática capilar glomerular.
+
+---
+
+Question 30:
+Son respuestas a la alcalosis metabólica:
+
+Options:
+1. Aumento de la presión parcial de CO2, de la bicarbonaturia y de la cetonemia.
+2. Disminución de la presión parcial de CO2, de la bicarbonaturia y de la cetonemia.
+3. Disminución de la kalemia y aumento de la natremia.
+4. Aumento de la presión parcial de O2 y disminución de la bicarbonaturia y de la cetonuria.
+
+---
+
+Question 31:
+¿Cuál es la osmolaridad (mOsm/l) de una solución que contiene NaCl 150 milimolar y KCl 50 milimolar?:
+
+Options:
+1. 200.
+2. 250.
+3. 300.
+4. 400.
+
+---
+
+Question 32:
+¿Qué vía de coagulación comienza con tromboplastina tisular?:
+
+Options:
+1. Vía extrínseca.
+2. Vía intrínseca.
+3. Vía común.
+4. Estabilización de la fibrina.
+
+---
+
+Question 33:
+Sólo un grupo sanguíneo contiene aglutininas anti-A y anti-B:
+
+Options:
+1. 0.
+2. A.
+3. B.
+4. AB.
+
+---
+
+Question 34:
+¿Qué unidad de sangre comporta los menores riesgos de inducir una reacción transfusional inmediata en un receptor B, Rh+ (B, rhesus positivo)?:
+
+Options:
+1. Sangre completa A, Rh+.
+2. Sangre completa O, Rh+.
+3. Sangre completa AB, Rh+.
+4. Concentrados de eritrocitos O, Rh+.
+
+---
+
+Question 35:
+Sobre los líquidos corporales, es CIERTO que:
+
+Options:
+1. El efecto Donnan es atribuible a los cationes no ionizados.
+2. Los aniones no difusibles son principalmente extracelulares.
+3. El plasma y el líquido intersticial no difieren esencialmente en sus concentraciones iónicas.
+4. La mayor cantidad de K+ se encuentra en el plasma.
+
+---
+
+Question 36:
+Se denomina distensibilidad pulmonar:
+
+Options:
+1. Al volumen que se expanden los pulmones por cada aumento unitario de presión transpulmonar.
+2. Al volumen residual.
+3. Al volumen de reserva menos el volumen corriente.
+4. Al volumen de reserva inspiratoria.
+
+---
+
+Question 37:
+La cantidad máxima de aire que puede expulsar una persona, tras llenar los pulmones hasta su máxima dimensión y espirando la máxima cantidad, se denomina:
+
+Options:
+1. Capacidad pulmonar total.
+2. Capacidad residual funcional.
+3. Capacidad vital.
+4. Capacidad inspiratoria.
+
+---
+
+Question 38:
+El cociente de la tasa de producción de CO2 respecto a la tasa de captación de O2 se denomina:
+
+Options:
+1. Cociente de intercambio respiratorio.
+2. Cociente alveolar.
+3. Cociente residual funcional.
+4. Cociente de reserva inspiratoria.
+
+---
+
+Question 39:
+La excesiva insuflación pulmonar activa una respuesta de retroalimentación que desconecta la rampa respiratoria impidiendo la inspiración adicional. Este hecho se denomina:
+
+Options:
+1. Ley de Henry.
+2. Efecto Bohr.
+3. Reflejo de insuflación de Hering-Breuer.
+4. Efecto Haldane.
+
+---
+
+Question 40:
+La diferencia entre la presión que hay en el interior de los alvéolos y la que hay en las superficies externas de los pulmones se denomina:
+
+Options:
+1. Presión transpulmonar.
+2. Presión alveolar.
+3. Presión neta.
+4. Presión pleural.
+
+---
+
+Question 41:
+¿A partir de qué tejido se desarrollan las valvas de las válvulas atrioventriculares cardíacas?:
+
+Options:
+1. Cresta neural.
+2. Endodermo.
+3. Miocardio.
+4. Endocardio.
+
+---
+
+Question 42:
+¿La expresión de qué factor de transcripción marca el inicio de la diferenciación de progenitores pancreáticos a partir del endodermo?:
+
+Options:
+1. Pdx1.
+2. Scl/Tal1.
+3. p53.
+4. Pu.1.
+
+---
+
+Question 43:
+¿Qué proceso celular media la aparición del fenotipo ectomesenquimático y migratorio en las células de la cresta neural?:
+
+Options:
+1. Transición epitelio-mesénquima.
+2. Transición mesénquima-epitelio.
+3. Apoptosis.
+4. Autofagia.
+
+---
+
+Question 44:
+¿En qué dominios específicos se encuentran las células madre intestinales de las que depende la renovación del epitelio digestivo?:
+
+Options:
+1. En los villi (vellosidades) intestinales.
+2. En la pared de los vasos sanguíneos subendodérmicos.
+3. En el tejido conectivo de la mucosa intestinal.
+4. En las criptas intestinales.
+
+---
+
+Question 45:
+¿De la interacción entre qué dos tejidos depende el desarrollo embrionario de los folículos pilosos?:
+
+Options:
+1. Dermis y vasos sanguíneos.
+2. Epidermis y sistema nervioso periférico.
+3. Epidermis y dermis.
+4. Estratos basales y córneos de la epidermis.
+
+---
+
+Question 46:
+¿Cómo se llama el proceso mediante el cual el agua se mueve a través de las membranas celulares siguiendo el gradiente de concentración de solutos?:
+
+Options:
+1. Difusión facilitada.
+2. Transporte activo.
+3. Ósmosis.
+4. Endocitosis.
+
+---
+
+Question 47:
+¿Qué molécula es esencial para la importación de proteínas grandes al núcleo a través del poro nuclear en células eucariotas?:
+
+Options:
+1. GTP.
+2. ATP.
+3. ARN mensajero.
+4. ADP
+
+---
+
+Question 48:
+¿Qué mecanismo actúa para transmitir la señal en un receptor acoplado a un canal iónico localizado en una sinapsis neuronal?:
+
+Options:
+1. Reciben la señal de un neurotransmisor, cambian de conformación y activan a una proteína G.
+2. La unión de un neurotransmisor activa a una enzima acoplada al receptor que bombea iones en contra de gradiente.
+3. Actúan directamente sobre la expresión génica de la neurona postsináptica.
+4. Transducen la señal química de un neurotransmisor en una señal eléctrica (cambio de voltaje de la membrana plasmática).
+
+---
+
+Question 49:
+¿Cuál es la enzima que termina la señalización mediada por el AMP cíclico?:
+
+Options:
+1. AMP cíclico fosfodiesterasa.
+2. Adenililciclasa.
+3. ATPasa.
+4. Fosfolipasa C.
+
+---
+
+Question 50:
+¿Cuál de los siguientes NO es de la familia de los filamentos intermedios?:
+
+Options:
+1. Filamentos de queratina.
+2. Filamentos de vimentina.
+3. Neurofilamentos.
+4. Microfilamentos de actina.
+
+---
+
+Question 51:
+Acerca del transportador de glucosa dependiente de Na+ de la membrana de las células eucariotas animales:
+
+Options:
+1. El transporte de glucosa es contra gradiente.
+2. Transporta Na+ al exterior de la célula.
+3. El transporte es de tipo antiporte acoplado.
+4. Es una ATPasa dependiente de Ca2+.
+
+---
+
+Question 52:
+La enzima ATP sintasa implicada en la fosforilación oxidativa mitocondrial:
+
+Options:
+1. Bombea protones al espacio intermembrana mitocondrial para sintetizar ATP.
+2. Está formada por dos subunidades, una central y otra periférica.
+3. Puede actuar como ATPasa bombeando protones al espacio intermembrana mitocondrial.
+4. Se localiza en el espacio intermembrana mitocondrial.
+
+---
+
+Question 53:
+Las cohesinas:
+
+Options:
+1. Condensan filamentos de colágeno.
+2. Aglutinan vesículas citoplásmicas.
+3. Mantienen cromátidas hermanas unidas.
+4. Forman haces de filamentos de colágeno.
+
+---
+
+Question 54:
+Respecto a las proteínas SNARE se sabe que:
+
+Options:
+1. Al unirse las SNAREv con las SNAREt se acercan las membranas de la zona de fusión de la vesícula (v) y la diana (t).
+2. La separación de las SNAREv y SNAREt requiere Ca2+.
+3. Las SNAREv impiden el recubrimiento de clatrina.
+4. Las SNAREv y SNAREt atraen moléculas de agua a la zona de fusión.
+
+---
+
+Question 55:
+¿Qué tipo celular es el responsable de producir anticuerpos?:
+
+Options:
+1. Fibroblastos.
+2. Células plasmáticas o plasmocitos.
+3. Macrófagos.
+4. Células cebadas o mastocitos.
+
+---
+
+Question 56:
+¿Qué tipo de colágeno es el más abundante en el tejido óseo?:
+
+Options:
+1. Tipo I.
+2. Tipo II.
+3. Tipo III.
+4. Tipo IV.
+
+---
+
+Question 57:
+¿Qué componentes forman la tríada en el músculo estriado esquelético?:
+
+Options:
+1. Dos túbulos T y una cisterna terminal del retículo sarcoplasmático.
+2. Dos cisternas terminales del retículo sarcoplasmático y un túbulo T.
+3. Dos sarcómeras y un túbulo T.
+4. Dos túbulos T y una sarcómera.
+
+---
+
+Question 58:
+¿Qué componente celular forma los grumos o gránulos de Nissl de las neuronas?:
+
+Options:
+1. Aparato de Golgi.
+2. Lisosomas.
+3. Retículo endoplásmico rugoso y ribosomas libres.
+4. Retículo endoplásmico liso.
+
+---
+
+Question 59:
+Señale cuál de las siguientes opciones justifica que la pancreatitis sea especialmente grave:
+
+Options:
+1. Su localización en el cuadrante superior izquierdo del marco intestinal la hace inaccesible para la cirugía.
+2. Su carácter exclusivamente endocrino y la abundancia de enzimas digestivas como la ptialina en sus productos de secreción.
+3. La liberación autolítica de enzimas como el tripsinógeno.
+4. Su escaso árbol vascular y la falta de vasos linfáticos.
+
+---
+
+Question 60:
+En el sistema nervioso el periodo refractario absoluto:
+
+Options:
+1. Ocurre tras el periodo refractario relativo.
+2. Es el periodo durante el cual para generar un nuevo potencial de acción se requiere un estímulo de mayor intensidad.
+3. Ocurre simultáneamente con el periodo refractario relativo.
+4. Es el periodo durante el cual no se puede generar un nuevo potencial de acción, aunque el estímulo sea de gran intensidad.
+
+---
+
+Question 61:
+Cuando la luz alcanza la retina ¿que atraviesa en primer lugar?:
+
+Options:
+1. Coroides.
+2. Capa de los conos y bastones.
+3. Capa de células pigmentarias.
+4. Capa de las fibras del nervio óptico.
+
+---
+
+Question 62:
+El sistema nervioso central necesita aclarar sus productos catabólicos hacia el líquido cefalorraquídeo (LCR) que circula por los ventrículos cerebrales y el espacio subaracnoideo. ¿Cómo se reabsorbe el LCR?:
+
+Options:
+1. Se drena a los vasos linfáticos del conducto torácico.
+2. Lo reabsorben los propios plexos coroideos.
+3. Se reabsorbe mediante vellosidades aracnoideas.
+4. Mediante vasos linfáticos del sistema nervioso central.
+
+---
+
+Question 63:
+Los vasos sanguíneos de diámetro mayor que los capilares están constituidos por:
+
+Options:
+1. Una túnica íntima solamente.
+2. Una túnica íntima y otra media.
+3. Una túnica íntima, una media y otra adventicia.
+4. Una túnica íntima, una media (que puede faltar en vasos delgados) y otra adventicia.
+
+---
+
+Question 64:
+Los corpúsculos de Hasall son propios de:
+
+Options:
+1. La corteza del linfonodo.
+2. La médula del riñón.
+3. La corteza del cerebro.
+4. La médula del timo.
+
+---
+
+Question 65:
+El aparato yuxtaglomerular renal lo forman:
+
+Options:
+1. Las células yuxtaglomerulares.
+2. Las células mesangiales extraglomerulares y las células yuxtaglomerulares.
+3. Las células mesangiales extraglomerulares, las células yuxtaglomerulares y la mácula densa.
+4. Las células mesangiales extraglomerulares, las células yuxtaglomerulares, la mácula densa y el glomérulo renal.
+
+---
+
+Question 66:
+Las células de Clara son propias de:
+
+Options:
+1. Tráquea.
+2. Alveolos.
+3. Bronquios.
+4. Bronquiolos.
+
+---
+
+Question 67:
+El espacio de Disse se encuentra en:
+
+Options:
+1. Bazo.
+2. Hígado.
+3. Páncreas.
+4. Riñón.
+
+---
+
+Question 68:
+¿Cuál de las siguientes es una definición adecuada de memoria inmunológica?:
+
+Options:
+1. El mecanismo por el cual un organismo impide el desarrollo de una respuesta inmunitaria contra los tejidos propios del huésped.
+2. El mecanismo por el que un organismo evita la exposición a microbios.
+3. La persistencia de anticuerpos y linfocitos específicos de un patógeno una vez eliminada la infección original, de modo que se puede prevenir la reinfección.
+4. El proceso de reducción o eliminación de un patógeno.
+
+---
+
+Question 69:
+Indique cuál de los siguientes órganos se considera sistema inmune primario:
+
+Options:
+1. Médula ósea.
+2. Ganglios linfáticos.
+3. Bazo.
+4. Mucosa intestinal.
+
+---
+
+Question 70:
+¿Cuál de los siguientes eventos NO se considera dentro del proceso de la inflamación?:
+
+Options:
+1. Secreción de citocinas.
+2. Secreción de quimiocinas.
+3. Reclutamiento de células inmunitarias innatas.
+4. Constricción de los vasos sanguíneos.
+
+---
+
+Question 71:
+¿Qué molécula de reconocimiento inmunitario innato permite a los macrófagos reconocer y fagocitar bacterias?:
+
+Options:
+1. FcRγ.
+2. C3b.
+3. C7.
+4. IL2R.
+
+---
+
+Question 72:
+¿Cuál de estas células puede presentar antígeno?:
+
+Options:
+1. Linfocito B.
+2. Linfocito T.
+3. Linfocito citotóxico.
+4. Hemocitoblasto.
+
+---
+
+Question 73:
+¿Existe alguna célula que pueda expresar los marcadores CD4 y CD8 simultáneamente?:
+
+Options:
+1. No, ninguna.
+2. Si, en linfocitos B.
+3. Si, en cierto estadio de los timocitos.
+4. En un tipo de linfocito de mucosa.
+
+---
+
+Question 74:
+El tejido linfoideo asociado a mucosas de tipo “GALT”:
+
+Options:
+1. Se encuentra en el timo.
+2. Se asocia a células denominadas M epiteliales.
+3. Está compuesto exclusivamente de células epiteliales.
+4. Se asocia al tejido adiposo.
+
+---
+
+Question 75:
+¿Cuál es la principal función de las células NK?:
+
+Options:
+1. Citotoxicidad natural.
+2. Producción de anticuerpos.
+3. Presentación de antígenos.
+4. Fagocitosis.
+
+---
+
+Question 76:
+¿Qué moléculas presentan antígenos a los linfocitos T?:
+
+Options:
+1. Inmunoglobulinas.
+2. Receptores Toll.
+3. MHC.
+4. Complemento.
+
+---
+
+Question 77:
+¿Qué clase de inmunidad es mediada por los linfocitos T citotóxicos?:
+
+Options:
+1. Inmunidad humoral.
+2. Inmunidad celular.
+3. Inmunidad innata.
+4. Inmunidad pasiva.
+
+---
+
+Question 78:
+¿Cuál es el principal objetivo de la selección clonal en los linfocitos?:
+
+Options:
+1. Aumentar la especificidad de anticuerpos.
+2. Eliminar antígenos de origen bacteriano.
+3. Generar un repertorio de células específicas para antígenos.
+4. Presentar antígenos a los linfocitos T.
+
+---
+
+Question 79:
+¿Qué citocina es crucial para la activación de los macrófagos?:
+
+Options:
+1. IFN-γ.
+2. IL-4.
+3. TNF-α.
+4. IL-10.
+
+---
+
+Question 80:
+¿Cuál es la función principal del sistema del complemento?:
+
+Options:
+1. Activar la inmunidad adaptativa.
+2. Opsonizar y destruir patógenos.
+3. Producir citocinas.
+4. Regular la producción de anticuerpos.
+
+---
+
+Question 81:
+¿Cuál es el principal mecanismo por el cual los linfocitos T CD8+ eliminan células infectadas?:
+
+Options:
+1. Citotoxicidad mediada por perforinas y granzimas.
+2. Producción de anticuerpos.
+3. Activación del complemento.
+4. Fagocitosis.
+
+---
+
+Question 82:
+¿Cuál de las siguientes células del sistema inmune NO es de estirpe linfoide?:
+
+Options:
+1. Células de Langerhans.
+2. Células NK.
+3. ILC.
+4. Células plasmáticas.
+
+---
+
+Question 83:
+¿Cuál de los siguientes mecanismos inmunológicos NO forma parte de la tolerancia periférica a los autoantígenos en los linfocitos T?:
+
+Options:
+1. Apoptosis de células efectoras.
+2. Edición del receptor de los linfocitos B.
+3. Anergia (falta de respuesta funcional) de las células efectoras.
+4. Supresión de células efectoras por células T reguladoras.
+
+---
+
+Question 84:
+¿Qué tipo de célula es la principal responsable de la respuesta inmune adaptativa?:
+
+Options:
+1. Macrófago.
+2. Neutrófilo.
+3. Eosinófilo.
+4. Linfocito.
+
+---
+
+Question 85:
+El paso de los anticuerpos maternos al feto que permite a los recién nacidos combatir las infecciones, se considera:
+
+Options:
+1. Inmunización adaptativa humoral.
+2. Inmunización pasiva.
+3. Inmunización mixta.
+4. Inmunización activa.
+
+---
+
+Question 86:
+¿Cuál de las siguientes señales NO es producida tras la unión del ligando al receptor tipo I para el TNF?:
+
+Options:
+1. Inhibición de la transcripción génica de mediadores inflamatorios y de supervivencia.
+2. Activación del NF-B.
+3. La inducción de la muerte celular por apoptosis.
+4. Activación de la cinasa (quinasa) MAP.
+
+---
+
+Question 87:
+La tolerancia central a lo propio es un proceso que se adquiere durante el desarrollo de:
+
+Options:
+1. Los linfocitos T.
+2. Los linfocitos T y B.
+3. Las células dendríticas.
+4. Los linfocitos T y las células dendríticas.
+
+---
+
+Question 88:
+¿Cómo se denomina al síndrome relacionado con mutación en LYST que conlleva a un defecto en la exocitosis de gránulos secretores y en la función lisosómica de muchos tipos celulares?:
+
+Options:
+1. Síndrome de Kostmann.
+2. Enfermedad granulomatosa crónica.
+3. Neutropenia congénita severa.
+4. Síndrome de Chédiak-Higashi.
+
+---
+
+Question 89:
+¿Qué correceptores principales están implicados en la infección por el virus causante del síndrome de inmunodeficiencia humana?:
+
+Options:
+1. CD5 y CCR5.
+2. CD5 y CXCR4.
+3. CXCR5 y CXCR4.
+4. CXCR4 y CCR5.
+
+---
+
+Question 90:
+¿Qué célula es la principal secretora de histamina al activarse?:
+
+Options:
+1. Mastocitos.
+2. Eosinófilos.
+3. Neutrófilos.
+4. Macrófagos.
+
+---
+
+Question 91:
+¿Cuál es el principal isotipo de inmunoglobulina presente en las secreciones mucosas?:
+
+Options:
+1. IgA.
+2. IgE.
+3. IgG.
+4. IgM.
+
+---
+
+Question 92:
+¿Cuál es el mecanismo de acción principal de los anticuerpos biespecíficos tipo BiTE (Bi-specific T-cell Engager) en la inmunoterapia contra el cáncer?:
+
+Options:
+1. Bloquean la señalización de los receptores PD-1 en las células T para potenciar la respuesta inmune contra los tumores.
+2. Inducen apoptosis en células tumorales mediante la activación de receptores de muerte celular Fas.
+3. Unen simultáneamente a células T y células tumorales, activando las células T y dirigiéndolas a eliminar las células tumorales.
+4. Neutralizan citocinas proinflamatorias en el microambiente tumoral para reducir la inflamación crónica.
+
+---
+
+Question 93:
+¿Cuál de las siguientes interleucinas participa en la diferenciación de los linfocitos T CD4+ en células Th17?:
+
+Options:
+1. IL-4.
+2. IL-12.
+3. IL-6.
+4. IL-10.
+
+---
+
+Question 94:
+Indique cuál de los siguientes es un interferón (IFN) de tipo II:
+
+Options:
+1. IFNα.
+2. IFNω.
+3. IFNγ.
+4. IFNβ.
+
+---
+
+Question 95:
+¿Cuál de los siguientes NO es un receptor de membrana para PAMP (Pathogen Associated Molecular Patterns) o DAMP (Danger Associated Molecular Patterns)?:
+
+Options:
+1. TLR.
+2. LRP5.
+3. NLR.
+4. CLR.
+
+---
+
+Question 96:
+El z-score, puntuación z o puntuación estandarizada (zi= (xi−x̅)/s donde x̅ es la media y s la desviación típica) de una observación es 2, entonces:
+
+Options:
+1. La distribución de la variable X NO es normal.
+2. La observación está por encima del cuantil 98%.
+3. La observación está por encima de la media más dos veces su desviación típica.
+4. La observación está por debajo de la media 2 menos dos veces su desviación típica.
+
+---
+
+Question 97:
+El modelo de distribución más apropiado para analizar el número de infectados mensuales que acuden a un servicio de urgencias de una zona concreta es:
+
+Options:
+1. La distribución de Poisson.
+2. La distribución binomial.
+3. La distribución binomial negativa.
+4. La distribución uniforme discreta.
+
+---
+
+Question 98:
+En un informe se ha aplicado un test Chicuadrado a una tabla de contingencia 2x3 donde el valor mínimo de las frecuencias esperadas en cada celda es 15 obteniéndose un p-valor de 0,49. Entonces:
+
+Options:
+1. La conclusión es que hay dependencia positiva entre las categorías por filas y por columnas de la tabla.
+2. El valor mínimo de las frecuencias esperadas es demasiado bajo y por tanto, el test que se ha aplicado no es apropiado en este contexto.
+3. Algo se ha hecho incorrectamente ya que no es posible obtener un p-valor tan elevado.
+4. La conclusión es que las categorías por filas y por columnas de la tabla se pueden aceptar como independientes.
+
+---
+
+Question 99:
+Si tenemos dos eventos aleatorios A y B que son independientes, entonces:
+
+Options:
+1. Su intersección (la probabilidad de que ocurran los dos a la vez) es cero.
+2. Su unión (la probabilidad de que ocurra alguno de ellos) es la suma de las probabilidades de los eventos, esto es, P(A)+P(B).
+3. Su intersección (la probabilidad de que ocurran los dos a la vez) es el producto de las probabilidades de los dos eventos, esto es, P(A)xP(B).
+4. Su unión (la probabilidad de que ocurra alguno de ellos) es la suma de la probabilidad del mayor más la probabilidad de la intersección.
+
+---
+
+Question 100:
+Se ha construido una recta de regresión (regresión lineal simple) entre las variables X e Y (Y=a+bX+e) que han sido previamente estandarizadas (tienen media cero y varianza unidad). Entonces:
+
+Options:
+1. La correlación lineal (r) entre X e Y es cero.
+2. El parámetro pendiente (b) es cero.
+3. El parámetro ordenada en el origen (a) es cero.
+4. El parámetro pendiente (b) es igual a uno.
+
+---
+
+Question 101:
+¿Cuál es la diferencia entre un desoxinucleótido y un didesoxinucleótido?:
+
+Options:
+1. Al desoxinucleótido le falta un grupo 3'hidroxilo en su azúcar.
+2. Al didesoxinucleótido le falta un grupo 3'hidroxilo en su azúcar.
+3. Al desoxinucleótido le falta un grupo 5'fosfato.
+4. Al didesoxinucleótido le falta un grupo 5'fosfato.
+
+---
+
+Question 102:
+¿Cuál es la cantidad aproximada de genes que codifican proteínas (genes codificantes) presentes en el genoma humano?:
+
+Options:
+1. 2.000.
+2. 20.000.
+3. 200.000.
+4. 1.200.000.
+
+---
+
+Question 103:
+¿Cuál es la mejor descripción del cambio genético siguiente: c.1138G>A?:
+
+Options:
+1. Transcripción.
+2. Transversión.
+3. Transición.
+4. Traducción.
+
+---
+
+Question 104:
+¿Qué término describe mejor las siguientes unidades genéticas en humanos: LINE‐ 1, SINE y Alu?:
+
+Options:
+1. Elementos transponibles.
+2. Genes HOX.
+3. Elementos P.
+4. Genes Homeobox.
+
+---
+
+Question 105:
+¿En qué momento ocurre la recombinación (entrecruzamiento) durante la meiosis?:
+
+Options:
+1. Mitosis.
+2. Meiosis I.
+3. Meiosis II.
+4. Citocinesis.
+
+---
+
+Question 106:
+¿Qué se analiza al secuenciar el transcriptoma?:
+
+Options:
+1. ADN.
+2. Metabolitos.
+3. Proteínas.
+4. ARN.
+
+---
+
+Question 107:
+¿Cuál es el cromosoma humano más pequeño?:
+
+Options:
+1. 1.
+2. 21.
+3. 22.
+4. Y.
+
+---
+
+Question 108:
+¿Cuál de los siguientes conceptos se refiere a la presencia de dos o más poblaciones de células con información genética diferente en un individuo?:
+
+Options:
+1. Heterocigosidad.
+2. Aneuploidía.
+3. Mosaicismo.
+4. Deleción.
+
+---
+
+Question 109:
+Si una persona manifiesta un carácter codificado por un gen que se localiza en el ADN mitocondrial ¿cuáles de sus ancestros deben haberlo manifestado?:
+
+Options:
+1. Su abuela materna y su madre.
+2. Su abuelo paterno y su padre.
+3. Sus dos abuelos maternos.
+4. Sus dos abuelas.
+
+---
+
+Question 110:
+¿Qué transcribe la ARN polimerasa II?:
+
+Options:
+1. Los ARN de transferencia y algunos ARN ribosómicos.
+2. Los ARN ribosómicos y algunos ARN de transferencia.
+3. Los ARN mensajeros y algunos ARN ribosómicos.
+4. Los ARN mensajeros y algunos ARN no codificantes.
+
+---
+
+Question 111:
+La inactivación del cromosoma X:
+
+Options:
+1. Origina fenotipos en mosaico.
+2. Favorece su inestabilidad cromosómica.
+3. Incrementa las tasas de mutación de sus genes.
+4. Impide su recombinación meiótica.
+
+---
+
+Question 112:
+Si un gen se localiza en el 13q14 significa que:
+
+Options:
+1. Está situado en el brazo largo del cromosoma 13.
+2. Está situado en el cromosoma 13 y en el 14.
+3. Está situado en el brazo largo del cromosoma 14.
+4. Está situado en el brazo corto del cromosoma 14.
+
+---
+
+Question 113:
+Cuando la expresión de un gen o de un par de genes enmascaran o modifican la expresión de otro gen o par génico se denomina:
+
+Options:
+1. Endogamia.
+2. Eugenesia.
+3. Euploidía.
+4. Epistasia.
+
+---
+
+Question 114:
+La expresividad es:
+
+Options:
+1. La gravedad de la expresión del fenotipo en individuos que presentan el mismo genotipo causante de la enfermedad.
+2. Probabilidad de que un gen presente cualquier nivel de expresión fenotípica.
+3. El fenómeno de la diferente expresión de alelos dependiendo del progenitor de origen.
+4. Rasgo que solo se expresa en un sexo.
+
+---
+
+Question 115:
+El orgánulo más asociado con herencia extranuclear es:
+
+Options:
+1. El ribosoma.
+2. La mitocondria.
+3. El aparato de Golgi.
+4. Los lisosomas.
+
+---
+
+Question 116:
+El gen CHD7 implicado en el Síndrome de CHARGE se localiza en la región cromosómica:
+
+Options:
+1. 8q12.
+2. 18q12.
+3. 8p12.
+4. 8q34.
+
+---
+
+Question 117:
+La anemia falciforme es una enfermedad:
+
+Options:
+1. Autosómica dominante.
+2. Autosómica recesiva.
+3. Ligada al cromosoma X dominante.
+4. Ligada al cromosoma X recesiva.
+
+---
+
+Question 118:
+Se separan por electroforesis fragmentos de ADN de 500, 1.000 y 2.000 pares de bases (pbs) de longitud. ¿Qué fragmento migrará más lejos en el gel?:
+
+Options:
+1. El fragmento de 500 pbs.
+2. El fragmento de 1.000 pbs.
+3. El fragmento de 2.000 pbs.
+4. Los tres migrarán a la misma distancia.
+
+---
+
+Question 119:
+Una inversión paracéntrica:
+
+Options:
+1. Incluye el centrómero en la región invertida.
+2. No incluye el centrómero en la región invertida.
+3. Contiene dos regiones invertidas adyacentes.
+4. Incluye el telómero en la región invertida.
+
+---
+
+Question 120:
+Una niña nacida con el Síndrome de Angelman tiene una deleción del gen AS (UBE3A). ¿De qué parental puede principalmente heredar la deleción?:
+
+Options:
+1. De la madre.
+2. Del padre.
+3. Puede haberla heredado de cualquiera de los dos.
+4. De ninguno de los dos.
+
+---
+
+Question 121:
+La herencia de una de las siguientes enfermedades es autosómica recesiva:
+
+Options:
+1. Síndrome de Rett.
+2. Enfermedad de Tay-Sachs.
+3. Retinoblastoma.
+4. Corea de Huntington.
+
+---
+
+Question 122:
+¿Qué enfermedad con herencia autosómica dominante es causada por una mutación o duplicación del gen PMP22?:
+
+Options:
+1. Distrofia muscular de Duchenne.
+2. Enfermedad de Crohn.
+3. Fibrosis quística.
+4. Enfermedad de Charcot-Marie-Tooth tipo 1A.
+
+---
+
+Question 123:
+¿Cuál de los siguientes síndromes de tumor hereditario se asocia con mutaciones del gen PTEN?:
+
+Options:
+1. Poliposis adenomatosa familiar (PAF).
+2. Mama/ovario familiar.
+3. Li-Fraumeni.
+4. Cowden.
+
+---
+
+Question 124:
+El mecanismo más frecuente que induce la activación del protooncogen BCL2 en el linfoma folicular es:
+
+Options:
+1. Mutación puntual.
+2. Amplificación génica.
+3. Inversión.
+4. Translocación.
+
+---
+
+Question 125:
+Un aumento de los niveles de 2,3bisfosfoglicerato:
+
+Options:
+1. Disminuiría la afinidad de la hemoglobina por el O2.
+2. Disminuiría la afinidad de la hemoglobina y de la mioglobina por el O2.
+3. Disminuiría la liberación de O2 de la hemoglobina en los capilares de los tejidos.
+4. Estabilizaría la estructura cuaternaria de la oxihemoglobina.
+
+---
+
+Question 126:
+En relación con el colágeno podemos afirmar que:
+
+Options:
+1. Tiene alto contenido en glicina lo que favorece su estructura secundaria mayoritaria de hélice-alfa.
+2. Para la acción de la prolina hidrolasa se requiere vitamina C.
+3. Se caracteriza por carecer del aminoácido prolina en su composición.
+4. Hay formación de enlaces cruzados entre lisinas de moléculas de tropocolágeno cercanas.
+
+---
+
+Question 127:
+Se aísla un enzima de cuatro bacterias diferentes, los cuatro catalizan la misma reacción, pero muestran diferentes valores de Km, ¿cuál tendrá mayor afinidad para el sustrato?:
+
+Options:
+1. El que tiene una Km de 0,15 mM.
+2. El que tiene una Km de 150 mM.
+3. El que tiene una Km de 15000 pM.
+4. El que tiene una Km de 1,5 nM.
+
+---
+
+Question 128:
+La transformación de piruvato en lactato:
+
+Options:
+1. Reduce el piruvato con un aporte de electrones procedente del NADH.
+2. Promueve el consumo de glucosa en situación de aerobiosis.
+3. Es esencial para la reoxidación del coenzima NADPH.
+4. Oxida el piruvato a lactato en situación de anaerobiosis.
+
+---
+
+Question 129:
+¿Cuál es la función de la movilización del glucógeno hepático?:
+
+Options:
+1. Proporcionar la gran energía requerida por el tejido hepático en situación de ayuno.
+2. Exportar la glucosa a otros tejidos cuando disminuyen los niveles sanguíneos.
+3. Exportar la glucosa a otros tejidos cuando se produce un aumento en los niveles de insulina sanguíneos.
+4. Utilización de la glucosa 6-P en diferentes rutas metabólicas.
+
+---
+
+Question 130:
+La lipoproteínalipasa o LPL:
+
+Options:
+1. Participa en la degradación de los triglicéridos almacenados intracelularmente para proporcionar ácidos grasos como combustible energético.
+2. Se expresa mayoritariamente en el hígado, donde constituye la principal vía de captación de ácidos grasos.
+3. Hidroliza los trigliceroles de las lipoproteínas que contengan apoC-II.
+4. Cataliza la entrada, por endocitosis, de los quilomicrones y VLDL en el tejido adiposo.
+
+---
+
+Question 131:
+La molécula de carnitina es necesaria para el organismo, ya que:
+
+Options:
+1. Es necesaria para la transferencia de ácidos grasos de cadena larga hacia el interior de la mitocondria.
+2. Interviene en la síntesis de ácidos grasos.
+3. Es necesaria para la β-oxidación al ser un cofactor de la acil-CoA deshidrogenasa.
+4. Interviene en la salida de acetil-CoA de la mitocondria, siendo por ello imprescindible para la síntesis de ácidos grasos.
+
+---
+
+Question 132:
+Los cuerpos cetónicos se sintetizan:
+
+Options:
+1. En el tejido hepático y el tejido adiposo cuando se acumula acetil-CoA y se exportan en forma de β-hidroxibutirato.
+2. En el tejido hepático y el tejido adiposo cuando se acumula acetil-CoA y se exportan en forma de acetoacetil-CoA.
+3. En el tejido hepático en situación de ayuno prolongado a partir del acetil-CoA.
+4. En el tejido hepático y constituyen el principal combustible metabólico de los eritrocitos en situación de ayuno prolongado.
+
+---
+
+Question 133:
+¿Cuál es la vitamina cuya deficiencia causa el escorbuto?:
+
+Options:
+1. Vitamina A.
+2. Vitamina C.
+3. Vitamina D.
+4. Vitamina E.
+
+---
+
+Question 134:
+¿Qué enfermedad se produce por una acumulación de esfingomielina en el cerebro como consecuencia de un defecto genético en la enzima esfingomielinasa?:
+
+Options:
+1. La enfermedad de Niemann-Pick.
+2. La enfermedad de Fabry.
+3. La enfermedad Tay-Sachs.
+4. La enfermedad de Sandhoff.
+
+---
+
+Question 135:
+¿Cuál es la enzima que cataliza la transformación de glutatión oxidado en glutatión reducido?:
+
+Options:
+1. Catalasa.
+2. Glutatión peroxidasa.
+3. Glutatión reductasa.
+4. Superóxido dismutasa.
+
+---
+
+Question 136:
+¿Qué aminoácido transporta amoniaco desde los músculos esqueléticos al hígado?:
+
+Options:
+1. Glicina.
+2. Leucina.
+3. Alanina.
+4. Glutamato.
+
+---
+
+Question 137:
+¿Qué marcadores bioquímicos de inflamación/infección son recomendados para el diagnóstico de sepsis?:
+
+Options:
+1. Proteína C reactiva (PCR) y haptoglobina.
+2. Procalcitonina (PCT) y calprotectina.
+3. Procalcitonina (PCT) y proteína C reactiva (PCR).
+4. Haptoglobina y calprotectina.
+
+---
+
+Question 138:
+Señale la respuesta CORRECTA. El amonio y el perfil de aminoácidos en plasma son marcadores biológicos empleados en la práctica clínica para el diagnóstico bioquímico de una de las siguientes enfermedades metabólicas:
+
+Options:
+1. Mucopolisacaridosis tipo I.
+2. Deficiencia de ornitina transcarbamilasa (OTC).
+3. Glucogenosis tipo V.
+4. Gangliosidosis GM2.
+
+---
+
+Question 139:
+Respecto a la enfermedad de la orina con olor a jarabe de arce señale la repuesta CORRECTA:
+
+Options:
+1. Es una enfermedad metabólica hereditaria que se produce por un defecto en el catabolismo de cistina, prolina y leucina.
+2. Es una enfermedad metabólica hereditaria que se produce por un defecto en el catabolismo de los aminoácidos ramificados (leucina, isoleucina y valina).
+3. Es una enfermedad metabólica hereditaria que se produce por un defecto en el catabolismo de lisina y triptófano.
+4. Es una enfermedad metabólica hereditaria que se produce por un defecto en el catabolismo de lisina, triptófano y valina.
+
+---
+
+Question 140:
+La hemólisis, la ictericia y la lipemia son las interferencias analíticas endógenas más frecuentes en la práctica clínica. Una de las siguientes afirmaciones al respecto es CIERTA:
+
+Options:
+1. Los únicos dos mecanismos de interferencia debidos a la hemólisis son la interferencia espectrofotométrica y la interferencia química.
+2. En muestras hemolizadas, parámetros analíticos como la aspartatoaminotransferasa (AST), la lactato deshidrogenasa (LDH) y el potasio están disminuidos.
+3. La ictericia es una interferencia analítica condicionada por un estado patológico del propio paciente y, por tanto, es inevitable.
+4. La ultracentrifugación (100.000 x g – 2.000.000 x g) es una metodología ineficaz para separar las diversas lipoproteínas contenidas en la muestra y eliminar la interferencia por lipemia.
+
+---
+
+Question 141:
+De las siguientes lipoproteínas, ¿Cuáles son las que contienen una mayor proporción de triglicéridos en su composición química?:
+
+Options:
+1. Quilomicrones y VLDL.
+2. VLDL y LDL.
+3. Quilomicrones y HDL.
+4. Quilomicrones y LDL.
+
+---
+
+Question 142:
+El proteinograma plasmático de un paciente con cirrosis hepática se caracteriza por:
+
+Options:
+1. Aumento de albúmina y disminución de la fracción gamma.
+2. Disminución de albúmina y de la fracción gamma.
+3. Disminución de albúmina y aumento de la fracción gamma.
+4. Aumento de albúmina y de la fracción gamma.
+
+---
+
+Question 143:
+El paciente con hipotiroidismo primario compensado o subclínico, sin tratamiento sustitutivo, presenta en sangre:
+
+Options:
+1. Tirotropina (TSH) y tiroxina (T4) aumentadas.
+2. TSH dentro de los valores de referencia y T4 ligeramente disminuida.
+3. TSH y T4 ligeramente disminuidas.
+4. TSH aumentada y T4 dentro de los valores de referencia.
+
+---
+
+Question 144:
+Los cristales con forma hexagonal observados al microscopio óptico en una muestra de orina reciente son de:
+
+Options:
+1. Leucina.
+2. Tirosina.
+3. Cistina.
+4. Colesterol.
+
+---
+
+Question 145:
+La prueba bioquímica con una mayor precisión para el diagnóstico de ascitis secundaria a hipertensión portal es:
+
+Options:
+1. El gradiente de la concentración de albúmina en suero-líquido ascítico.
+2. La cuantificación de proteínas totales en líquido ascítico.
+3. El cociente de la concentración de lactato deshidrogenasa en líquido ascítico/suero.
+4. La cuantificación de lactato deshidrogenasa en líquido ascítico.
+
+---
+
+Question 146:
+En la práctica clínica habitual en hematología, el anticoagulante de elección que mejor conserva la morfología celular para realizar los hemogramas es:
+
+Options:
+1. El fluoruro.
+2. El ácido etilenodiaminatetraacético (EDTA).
+3. El citrato.
+4. La heparina.
+
+---
+
+Question 147:
+La hormona luteinizante (LH) estimula la secreción de testosterona en:
+
+Options:
+1. La teca.
+2. La médula adrenal.
+3. Las células de Leydig.
+4. Las células de Sertoli.
+
+---
+
+Question 148:
+En la enfermedad de Cushing, el aumento de la secreción de cortisol por la corteza suprarrenal es secundario al aumento de la secreción de:
+
+Options:
+1. El propio cortisol por un mecanismo de retroalimentación positiva.
+2. Hormona luteinizante (LH).
+3. Hormona adrenocorticotrópica (ACTH).
+4. Hormona antidiurética (ADH).
+
+---
+
+Question 149:
+Cursa con depósitos excesivos de cobre en los tejidos:
+
+Options:
+1. La enfermedad de Wilson.
+2. Enfermedad de Von Gierke o glucogenosis tipo I.
+3. Enfermedad de Mcardle o glucogenosis tipo V.
+4. Glucogenosis tipo III.
+
+---
+
+Question 150:
+El marcador más precoz en el infarto agudo de miocardio es:
+
+Options:
+1. La troponina I.
+2. La troponina T.
+3. La mioglobina.
+4. La isoenzima MB de la creatin-cinasa (CK-MB).
+
+---
+
+Question 151:
+Respecto a la duplicación del ADN:
+
+Options:
+1. Todas las copias de ADN parten de una sola cadena molde.
+2. Es una duplicación semiconservativa.
+3. La cadena orientada que deja libre una posición 3 ́para la polimerasa es la proveniente de la madre, y es la cadena molde preferente, solo si hay alguna interrupción en la lectura el organismo reproduce la cadena complementaria.
+4. En la mitosis de una célula eucariota las mitocondrias son las primeras en duplicarse.
+
+---
+
+Question 152:
+El ADN fetal que circula en el plasma de la gestante:
+
+Options:
+1. Representa todo el ADN plasmático que se extrae de la sangre materna.
+2. Es útil únicamente para trastornos que afecten al cromosoma Y, para evitar confundirlo con el ADN materno.
+3. Solo circula ADN fetal en la gestante cuando existe sufrimiento fetal o placentario.
+4. Es un porcentaje pequeño respecto al ADN que circula en el plasma materno y se necesitan técnicas de amplificación y diferenciación del ADN fetal respecto al materno para que tenga utilidad diagnóstica.
+
+---
+
+Question 153:
+¿Cuál es la respuesta CORRECTA en relación con la acción reguladora de los microRNAs en las células eucariotas?:
+
+Options:
+1. Se acoplan a regiones del ARN ribosómico inactivando la traducción cuando está sobrepasada la célula.
+2. Actúan directamente sobre la región promotora del ADN acoplándose a dicha región e inactivándola.
+3. Se sintetizan por células cancerígenas para bloquear los desmosomas en las células vecinas.
+4. Regulan la expresión génica por medio de apareamiento de bases con secuencias complementarias en los RNA mensajeros diana.
+
+---
+
+Question 154:
+¿Cuál de las siguientes afirmaciones sobre los cebadores o primers usados en la reacción de PCR es FALSA?:
+
+Options:
+1. Los cebadores deben tener una longitud de entre 15 y 30 nucleótidos.
+2. No deben tener secuencias internas autocomplementarias, porque daría lugar a formación de estructuras secundarias ("rizos", "bucles").
+3. No deben ser complementarios entre ellos.
+4. Deben tener, al menos, 16 parejas timina/adenina (TA).
+
+---
+
+Question 155:
+En la técnica de PCR, seleccione la opción INCORRECTA con respecto a la "temperatura de melting":
+
+Options:
+1. Es también denominada "temperatura de fusión" o "de desnaturalización".
+2. Es característica de la longitud y de la secuencia de nucleótidos de la cadena de ADN que estemos analizando.
+3. Es aquella temperatura a la que se encuentran desnaturalizadas 2/3 de las moléculas de ADN.
+4. Es complementaria a la "temperatura de annealing", o de alineamiento.
+
+---
+
+Question 156:
+¿Qué es una aneuploidía?:
+
+Options:
+1. Se usa este término para definir la carga correcta de cromosomas en una especie.
+2. La aparición de uno o más cromosomas adicionales o faltantes que conducen a un complemento cromosómico desequilibrado, o cualquier número de cromosomas que no sea un múltiplo exacto del número haploide.
+3. Es un sinónimo de triploidía.
+4. Es muy frecuente en humanos (50% de los embarazos a término).
+
+---
+
+Question 157:
+La hemocromatosis por mutaciones en el gen HFE es un tipo de enfermedad:
+
+Options:
+1. Autosómica dominante.
+2. Autosómica recesiva.
+3. Ligada al cromosoma X.
+4. La hemocromatosis no es hereditaria
+
+---
+
+Question 158:
+Una fórmula cromosómica 47XXY indica la presencia de un sujeto:
+
+Options:
+1. De sexo masculino con síndrome de Klinefelter.
+2. De sexo femenino con síndrome de Turner.
+3. De sexo masculino con síndrome de Swyer.
+4. Es la fórmula cromosómica normal en varones.
+
+---
+
+Question 159:
+En la replicación del ADN desde un origen de replicación, la ADN-polimerasa necesita:
+
+Options:
+1. Un cebador en la hebra continua y un cebador en la hebra discontinua.
+2. Un cebador en la hebra continua y un cebador para cada fragmento de Okazaki en la hebra discontinua.
+3. La ADN-polimerasa NO necesita cebadores.
+4. Varios cebadores en la hebra continua y varios cebadores en la hebra discontinua.
+
+---
+
+Question 160:
+¿Qué enzima se encarga de unir los fragmentos cortos de ADN producidos durante la replicación de la cadena retardada del ADN?:
+
+Options:
+1. Helicasa.
+2. Primasa.
+3. Ligasa.
+4. ADN polimerasa.
+
+---
+
+Question 161:
+¿En cuál de los siguientes procesos intervienen ARN pequeños nucleares (ARNsn)?:
+
+Options:
+1. Procesamiento y modificación química del ARN ribosómico en el nucleolo.
+2. Regulación de la expresión génica mediante degradación de ARN mensajeros selectivos.
+3. Eliminación de intrones durante el procesamiento del ARN mensajero.
+4. Inactivación del cromosoma X en las células femeninas.
+
+---
+
+Question 162:
+La activación del complejo ciclina B-CDK 1:
+
+Options:
+1. Se produce cuando la célula va a replicar el ADN.
+2. Promueve la separación de las cromátidas hermanas.
+3. Se produce por daño en el ADN, bloqueando la progresión del ciclo.
+4. Induce la entrada de la célula en mitosis.
+
+---
+
+Question 163:
+¿Cuál de los siguientes antimicrobianos actúa a nivel de la membrana plasmática?:
+
+Options:
+1. Daptomicina.
+2. Doxiciclina.
+3. Ceftriaxona.
+4. Levofloxacino.
+
+---
+
+Question 164:
+¿Cuál de los siguientes antimicrobianos no es un beta-lactámico?:
+
+Options:
+1. Aztreonam.
+2. Acido clavulánico.
+3. Ertapenem.
+4. Levofloxacino.
+
+---
+
+Question 165:
+En relación a Streptococcus pyogenes es FALSO que:
+
+Options:
+1. Suelen ser muy sensibles a penicilina.
+2. No es un agente productor de toxinas.
+3. Produce cuadros superficiales del tipo impétigo o erisipela.
+4. La proteína M de la superficie permite clasificar los aislamientos clínicos en más de 200 genotipos.
+
+---
+
+Question 166:
+Una de las características de ceftarolina es:
+
+Options:
+1. Su posología estrictamente oral.
+2. Su notable actividad frente a Staphylococcus aureus resistente a meticilina.
+3. Su capacidad de inhibir el complejo ribosomal 30S-ARNm.
+4. Su notable actividad frente a microorganismos como Pseudomonas aeruginosa.
+
+---
+
+Question 167:
+¿Cuál de los siguientes mecanismos NO se asocia a resistencia antibiótica a linezolid?:
+
+Options:
+1. Alteraciones de las proteínas fijadoras de penicilina (PBPs).
+2. Mutaciones en el gen que codifica el 23S-ARNr bacteriano.
+3. Presencia de una metiltransferasa del 23S-ARNr codificada por el gen cfr.
+4. Cambios en las proteínas ribosomales L3 y L4.
+
+---
+
+Question 168:
+Señale la asociación CORRECTA:
+
+Options:
+1. Chlamydia pneumoniae- colonias rugosas en medio de agar sangre.
+2. Listeria monocytogenes- productor de beta-hemólisis en medio de agar sangre.
+3. Bacillus cereus- agente causal del carbunco.
+4. Mycoplasma genitalium- agente causal del linfogranuloma venéreo.
+
+---
+
+Question 169:
+Señale la respuesta INCORRECTA respecto a los microorganismos del género Chlamydia:
+
+Options:
+1. Chlamydia trachomatis es un agente causal de enfermedad inflamatoria pélvica.
+2. Chlamydia trachomatis es el agente causal del tracoma.
+3. Chlamydia psittaci es una causa frecuente de infecciones de transmisión sexual.
+4. Los microorganismos de este género son bacterias intracelulares obligadas.
+
+---
+
+Question 170:
+Señale la asociación INCORRECTA respecto a los microorganismos del género Corynebacterium:
+
+Options:
+1. Corynebacterium striatum- zoonosis.
+2. Corynebacterium urealyticum- infección urinaria.
+3. Corynebacterium minutissimum- eritrasma.
+4. Corynebacterium jeikeium- resistencia a múltiples antibióticos.
+
+---
+
+Question 171:
+Señale la asociación INCORRECTA:
+
+Options:
+1. Streptococcus mitis- endocarditis.
+2. Streptococcus agalactiae- faringitis.
+3. Streptococcus pneumoniae- meningitis.
+4. Streptococcus pyogenes- fascitis necrosante.
+
+---
+
+Question 172:
+¿Cuál es el tratamiento de elección de la uretritis gonocócica?:
+
+Options:
+1. Vancomicina.
+2. Ceftriaxona.
+3. Penicilina.
+4. Trimetoprim-Sulfametoxazol.
+
+---
+
+Question 173:
+El diagnóstico de una infección respiratoria por Haemophilus influenzae se realiza mediante:
+
+Options:
+1. Tinción de Gram y cultivo de muestra respiratoria.
+2. Detección del antígeno capsular en orina.
+3. Inmunofluorescencia indirecta de muestra respiratoria.
+4. Detección de anticuerpos en sangre
+
+---
+
+Question 174:
+Respecto a las infecciones por Legionella pneumophila, una de las siguientes afirmaciones es FALSA:
+
+Options:
+1. Se asocian a la inhalación de aerosoles de reservorios húmedos contaminados.
+2. Ocurren principalmente en niños pequeños.
+3. Su diagnóstico puede realizarse mediante detección de antígeno en orina.
+4. Hay casos con poca afectación clínica.
+
+---
+
+Question 175:
+Respecto a Francisella tularensis, ¿cuál de las siguientes es FALSA?:
+
+Options:
+1. Es un cocobacilo Gram-negativo.
+2. Entre sus reservorios se encuentran los pequeños roedores.
+3. No hay casos autóctonos en España.
+4. Es un patógeno intracelular.
+
+---
+
+Question 176:
+En la actualidad, ¿cuál de las siguientes NO es una infección prevenible mediante vacunación?:
+
+Options:
+1. Hepatitis por el virus de la hepatitis C.
+2. Meningitis por Neisseria meningitidis.
+3. Neumonía por Streptococcus pneumoniae.
+4. Tos ferina (Bordetella pertussis).
+
+---
+
+Question 177:
+Respecto a la brucelosis, ¿cuál de las siguientes es FALSA?:
+
+Options:
+1. No requiere tratamiento antibiótico.
+2. Para su diagnóstico se puede usar la aglutinación en porta del Rosa de Bengala.
+3. Puede transmitirse a partir de productos lácteos no pasteurizados.
+4. Brucella melitensis es una bacteria cultivable en el laboratorio.
+
+---
+
+Question 178:
+Respecto a las infecciones entéricas causadas por Campylobacter jejuni es CIERTO que:
+
+Options:
+1. Son zoonosis con reservorio exclusivo en ganado bovino o vacuno.
+2. Se asocian a la inhalación de aerosoles contaminados.
+3. Se recomienda tratamiento antibiótico en todos los casos.
+4. Son causa frecuente de diarrea en población infantil.
+
+---
+
+Question 179:
+Una de las siguientes asociaciones entre especies de Yersinia y patología producida es FALSA:
+
+Options:
+1. Yersinia pestis – peste.
+2. Yersinia tuberculosis – tuberculosis.
+3. Yersinia enterocolitica – enteritis.
+4. Yersinia pseudotuberculosis - adenitis mesentérica.
+
+---
+
+Question 180:
+La fiebre tifoidea:
+
+Options:
+1. Está causada por Rickettsia typhi.
+2. Es una zoonosis.
+3. Una pequeña proporción de las personas infectadas se convierten en portadores crónicos.
+4. El microorganismo causante se acantona característicamente en la médula ósea.
+
+---
+
+Question 181:
+Una de las siguientes características de Stenotrophomonas maltophilia es FALSA:
+
+Options:
+1. Suele ser sensible al cotrimoxazol.
+2. Es positiva para la prueba de la oxidasa.
+3. Suele ser resistente a múltiples antibióticos.
+4. Es una de las causas frecuentes de neumonía en unidades de cuidados intensivos.
+
+---
+
+Question 182:
+Entre las enterobacterias causantes de gastroenteritis en el viajero se encuentra:
+
+Options:
+1. Enterobacter cloacae.
+2. Escherichia coli.
+3. Enterococcus faecalis.
+4. Giardia lamblia.
+
+---
+
+Question 183:
+¿Cuál es el principal factor de virulencia de Cryptococcus neoformans que protege al hongo de la respuesta inmunitaria del huésped?:
+
+Options:
+1. La capacidad de crecer a 30oC.
+2. La producción de ergosterol.
+3. La producción de una gruesa cápsula de polisacárido.
+4. La producción de catalasa.
+
+---
+
+Question 184:
+¿Cuál de las siguientes especies de Mycobacterium NO crece a 35-37oC?:
+
+Options:
+1. M. tuberculosis complex.
+2. M. scrofulaceum.
+3. M. kansasii.
+4. M. ulcerans.
+
+---
+
+Question 185:
+¿Cuál es el método más común actualmente para diagnosticar la leptospirosis en la práctica clínica?:
+
+Options:
+1. Cultivo en un medio rico en albúmina y hemoglobina.
+2. Detección de anticuerpos mediante pruebas serológicas.
+3. Secuenciación masiva.
+4. Microscopía de campo oscuro.
+
+---
+
+Question 186:
+¿Cómo se reproducen asexualmente los hongos que pertenecen al orden Mucorales?:
+
+Options:
+1. Por la formación de esporangiosporas.
+2. Mediante gemación.
+3. Por fisión binaria.
+4. Por fragmentación de hifas.
+
+---
+
+Question 187:
+¿Cuál de los siguientes hongos no produce microconidias?:
+
+Options:
+1. Trichophyton mentagrophytes.
+2. Microsporum canis.
+3. Trichophyton verrucosum.
+4. Epidermophyton floccosum.
+
+---
+
+Question 188:
+¿Cuál es el mecanismo de acción de los análogos de nucleósidos/nucleótidos en el tratamiento antiviral?:
+
+Options:
+1. Bloquean la salida del virus de la célula infectada.
+2. Inhiben la actividad de la proteasa viral.
+3. Bloquean la síntesis del ácido nucleico y la replicación del virus.
+4. Bloquean la unión del virus a la célula huésped.
+
+---
+
+Question 189:
+¿Qué células son el lugar de latencia más frecuente del virus de Epstein-Barr (VEB)?:
+
+Options:
+1. Células T.
+2. Células epiteliales.
+3. Linfocitos B.
+4. Hepatocitos.
+
+---
+
+Question 190:
+¿Cuál es la característica principal del estado de latencia en los herpesvirus?:
+
+Options:
+1. El virus replica activamente sin causar síntomas.
+2. El virus induce la apoptosis de las células infectadas.
+3. El virus se integra en el ADN del huésped como un provirus.
+4. El genoma viral permanece en el núcleo de las células del huésped, pero no integrado al ADN celular.
+
+---
+
+Question 191:
+¿Cuál de los siguientes enterovirus se asocia comúnmente a brotes de enfermedad de manos, pies y boca?:
+
+Options:
+1. Enterovirus D68.
+2. Coxsackievirus A.
+3. Poliovirus.
+4. Echovirus 11.
+
+---
+
+Question 192:
+¿Cuál de las siguientes descripciones sobre la estructura de un virión de Poliovirus es CORRECTA?:
+
+Options:
+1. Virus no envuelto con ARN monocatenario de polaridad positiva.
+2. Virus envuelto con ARN monocatenario de polaridad negativa.
+3. Virus envuelto con ADN bicatenario lineal.
+4. Virus no envuelto con ADN monocatenario circular.
+
+---
+
+Question 193:
+¿Cuál es el principal mecanismo de acción de los inhibidores de la neuraminidasa, como oseltamivir y zanamivir, en el tratamiento del virus de la gripe?:
+
+Options:
+1. Bloquean la entrada del virus en la célula huésped.
+2. Inhiben la liberación de nuevas partículas virales de las células infectadas.
+3. Interfieren en la síntesis del ARN viral.
+4. Inhiben la replicación del ADN viral.
+
+---
+
+Question 194:
+¿Qué proteínas virales están principalmente implicadas en la deriva antigénica de los virus de la gripe A?:
+
+Options:
+1. Proteínas de matriz M1 y M2.
+2. Hemaglutinina (HA) y neuraminidasa (NA).
+3. Proteínas subunidades de la polimerasa (PB1, PB2 y PA).
+4. Proteína no estructural (NS1).
+
+---
+
+Question 195:
+El diagnóstico de la hepatitis A se lleva a cabo habitualmente mediante:
+
+Options:
+1. Detección de IgMs específica en suero/plasma mediante pruebas de enzimo(quimio) inmunoanálisis.
+2. Detección del antígeno de cápside en las heces mediante pruebas de enzimo(quimio) inmunoanálisis.
+3. Detección de ARN viral en las heces mediante PCR en tiempo real.
+4. Detección de ARN viral en suero/plasma mediante PCR en tiempo real.
+
+---
+
+Question 196:
+¿Cuál de los siguientes virus utiliza una transcriptasa inversa para replicar su genoma?:
+
+Options:
+1. Virus de la hepatitis C.
+2. Virus de la hepatitis B.
+3. Virus de la hepatitis E.
+4. Virus de la hepatitis delta.
+
+---
+
+Question 197:
+Indique la diana molecular del fármaco antirretroviral maraviroc:
+
+Options:
+1. Transcriptasa inversa.
+2. Integrasa.
+3. Proteasa.
+4. Correceptor CCR5.
+
+---
+
+Question 198:
+¿Qué ameba es indistinguible morfológicamente de la Entamoeba dispar?:
+
+Options:
+1. Entamoeba histolytica.
+2. Entamoeba hartmanni.
+3. Entamoeba moshkovskii.
+4. Entamoeba coli.
+
+---
+
+Question 199:
+¿Qué forma de trasmisión de la tripanosomiasis americana o enfermedad de Chagas puede darse en una zona no endémica?:
+
+Options:
+1. Por triatominos.
+2. Por Anopheles.
+3. Por garrapatas.
+4. Vertical.
+
+---
+
+Question 200:
+La infección cerebral humana por Toxoplasma puede tener una presentación clínica característica, con sintomatología compatible con:
+
+Options:
+1. Coriorretinitis no pigmentaria.
+2. Microcefalia.
+3. Lesión ocupante de espacio, con anillo de contraste en pruebas de imagen.
+4. Hidrocefalia.
+
+---
+
+Question 201:
+El neurotransmisor que liberan las neuronas simpáticas postganglionares:
+
+Options:
+1. Es siempre acetilcolina independientemente del tipo de célula diana.
+2. Es siempre noradrenalina independientemente del tipo de célula diana.
+3. Generalmente es acetilcolina, aunque hay excepciones como las glándulas sudoríparas que están inervadas por neuronas simpáticas que liberan noradrenalina.
+4. Generalmente es noradrenalina, aunque hay excepciones como las glándulas sudoríparas que están inervadas por neuronas simpáticas que liberan acetilcolina.
+
+---
+
+Question 202:
+Los canales de Na+ pueden bloquearse selectivamente con:
+
+Options:
+1. Trietilamonio.
+2. Benzodiazepinas.
+3. Verapamilo.
+4. Lidocaína.
+
+---
+
+Question 203:
+El epitelio pseudoestratificado columnar se caracteriza por:
+
+Options:
+1. Todas las células contactan con la lámina basal.
+2. No apoya en una lámina basal ya que no se observa siempre, solo cuando es necesaria para su función.
+3. Mostrar varias capas celulares, todas planas.
+4. Todas las células llegan a la superficie apical.
+
+---
+
+Question 204:
+De los siguientes componentes del complemento ¿cuál puede actuar como opsonina?:
+
+Options:
+1. C2.
+2. C4b.
+3. C7.
+4. Factor B.
+
+---
+
+Question 205:
+¿Cuál de estos receptores se expresa en la superficie de los linfocitos B?:
+
+Options:
+1. TCR.
+2. BCR.
+3. CD8.
+4. KIR.
+
+---
+
+Question 206:
+La ARN polimerasa III transcribe:
+
+Options:
+1. ARN mensajero.
+2. ARN de transferencia.
+3. Todos los ARN ribosómicos.
+4. Micro ARN.
+
+---
+
+Question 207:
+¿Cuál de los siguientes procesos tiene lugar después de la liberación del citocromo c del espacio intermembrana de la mitocondria?:
+
+Options:
+1. Las proteínas proapoptóticas Bax y Bak forman poros en la membrana externa mitocondrial.
+2. Inhibición de la unión de Apaf-1 a las caspasas.
+3. Activación de las caspasas mediante fosforilación por la proteína Bcl-2.
+4. Activación de las caspasas mediante la formación del apoptosoma.
+
+---
+
+Question 208:
+¿Qué gen supresor de tumores se relaciona con la poliposis adenomatosa familiar del colon?:
+
+Options:
+1. RB1.
+2. EGFR.
+3. BRAF.
+4. APC.
+
+---
+
+Question 209:
+¿Cuál es la función principal de las glicoproteínas virales en la envoltura de un virus?:
+
+Options:
+1. Facilitar la entrada del virus en la célula huésped por fusión con la membrana celular.
+2. Permitir el reconocimiento del sistema inmunitario del huésped.
+3. Formar la cápside que protege el genoma viral.
+4. Proporcionar rigidez estructural al virión.
+
+---
+
+Question 210:
+Respecto a Vibrio cholera es FALSO que:
+
+Options:
+1. Es un bacilo Gram-negativo móvil con forma curvada.
+2. Produce patología mediante la invasión del tejido entérico.
+3. Su mecanismo de transmisión es fecaloral.
+4. Puede dar lugar a brotes y epidemias.

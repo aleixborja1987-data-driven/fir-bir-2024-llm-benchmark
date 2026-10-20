@@ -1,0 +1,25 @@
+condition_id,model,exam,strategy,n_replicates,mean_correct,mean_accuracy_pct,mean_score,mean_blank,mean_incorrect,accuracy_sd
+deepseek_bir_item_wise,DeepSeek V4 Pro,BIR,item-wise,2,196.5,98.25,195.33333333333331,0.0,3.5,0.3535533905932738
+deepseek_bir_whole_exam,DeepSeek V4 Pro,BIR,whole-exam,2,196.5,98.25,195.33333333333331,0.0,3.5,0.3535533905932738
+deepseek_fir_item_wise,DeepSeek V4 Pro,FIR,item-wise,2,183.5,91.75,178.33333333333331,1.0,15.5,0.3535533905932738
+deepseek_fir_whole_exam,DeepSeek V4 Pro,FIR,whole-exam,2,175.0,87.5,173.33333333333334,20.0,5.0,0.0
+gpt52_bir_item_wise,GPT-5.2,BIR,item-wise,2,196.5,98.25,195.33333333333331,0.0,3.5,0.3535533905932738
+gpt52_bir_whole_exam,GPT-5.2,BIR,whole-exam,2,197.0,98.5,196.0,0.0,3.0,0.0
+gpt52_fir_item_wise,GPT-5.2,FIR,item-wise,2,190.0,95.0,186.83333333333331,0.5,9.5,0.7071067811865476
+gpt52_fir_whole_exam,GPT-5.2,FIR,whole-exam,2,188.5,94.25,184.66666666666669,0.0,11.5,0.3535533905932738
+grok_bir_item_wise,Grok 4.3,BIR,item-wise,2,194.0,97.0,192.33333333333334,1.0,5.0,0.0
+grok_bir_whole_exam,Grok 4.3,BIR,whole-exam,2,197.0,98.5,196.0,0.0,3.0,0.0
+grok_fir_item_wise,Grok 4.3,FIR,item-wise,2,184.5,92.25,180.5,3.5,12.0,0.3535533905932738
+grok_fir_whole_exam,Grok 4.3,FIR,whole-exam,2,187.0,93.5,182.66666666666666,0.0,13.0,0.0
+kimi_bir_item_wise,Kimi K2.6,BIR,item-wise,2,193.5,96.75,191.33333333333331,0.0,6.5,0.3535533905932738
+kimi_bir_whole_exam,Kimi K2.6,BIR,whole-exam,2,196.0,98.0,194.66666666666666,0.0,4.0,0.0
+kimi_fir_item_wise,Kimi K2.6,FIR,item-wise,2,183.0,91.5,177.33333333333331,0.0,17.0,1.4142135623730951
+kimi_fir_whole_exam,Kimi K2.6,FIR,whole-exam,2,186.5,93.25,182.0,0.0,13.5,1.0606601717798212
+opus_bir_item_wise,Claude Opus 4.8,BIR,item-wise,2,199.0,99.5,198.66666666666666,0.0,1.0,0.0
+opus_bir_whole_exam,Claude Opus 4.8,BIR,whole-exam,2,196.0,98.0,194.66666666666669,0.0,4.0,0.7071067811865476
+opus_fir_item_wise,Claude Opus 4.8,FIR,item-wise,2,195.5,97.75,194.0,0.0,4.5,0.3535533905932738
+opus_fir_whole_exam,Claude Opus 4.8,FIR,whole-exam,2,187.5,93.75,183.33333333333334,0.0,12.5,1.0606601717798212
+qwen_bir_item_wise,Qwen3-VL-235B-A22B-Instruct,BIR,item-wise,2,193.0,96.5,190.83333333333331,0.5,6.5,0.0
+qwen_bir_whole_exam,Qwen3-VL-235B-A22B-Instruct,BIR,whole-exam,2,194.0,97.0,192.0,0.0,6.0,0.0
+qwen_fir_item_wise,Qwen3-VL-235B-A22B-Instruct,FIR,item-wise,2,177.5,88.75,171.66666666666669,5.0,17.5,0.3535533905932738
+qwen_fir_whole_exam,Qwen3-VL-235B-A22B-Instruct,FIR,whole-exam,2,177.0,88.5,169.33333333333334,0.0,23.0,0.0

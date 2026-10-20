@@ -1,0 +1,37 @@
+{
+  "run_id": "fir2024_deepseek_v4_pro_whole_text_imageblind_2runs_20260702T152321Z",
+  "created_utc": "20260702T152321Z",
+  "provider": "DeepSeek",
+  "api_endpoint": "OpenAI-compatible Chat Completions",
+  "base_url": "https://api.deepseek.com",
+  "model_requested": "deepseek-v4-pro",
+  "prompt_template_version": "deepseek_v4pro_whole_extracted_text_examlike_json_210answers_v1",
+  "exam": "fir",
+  "questions_csv": "fir2024_questions_210.csv",
+  "answer_key_csv": "fir2024_answer_key_210.csv",
+  "n_replicates": 2,
+  "n_questions": 210,
+  "n_image_containing_items_text_only": 20,
+  "generation_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 30000,
+    "thinking": "disabled",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "file_input_enabled": false,
+    "input_type": "complete extracted exam text from CSV"
+  },
+  "scoring": {
+    "correct": 1,
+    "incorrect": -0.3333333333333333,
+    "blank": 0,
+    "missing_or_invalid": 0,
+    "questions_without_official_answer_excluded": true
+  },
+  "completed_utc": "20260702T152556Z"
+}

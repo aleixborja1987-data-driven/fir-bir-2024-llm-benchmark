@@ -1,0 +1,136 @@
+{
+  "run_name": "bir24_grok43_item_nr_2r_20260805T143243Z",
+  "created_utc": "20260805T143243Z",
+  "provider": "xAI",
+  "interface": "API",
+  "api_endpoint": "OpenAI-compatible Chat Completions",
+  "base_url": "https://api.x.ai/v1",
+  "model_requested": "grok-4.3",
+  "condition": "itemwise_text_rationale_nonthinking",
+  "prompt_template_version": "bir2024_text_itemwise_examlike_blank_strict_json_short_rationale_nonthinking_v1",
+  "script_version": "bir2024_grok43_itemwise_nonthinking_strict_json_reasoning_audit_v1",
+  "generation_parameters": {
+    "reasoning_effort": "none",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 300,
+    "stream": false,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "bir_exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "blank"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "answer",
+            "rationale"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "rationale_max_chars": 160,
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "x_search_enabled": false,
+    "file_input_enabled": false,
+    "image_input_enabled": false,
+    "retrieval_enabled": false,
+    "truststore_status": "enabled"
+  },
+  "answer_schema": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "blank"
+        ]
+      },
+      "rationale": {
+        "type": "string",
+        "maxLength": 160
+      }
+    },
+    "required": [
+      "answer",
+      "rationale"
+    ],
+    "additionalProperties": false
+  },
+  "reasoning_audit_rule": {
+    "reasoning_effort_sent": "none",
+    "require_explicit_numeric_reasoning_tokens": true,
+    "required_reasoning_tokens_per_call": 0,
+    "require_empty_reasoning_content": true,
+    "abort_on_violation": true
+  },
+  "connection_configuration": {
+    "truststore_status": "enabled",
+    "truststore_injected_before_openai_import": true
+  },
+  "n_replicates": 2,
+  "n_questions_in_file": 210,
+  "n_questions_attempted": 210,
+  "selection": {
+    "limit": null,
+    "start_q": null,
+    "end_q": null
+  },
+  "is_full_definitive_selection": true,
+  "questions_file": "bir2024_questions_210.csv",
+  "answer_key_file": "bir2024_answer_key_210.csv",
+  "questions_file_sha256": "f7032407751cb83b62bafea409a2f2e6d753506e4c1603463102c9035d37f03e",
+  "answer_key_file_sha256": "f1ff673628e80e5b6e2cd1dd03130681cc299d24aa1fb0af550c05cac9e852d1",
+  "prompt_preamble": "You are taking an examination for Biology residency access.\n\nThis is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct. In the official exam, correct answers score +1 point, incorrect answers score -1/3 points, and blank answers score 0 points. Act as a human candidate and try to get the highest score possible.\n\nReturn exactly one JSON object matching the supplied schema.\nThe \"answer\" field must be exactly \"1\", \"2\", \"3\", \"4\", or \"blank\".\nThe \"rationale\" field must be brief and must not exceed 160 characters.\nDo not use web search, X search, external references, files, images, retrieval, tools, or an answer key.\n",
+  "prompt_preamble_sha256": "c9b96b4c89a7738d9c85b4cef088447e1f056b9a31816ae7c5d944e0425eecd2",
+  "retry_policy": {
+    "max_attempts_per_call": 5,
+    "retry_transient_api_errors": true,
+    "retry_invalid_structured_outputs": true,
+    "retry_valid_but_incorrect_answers": false
+  },
+  "tools_or_web_search_provided_to_model": false,
+  "notes": "The official answer key is merged only after inference for local scoring. No tools, web search, X search, files, images, retrieval, or answer key are included in API requests.",
+  "completed_utc": "20260805T144355Z",
+  "definitive_run_completed_as_prespecified": false,
+  "observed_reasoning_audit": {
+    "n_calls_completed": 420,
+    "all_reasoning_token_values_explicit": true,
+    "unique_reasoning_token_values": [
+      0
+    ],
+    "total_reasoning_tokens": 0,
+    "calls_with_positive_reasoning_tokens": 0,
+    "calls_with_nonempty_reasoning_content": 0,
+    "protocol_violations": 0
+  },
+  "output_files": {
+    "raw_outputs": "outputs\\bir24_grok43_item_nr_2r_20260805T143243Z\\raw.jsonl",
+    "scored_results": "outputs\\bir24_grok43_item_nr_2r_20260805T143243Z\\results.csv",
+    "summary_by_replicate": "outputs\\bir24_grok43_item_nr_2r_20260805T143243Z\\summary.csv",
+    "discordances": "outputs\\bir24_grok43_item_nr_2r_20260805T143243Z\\discordances.csv",
+    "run_metadata": "outputs\\bir24_grok43_item_nr_2r_20260805T143243Z\\metadata.json"
+  }
+}

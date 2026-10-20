@@ -1,0 +1,31 @@
+{
+  "run_name": "bir2024_gpt_5_2_2025_12_11_itemwise_2runs_20260630T140954Z",
+  "run_timestamp_utc": "20260630T140954Z",
+  "script_version": "bir2024_gpt52_itemwise_2runs_v1",
+  "provider": "OpenAI",
+  "interface": "API",
+  "api_endpoint": "Responses API",
+  "model_requested": "gpt-5.2-2025-12-11",
+  "prompt_template_version": "bir2024_text_itemwise_examlike_blank_v1",
+  "prompt_preamble": "You are taking an examination for Biology residency access.\n\nThis is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct. In the official exam, correct answers score +1 point, incorrect answers score -1/3 points, and blank answers score 0 points. Act as a human candidate and try to get the highest score possible.\n\nReturn only valid JSON with:\n{\"answer\": \"1|2|3|4|blank\", \"rationale\": \"brief explanation\"}\n",
+  "prompt_preamble_sha256": "44744af69e9de9d2aa854f01c8adba91b357977e3a64c234085f7b13e3cd8d1c",
+  "generation_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 300,
+    "reasoning_effort": "not_sent",
+    "stream": false,
+    "store": false,
+    "tools_enabled": false,
+    "web_search_enabled": false
+  },
+  "n_replicates": 2,
+  "questions_file": "bir2024_questions_210.csv",
+  "answer_key_file": "bir2024_answer_key_210.csv",
+  "questions_file_sha256": "f7032407751cb83b62bafea409a2f2e6d753506e4c1603463102c9035d37f03e",
+  "answer_key_file_sha256": "f1ff673628e80e5b6e2cd1dd03130681cc299d24aa1fb0af550c05cac9e852d1",
+  "n_questions": 210,
+  "n_answer_key_rows": 210,
+  "tools_or_web_search_provided_to_model": false,
+  "notes": "The official answer key is not included in prompts or API requests. It is merged only after model generation for offline scoring. No tools, web search, file search, or external retrieval are provided to the model."
+}

@@ -1,0 +1,15 @@
+You are taking the Spanish FIR examination for Clinical Physics residency access.
+
+This is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct.
+
+Some questions may include an image, figure, graph, diagram, equation screenshot, or table. If an image is provided, use it as part of the question.
+
+Scoring rule:
+- Correct answer: +1 point.
+- Incorrect answer: -1/3 points.
+- Blank answer: 0 points.
+
+Act as a human candidate trying to maximize the final score. Answer from your own knowledge and the provided question/images only. Do not use web search, external tools, files beyond the provided image, retrieval, or any answer key.
+
+Return only valid JSON matching the required schema:
+{"answer":"1|2|3|4|blank","rationale":"brief rationale, max 160 characters"}

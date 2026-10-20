@@ -1,0 +1,129 @@
+{
+  "run_id": "bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z",
+  "created_utc": "20260805T095219Z",
+  "provider": "Moonshot AI / Kimi",
+  "interface": "API",
+  "endpoint": "OpenAI-compatible Chat Completions",
+  "base_url": "https://api.moonshot.ai/v1",
+  "model_requested": "kimi-k2.6",
+  "condition": "itemwise_text_nonthinking",
+  "prompt_template_version": "bir2024_text_itemwise_examlike_blank_strict_v1",
+  "script_version": "bir2024_kimi_k2_6_itemwise_nonthinking_2reps_definitive_v1",
+  "truststore_status": "enabled",
+  "questions_file": "bir2024_questions_210.csv",
+  "answer_key_file": "bir2024_answer_key_210.csv",
+  "questions_file_sha256": "f7032407751cb83b62bafea409a2f2e6d753506e4c1603463102c9035d37f03e",
+  "answer_key_file_sha256": "f1ff673628e80e5b6e2cd1dd03130681cc299d24aa1fb0af550c05cac9e852d1",
+  "n_questions_in_file": 210,
+  "n_questions_selected": 210,
+  "is_full_definitive_selection": true,
+  "limit": null,
+  "start_q": null,
+  "end_q": null,
+  "replicates": 2,
+  "thinking": {
+    "requested": {
+      "type": "disabled"
+    },
+    "policy": "explicitly_disabled",
+    "reasoning_audit_rule": {
+      "abort_if_reasoning_content_nonempty": true,
+      "abort_if_reasoning_tokens_above": 1,
+      "residual_reasoning_token_allowance": 1,
+      "interpretation": "Exactly 1 reported reasoning token with empty reasoning_content is logged as provider-accounting residue, not substantive reasoning."
+    }
+  },
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "sampling_parameter_note": "Provider-constrained settings for Kimi K2.6 non-thinking mode. temperature=0 and top_p=1 are unsupported.",
+  "n": 1,
+  "presence_penalty": 0.0,
+  "frequency_penalty": 0.0,
+  "max_tokens": 500,
+  "response_format": "json_schema_strict",
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "tools": "not_provided",
+  "web_search": "not_provided",
+  "file_input": false,
+  "image_input": false,
+  "rationales_requested": true,
+  "rationale_max_chars": 160,
+  "system_prompt": "You are taking the Spanish BIR examination for Biology residency access.\n\nThis is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct.\n\nScoring rule:\n- Correct answer: +1 point.\n- Incorrect answer: -1/3 points.\n- Blank answer: 0 points.\n\nAct as a human candidate trying to maximize the final score. Answer from your own knowledge only. Do not use web search, external tools, files, images, or any answer key.\n\nReturn only valid JSON matching the required schema:\n{\"answer\":\"1|2|3|4|blank\",\"rationale\":\"brief rationale, max 160 characters\"}\n",
+  "system_prompt_sha256": "2e65843a015c922ccae0d5cae7cee1088b5c73ff5976aab2a7f1ed9af35a5d15",
+  "answer_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "bir2024_mcq_answer",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "answer": {
+            "type": "string",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "blank"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 160
+          }
+        },
+        "required": [
+          "answer",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "retry_policy": {
+    "max_total_attempts": 7,
+    "base_sleep_seconds": 10.0,
+    "max_backoff_seconds": 120.0,
+    "retry_transient_api_failures": true,
+    "retry_invalid_structured_outputs": true,
+    "retry_unexpected_finish_reason": true,
+    "retry_valid_but_incorrect_answers": false
+  },
+  "request_timeout_seconds": 600.0,
+  "between_calls_sleep_seconds": 0.15,
+  "between_replicates_sleep_seconds": 2.0,
+  "scoring": {
+    "correct": 1,
+    "incorrect": -0.3333333333333333,
+    "blank": 0,
+    "missing_or_invalid": 0,
+    "questions_without_official_answer_excluded": true
+  },
+  "completed_utc": "20260805T101645Z",
+  "definitive_run_completed_as_prespecified": true,
+  "observed_reasoning_audit": {
+    "n_calls_with_reasoning_content": 0,
+    "n_calls_with_any_reasoning_tokens": 420,
+    "n_calls_with_residual_reasoning_token_only": 420,
+    "n_calls_with_substantive_reasoning": 0,
+    "n_calls_with_reasoning_observed": 0,
+    "n_protocol_violations": 0,
+    "total_reasoning_tokens": 420.0,
+    "reasoning_token_distribution": {
+      "1": 420
+    },
+    "residual_reasoning_token_allowance": 1,
+    "run_acceptance_criterion": "All calls must have empty reasoning_content and no call may report more than the residual-token allowance."
+  },
+  "output_files": {
+    "metadata": "outputs\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z_metadata.json",
+    "raw_results": "outputs\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z_raw_results.jsonl",
+    "results": "outputs\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z_results.csv",
+    "summary": "outputs\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z_summary.csv",
+    "prompt_preamble": "outputs\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z\\bir2024_kimi_k2_6_itemwise_nonthinking_2r_STRICT_20260805T095219Z_prompt_preamble.txt"
+  }
+}

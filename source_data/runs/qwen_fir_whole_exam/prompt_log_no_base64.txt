@@ -1,0 +1,2380 @@
+You are taking an examination for Pharmacy residency access.
+
+This is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct. In the official exam, correct answers score +1 point, incorrect answers score -1/3 points, and blank answers score 0 points. Act as a human candidate and try to get the highest score possible.
+
+You will receive the full exam text, containing all questions and their four answer options. Some questions include an attached image placed immediately after the corresponding question text. For image-containing questions, use both the question text and the attached image. Do not use web search, tools, external references, files beyond the attached images, or an answer key.
+
+Return only valid JSON with exactly this shape:
+{
+  "answers": [
+    {"question_number": 1, "answer": "1|2|3|4|blank"},
+    {"question_number": 2, "answer": "1|2|3|4|blank"}
+  ]
+}
+
+Output rules:
+- Return exactly one answer object for every question included in the input.
+- Use the integer question number shown in the input.
+- The value of "answer" must be exactly one single string: "1", "2", "3", "4", or "blank".
+- Do not return multiple options.
+- Do not return values such as "1,2", "1 or 2", "3/4", "4,", lists, arrays, ranges, or explanations inside the "answer" field.
+- If you cannot choose one single best option, return "blank".
+- Do not include rationales, explanations, comments, markdown, or any other fields.
+
+
+
+FULL EXAM TEXT:
+
+Question 1:
+[Attached image for this question follows this text block.]
+¿En cuál de las posiciones marcadas en la molécula de omeprazol tiene lugar la protonación que inicia el proceso de activación de este profármaco?:
+
+Options:
+1. Posición A.
+2. Posición B.
+3. Posición C.
+4. Posición D.
+[IMAGE_SENT_FOR_Q001: images\fir\Q001.png, sha256=d834be34d0b1dd65a3616492d1e2b0ddf397f5dc11edd8c47c1187bdbe441ac8]
+
+---
+
+Question 2:
+Los fármacos que se absorben por vía oral tienden a cumplir lo que se conoce como reglas de Lipinski. ¿Cuál de los siguientes requisitos NO se ajusta a dichas reglas?:
+
+Options:
+1. Peso molecular inferior a 500.
+2. Logaritmo de P inferior a 5.
+3. Número de grupos donadores de enlaces de H inferior a 5.
+4. Número de grupos aceptores de enlaces de H inferior a 5.
+
+---
+
+Question 3:
+El orlistat se utiliza para combatir la obesidad. Actúa inhibiendo la lipasa pancreática y acila uno de los aminoácidos del centro activo. ¿De qué aminoácido se trata?:
+
+Options:
+1. Serina.
+2. Histidina.
+3. Ácido aspártico.
+4. Lisina.
+
+---
+
+Question 4:
+Ciertos efectos secundarios de la ciclofosfamida derivan de la acroleína que se forma en el proceso de su activación. ¿Cuál de los siguientes fármacos, administrados conjuntamente con la ciclofosfamida, puede disminuir su toxicidad?:
+
+Options:
+1. Omeprazol.
+2. N-acetilcisteína.
+3. Hidrocortisona.
+4. Vitamina C.
+
+---
+
+Question 5:
+¿Cuál es el efecto de la sustitución del grupo bencilo de la bencilpenicilina por un grupo atractor de electrones?:
+
+Options:
+1. Espectro antibacteriano ampliado.
+2. Mayor actividad.
+3. Mayor estabilidad frente a betalactamasas.
+4. Mayor estabilidad frente a los ácidos.
+
+---
+
+Question 6:
+[Attached image for this question follows this text block.]
+El captopril es un inhibidor de la enzima conversora de angiotensina, que se diseñó modificando la estructura de la succinilprolina, por introducción de un metilo en la cadena carbonada, y sustitución del grupo CO2H. ¿Qué grupo X hay en su lugar en el captopril?:
+
+Options:
+1. Un grupo hidroxilo.
+2. Un grupo mercapto.
+3. Un grupo acetilo.
+4. Un grupo amino.
+[IMAGE_SENT_FOR_Q006: images\fir\Q006.png, sha256=462223e7242079341669b673f66c32a7d84983e48ac72ff1292c1c8d940bbd99]
+
+---
+
+Question 7:
+¿Qué nombre reciben los análogos de morfina que carecen del puente oxigenado entre las posiciones 4 y 5?:
+
+Options:
+1. Benzomorfanos.
+2. Morfinanos.
+3. Fenilpiperidinas.
+4. Oripavinas.
+
+---
+
+Question 8:
+¿Cuál de las siguientes modificaciones resulta útil para disminuir el metabolismo por hidroxilación aromática de fármacos que incluyen algún arilo en su estructura?:
+
+Options:
+1. Introducir un grupo metoxilo en posición para.
+2. Introducir un halógeno en posición para.
+3. Introducir un grupo metilo en posición para.
+4. El metabolismo de los grupos arilo no se ve afectado por los sustituyentes.
+
+---
+
+Question 9:
+[Attached image for this question follows this text block.]
+¿Cuál de los siguientes fármacos tricíclicos ejerce su acción principalmente por interacción con receptores muscarínicos?:
+
+Options:
+1. El compuesto A.
+2. El compuesto B.
+3. El compuesto C.
+4. El compuesto D.
+[IMAGE_SENT_FOR_Q009: images\fir\Q009.png, sha256=89f1820feb7dd25166605f1ee625206e4915eed89171bc172c7680844442ca33]
+
+---
+
+Question 10:
+[Attached image for this question follows this text block.]
+¿Cuál es el papel del fragmento marcado en la estructura del siguiente fármaco?:
+
+Options:
+1. Mejorar la interacción del grupo guanidina con la diana.
+2. Disminuir la duración de acción del fármaco.
+3. Aumentar la duración de acción del fármaco.
+4. Disminuir la basicidad del grupo guanidina.
+[IMAGE_SENT_FOR_Q010: images\fir\Q010.png, sha256=81c47330f9086086c35da9e219dfc547dc41b66455a5e2f47fd1451f66c4969e]
+
+---
+
+Question 11:
+[Attached image for this question follows this text block.]
+¿Cuál es la finalidad de la modificación marcada en el fármaco B, diseñado por manipulación estructural de A?:
+
+Options:
+1. Aumentar la lipofilia del fármaco para facilitar su acceso al interior de las células.
+2. Dificultar la formación de un catión alílico capaz de alquilar bases del ADN.
+3. Mejorar el carácter antagonista del fármaco.
+4. Establecer una interacción adicional que refuerza la unión al receptor.
+[IMAGE_SENT_FOR_Q011: images\fir\Q011.png, sha256=753bc973be1fd43d54ff310048c673528083c32529fdc3a426bfec6ea410d254]
+
+---
+
+Question 12:
+Las antraciclinas son agentes antitumorales que poseen en su estructura un fragmento de betahidroxicarbonilo capaz de formar complejos con Fe3+. ¿Por qué estos complejos refuerzan la acción antitumoral de dichos fármacos?:
+
+Options:
+1. Favorecen reacciones de alquilación de bases del ADN.
+2. Favorecen la intercalación entre las bases del ADN.
+3. Promueven la formación de radicales hidroxilo.
+4. Estimulan la despolimerización de los microtúbulos.
+
+---
+
+Question 13:
+El peróxido de hidrógeno puede generar en el organismo especies reactivas de oxígeno a través de la reacción de Fenton. Indique cuál de los siguientes compuestos es capaz de prevenir dicha reacción:
+
+Options:
+1. Ácido ascórbico.
+2. Alfa-tocoferol.
+3. Dexrazoxano.
+4. Alfa-caroteno.
+
+---
+
+Question 14:
+[Attached image for this question follows this text block.]
+Teniendo en cuenta la estructura general de los glucocorticoides, y su relación estructuraactividad, ¿cuál de las modificaciones propuestas conduciría a compuestos con mayor actividad antiinflamatoria?:
+
+Options:
+1. Introducción de un átomo de flúor en la posición 9-alfa.
+2. La oxidación del hidroxilo en posición 11.
+3. La acetilación del hidroxilo en posición 21.
+4. La introducción de un doble enlace entre las posiciones 15 y 16.
+[IMAGE_SENT_FOR_Q014: images\fir\Q014.png, sha256=a82800dd233d51a07124c575833c942797ae0efb06e75d8f2d84f14284394046]
+
+---
+
+Question 15:
+¿Cuál de las siguientes reacciones metabólicas de fase II ayuda a eliminar del organismo metabolitos electrófilos?:
+
+Options:
+1. Conjugación con glutatión.
+2. Conjugación con sulfato.
+3. Acetilación.
+4. Glucuronidación.
+
+---
+
+Question 16:
+[Attached image for this question follows this text block.]
+El compuesto cuya estructura se representa a continuación es: Cl N Cl N H O NH O
+
+Options:
+1. Un agente antiviral que actúa incorporándose como falso nucleósido e inhibiendo la ARN-polimerasa.
+2. Un agente antifúngico que actúa como inhibidor de la timidilato sintasa.
+3. Un agente antineoplásico.
+4. Un agente antibacteriano que actúa como inhibidor competitivo reversible de la dihidrofolato reductasa.
+[IMAGE_SENT_FOR_Q016: images\fir\Q016.png, sha256=1386137ef7b7ed40f1cca9be6be3f9a04bdb609df5f2c932a8406eb7e453a492]
+
+---
+
+Question 17:
+[Attached image for this question follows this text block.]
+¿Cuál de los reactivos que se indican son adecuados como materiales de partida para la síntesis del norfloxacino?:
+
+Options:
+1. Un derivado de benzofenona y glicinato de etilo.
+2. Un derivado de anilina y un haluro de benzoílo.
+3. Un derivado de anilina y etoximetilenmalonato de dietilo.
+4. Un derivado de anilina y acroleína.
+[IMAGE_SENT_FOR_Q017: images\fir\Q017.png, sha256=5536f22be2b16fa011e9d3ca649fb56a558b252e0c4ca87f8dd58eba290a0708]
+
+---
+
+Question 18:
+[Attached image for this question follows this text block.]
+¿Cuál de los fragmentos marcados en la estructura de este agente antimalárico permite que se acumule en el interior de la vacuola digestiva de Plasmodium?:
+
+Options:
+1. Los fragmentos c y e.
+2. Los fragmentos b y d.
+3. Los fragmentos a y b.
+4. Los fragmentos a y d.
+[IMAGE_SENT_FOR_Q018: images\fir\Q018.png, sha256=0f03233bbb18613943ddb863270e1bfe1e2f334711577bdd2b7a87a254dd6418]
+
+---
+
+Question 19:
+¿Cuál es la manifestación clínica que menos esperaría en una infección causada por Fusarium spp.?:
+
+Options:
+1. Diarrea crónica.
+2. Onicomicosis.
+3. Queratitis.
+4. Fungemia.
+
+---
+
+Question 20:
+¿Qué condiciones de las siguientes son necesarias para que el hongo basidiomiceto Malassezia furfur crezca en un cultivo?:
+
+Options:
+1. Incubar las placas a 42ºC y en atmósfera microaerofílica.
+2. Medios de cultivo habituales cubiertos con aceite de oliva.
+3. Incubar las placas a 35ºC y en atmósfera anaerobia.
+4. Medios específicos ricos en niacina.
+
+---
+
+Question 21:
+Nocardia se visualiza en la tinción de Gram en forma de:
+
+Options:
+1. Diplococos grampositivos.
+2. Diplococos gramnegativos.
+3. Bacilos grampositivos ramificados.
+4. Bacilos gramnegativos.
+
+---
+
+Question 22:
+¿Qué antibiótico se utiliza en el tratamiento de la diarrea causada por Clostridioides difficile toxigénico?:
+
+Options:
+1. Fidaxomicina.
+2. Bezlotoxumab.
+3. Clindamicina.
+4. Cefotaxima.
+
+---
+
+Question 23:
+¿Qué antibiótico es inactivo frente a Pseudomonas aeruginosa?:
+
+Options:
+1. Amikacina.
+2. Linezolid.
+3. Ceftolozano-tazobactam.
+4. Ceftazidima-avibactam.
+
+---
+
+Question 24:
+¿Cuál de los siguientes microorganismos presenta test de CAMP positivo?:
+
+Options:
+1. Streptococcus pyogenes.
+2. Streptococcus pneumoniae.
+3. Streptococcus mitis.
+4. Streptococcus agalactiae.
+
+---
+
+Question 25:
+¿Cuál de las siguientes relaciones entre antibiótico y mecanismo de acción es correcto?:
+
+Options:
+1. Linezolid – Inhibición de la ADN-girasa.
+2. Azitromicina – Unión a la subunidad 50S del ribosoma bacteriano e inhibición de la síntesis de proteínas.
+3. Ciprofloxacino – Inhibición de la síntesis de la pared bacteriana.
+4. Amikacina – Despolarización de la membrana.
+
+---
+
+Question 26:
+¿Qué mecanismo intrínseco de resistencia a antibióticos beta-lactámicos presenta Serratia?:
+
+Options:
+1. Carbapenemasa de clase D (OXA).
+2. Beta-lactamasa plasmídica de clase A (TEM-1).
+3. Beta-lactamasa cromosómica inducible de clase C (AmpC).
+4. Mutación de porinas (OprD).
+
+---
+
+Question 27:
+¿Para qué sirve la tinción de Ziehl-Neelsen?:
+
+Options:
+1. Para teñir micobacterias y otros microorganismos ácido-alcohol resistentes.
+2. Para separar los principales grupos de bacterias (grampositivas y gramnegativas).
+3. Para detectar parásitos sanguíneos.
+4. Para la detección e identificación de protozoos fecales.
+
+---
+
+Question 28:
+¿A cuál de estos microorganismos corresponden las siguientes características: Cocos grampositivos en racimos, colonias beta-hemolíticas, catalasa-positivo, coagulasa-positivo?:
+
+Options:
+1. Staphylococcus aureus.
+2. Listeria monocytogenes.
+3. Streptococcus pyogenes.
+4. Bacteroides fragilis.
+
+---
+
+Question 29:
+¿Cuál es la característica distintiva de Mycoplasma pneumoniae, en comparación con otras bacterias?:
+
+Options:
+1. Presencia de cápsula.
+2. Ausencia de pared celular.
+3. Producción de esporas.
+4. Ácido-alcohol resistencia.
+
+---
+
+Question 30:
+¿Qué técnica ha demostrado efectividad en infecciones recurrentes por Clostridioides difficile?:
+
+Options:
+1. Terapia con probióticos.
+2. Trasplante de microbiota fecal.
+3. Inmunoterapia.
+4. Terapia con bacteriófagos.
+
+---
+
+Question 31:
+Con respecto a la resistencia a glicopéptidos en los enterococos, señale la opción INCORREC- TA:
+
+Options:
+1. Las cepas con fenotipo VanA muestran resistencia a vancomicina y teicoplanina.
+2. Enterococcus gallinarum y Enterococcus casseliflavus presentan resistencia intrínseca de alto nivel a vancomicina.
+3. Las cepas con fenotipo VanB muestran resistencia a vancomicina, pero no a teicoplanina.
+4. Las cepas con fenotipo VanC muestran resistencia a vancomicina, pero no a teicoplanina.
+
+---
+
+Question 32:
+¿Cuál de los siguientes antimicrobianos sería más activo frente a una infección por Acinetobacter baumannii?:
+
+Options:
+1. Sulbactam/durlobactam.
+2. Ertapenem.
+3. Ceftriaxona.
+4. Daptomicina.
+
+---
+
+Question 33:
+En relación a las infecciones producidas por microorganismos grampositivos, ¿cuál de los siguientes síndromes clínicos está mediado por la producción de una toxina?:
+
+Options:
+1. Empiema.
+2. Escarlatina.
+3. Endocarditis.
+4. Erisipeloide.
+
+---
+
+Question 34:
+Las cepas multirresistentes de Mycobacterium tuberculosis (MDR-TB) se definen como:
+
+Options:
+1. Resistentes al menos a isoniacida.
+2. Resistentes al menos a isoniacida y rifampicina.
+3. Resistentes al menos a isoniacida, rifampicina y pirazinamida.
+4. Resistentes al menos a isoniacida, rifampicina, pirazinamida y etambutol.
+
+---
+
+Question 35:
+Señale la respuesta FALSA sobre Neisseria meningitidis:
+
+Options:
+1. Se transmite por gotas.
+2. Produce infecciones adquiridas en el laboratorio.
+3. No crece en agar sangre.
+4. Es sensible a cefotaxima.
+
+---
+
+Question 36:
+Señale la asociación correcta:
+
+Options:
+1. Bartonella henselae - Fiebre de las trincheras.
+2. Brucella abortus - Síndrome de Reiter.
+3. Neisseria meningitidis - Síndrome de Waterhouse-Friderichsen.
+4. Listeria monocytogenes - carbunco.
+
+---
+
+Question 37:
+¿Qué compuesto actúa como inhibidor de una carbapenemasa tipo VIM (clase B de Ambler)?:
+
+Options:
+1. Ácido etilenodiaminotetraacético (EDTA).
+2. Ácido borónico.
+3. Ácido clavulánico.
+4. Ácido fusídico.
+
+---
+
+Question 38:
+¿Qué parásito puede ser diagnosticado durante la fase aguda de la enfermedad mediante microscopía directa de sangre periférica en fresco?:
+
+Options:
+1. Plasmodium falciparum.
+2. Leishmania chagasi.
+3. Trypanosoma cruzi.
+4. Toxoplasma gondii.
+
+---
+
+Question 39:
+¿A qué especie de Plasmodium corresponde la siguiente descripción morfológica: los trofozoítos tienen un citoplasma ameboide, los esquizontes tienen de 12 a 24 merozoítos y los gametocitos son redondos?:
+
+Options:
+1. P. vivax.
+2. P. ovale.
+3. P. malariae.
+4. P. knowlesi.
+
+---
+
+Question 40:
+¿Qué parásito trematodo causa alteración de los conductos biliares?:
+
+Options:
+1. Schistosoma mansoni.
+2. Opistorchis viverrini.
+3. Paragonimus westermani.
+4. Schistosoma mekongi.
+
+---
+
+Question 41:
+El modelo matemático de Heckel proporciona información de utilidad sobre:
+
+Options:
+1. El tamaño de partícula medio de un material pulverulento para su dosificación en cápsulas rígidas o comprimidos.
+2. El grado de sedimentación de partículas sólidas en una determinada formulación en suspensión.
+3. La estabilidad de un fármaco en relación con la temperatura y en función de la energía de activación.
+4. Las características de plasticidad de una mezcla pulverulenta para su posible dosificación en comprimidos.
+
+---
+
+Question 42:
+¿Cómo se define el concepto de velocidad de disolución aparente?:
+
+Options:
+1. Velocidad de disolución de una sustancia pura tras su compactación bajo la condición de mantenimiento constante del área superficial.
+2. Velocidad de disolución de un sólido pulverulento o un granulado bajo la condición de mantenimiento de las propiedades de densidad aparente.
+3. Velocidad de disolución de sustancias puras o en preparaciones en polvo o granulados, en un equipo de flujo continuo.
+4. Velocidad de disolución de sustancias puras en equipos de flujo continuo, manteniendo constante el flujo aparente del medio de disolución.
+
+---
+
+Question 43:
+Indique cuál de los siguientes métodos se corresponde con la fabricación de cápsulas gelatinosas blandas:
+
+Options:
+1. El método de Scherer o de matrices rotatorias.
+2. El método de Schulman o de matrices concéntricas.
+3. El método de Higuchi o de inyectores concéntricos.
+4. El método de Hopkins o de microfluídica inversa a baja presión.
+
+---
+
+Question 44:
+Señale mediante qué técnica se determina la osmolalidad o tono osmótico de un preparado inyectable:
+
+Options:
+1. Osmometría de difracción láser con transformada de Fourier.
+2. Determinación del descenso del punto de congelación de la disolución.
+3. Determinación potenciométrica de la fuerza iónica de la disolución.
+4. Osmometría por incremento del punto de ebullición de la disolución.
+
+---
+
+Question 45:
+[Attached image for this question follows this text block.]
+Señale el tipo de empaquetamiento de las partículas esféricas mostrado en el siguiente dibujo:
+
+Options:
+1. Cúbico.
+2. Hexagonal (primitivo).
+3. Tetragonal (centrado).
+4. Hexagonal (cerrado).
+[IMAGE_SENT_FOR_Q045: images\fir\Q045.png, sha256=b7ceb4f41eb28bfd0d4dc2c772f0b0995a008066f236019ebf49fda3e81c1955]
+
+---
+
+Question 46:
+Entre las características de las microemulsiones en sus aplicaciones farmacéuticas, señale la respuesta FALSA:
+
+Options:
+1. Permiten solubilizar compuestos químicamente incompatibles en cada fase sin que se produzca interacción entre ellos.
+2. Al presentar una viscosidad más alta que las emulsiones se extienden mejor sobre la piel y mucosas.
+3. Los glóbulos de fase interna con un elevado contenido en tensoactivos y cotensoactivos facilitan la penetración transdérmica del fármaco.
+4. La elevada proporción de tensoactivos que incorporan pueden causar toxicidad.
+
+---
+
+Question 47:
+[Attached image for this question follows this text block.]
+Señale el nombre del aparato que se muestra a continuación, empleado para separar las partículas del sólido en fracciones granulométricas:
+
+Options:
+1. Multicámara de sedimentación centrífuga.
+2. Elutriador multietapa.
+3. Cámara de sedimentación continua.
+4. Cámara de sedimentación multietapa.
+[IMAGE_SENT_FOR_Q047: images\fir\Q047.png, sha256=0c0d1c3e1910293b17a8df3d9bd2b47003ab7ef628d69c073414288e29d68488]
+
+---
+
+Question 48:
+¿Cuál de las afirmaciones siguientes caracteriza a la córnea?:
+
+Options:
+1. Está altamente vascularizada.
+2. Forma el límite anterior de la cámara posterior del ojo.
+3. Carece de terminaciones nerviosas.
+4. Es la porción anterior transparente de la túnica fibrosa.
+
+---
+
+Question 49:
+Señale la respuesta correcta en relación con la gastrina:
+
+Options:
+1. Es secretada por el intestino delgado.
+2. Mantiene la estructura de la mucosa del intestino grueso.
+3. Estimula la secreción de NaCl por las células parietales.
+4. Estimula la secreción del pepsinógeno por las células principales.
+
+---
+
+Question 50:
+Señale la respuesta correcta respecto a los posibles destinos del cuerpo amarillo:
+
+Options:
+1. En caso de embarazo, el sincitiotrofoblasto de la placenta en desarrollo produce gonadotropina coriónica humana e inhibe la somatomamotropina coriónica humana.
+2. La gonadotropina coriónica humana mantiene el cuerpo amarillo del embarazo unos 6 meses, a partir de los cuales la placenta se encarga de la producción de progesterona, estrógeno y relaxina.
+3. En ausencia de embarazo está presente la LH y el cuerpo amarillo empieza a atrofiarse.
+4. En ausencia de embarazo la carencia de estrógeno y progesterona también estimula la liberación de FSH de la hipófisis, reiniciándose el ciclo menstrual.
+
+---
+
+Question 51:
+El factor VII de la coagulación es el:
+
+Options:
+1. Acelerador de la conversión de la protrombina sérica (SPCA).
+2. Componente tromboplastínico del plasma (PTC).
+3. Factor de Fletcher.
+4. Factor antihemofílico C.
+
+---
+
+Question 52:
+La propagación más lenta del impulso cardíaco se produce en:
+
+Options:
+1. El músculo auricular.
+2. El nodo auriculoventricular.
+3. El sistema de Purkinje.
+4. El tronco de His.
+
+---
+
+Question 53:
+Respecto a la regulación de la secreción de aldosterona, ¿cuál de las siguientes afirmaciones es correcta?:
+
+Options:
+1. El incremento de la concentración de iones potasio en el líquido extracelular aumenta la secreción de aldosterona.
+2. El aumento de la concentración de angiotensina en el líquido extracelular disminuye la secreción de aldosterona.
+3. El incremento de sodio produce un aumento de secreción de aldosterona.
+4. La disminución de la concentración de iones potasio produce una disminución de la secreción de aldosterona.
+
+---
+
+Question 54:
+En la maduración eritroide, ¿cuál de las siguientes células se encuentra entre el eritroblasto basófilo y el eritroblasto ortocromático?:
+
+Options:
+1. Reticulocito.
+2. Eritrocito.
+3. Proeritroblasto.
+4. Eritroblasto policromático.
+
+---
+
+Question 55:
+¿Cuál es el promedio aproximado de pérdida de agua en las heces?:
+
+Options:
+1. 0-50 mL/día.
+2. 100-200 mL/día.
+3. 200-300 mL/día.
+4. Más de 300 mL/día.
+
+---
+
+Question 56:
+¿Cuál es la vía de señalización/activación tras la unión de la hormona leptina a su receptor?:
+
+Options:
+1. GMPc.
+2. JAK2.
+3. Proteína G.
+4. Adenilato ciclasa-AMPc.
+
+---
+
+Question 57:
+¿Cuál de los siguientes es el responsable de la planificación y programación de los movimientos voluntarios?:
+
+Options:
+1. El vestibulocerebelo.
+2. El espinocerebelo.
+3. El cerebrocerebelo.
+4. La formación reticular.
+
+---
+
+Question 58:
+¿Cómo se denomina el plexo nervioso situado entre las capas musculares longitudinales y circulares del tubo digestivo?:
+
+Options:
+1. Plexo hipogástrico.
+2. Plexo submucoso o de Meissner.
+3. Plexo de Schabadasch o Henle.
+4. Plexo de Auerbach.
+
+---
+
+Question 59:
+Señale la relación INCORRECTA:
+
+Options:
+1. Troponina I – Actina.
+2. Troponina T – Tropomiosina.
+3. Troponina C – Calcio.
+4. Tropomiosina – Miosina.
+
+---
+
+Question 60:
+Varón de 40 años acude al servicio de urgencias con síntomas de deterioro cognitivo. El hemograma muestra trombopenia marcada. ¿Qué elementos celulares no deberán pasarse por alto en el estudio del frotis de sangre periférica?:
+
+Options:
+1. Eritrocitos con una zona central más deprimida respecto a los hematíes normales.
+2. Hematíes de aspecto redondeado con varias espículas alargadas distribuidas irregularmente por su superficie.
+3. Eritrocitos fragmentados.
+4. Hematíes redondeados con espículas cortas distribuidas regularmente por toda la superficie.
+
+---
+
+Question 61:
+En pacientes con LEC NOS (Leucemia Eosinofílica Crónica no Especificada) la enfermedad sufre una transformación a:
+
+Options:
+1. Enfermedad de Kimura.
+2. Linfoma Hodgkin.
+3. Linfoma no Hodgkin.
+4. Leucemia aguda.
+
+---
+
+Question 62:
+Las células de Mott son:
+
+Options:
+1. Linfocitos con citoplasma hialino y abundantes vellosidades debido a la intensa actividad de su citoesqueleto.
+2. Células plasmáticas con inclusiones de naturaleza inmunoglobulínica que ocupan la mayor parte del citoplasma y confieren a la célula un aspecto de mórula.
+3. Linfocitos de pequeño tamaño, cromatina madura, condensada con aspecto de caparazón de tortuga y una relación núcleo/citoplasma elevada.
+4. Células de tamaño grande similar al del monocito con cromatina madura que presenta surcos similares a las circunvoluciones cerebrales.
+
+---
+
+Question 63:
+¿En cuál de las siguientes patologías es una prueba diagnóstica clave la prueba de Coombs directo?:
+
+Options:
+1. Anemia hemolítica congénita.
+2. Anemia hemolítica de causa no inmune.
+3. Anemia no hemolítica.
+4. Anemia hemolítica adquirida de origen inmune.
+
+---
+
+Question 64:
+Durante la revisión de un hemograma nos encontramos ante un volumen plaquetar medio (VPM) elevado y decidimos revisar el frotis al microscopio, confirmándose el hallazgo de macrotrombocitos. ¿Cuál de las siguientes deberá ser la sospecha diagnóstica?:
+
+Options:
+1. Anemia ferropénica.
+2. Linfoma folicular del manto.
+3. Mielofibrosis.
+4. Trombocitopenia asociada al gen MYH9.
+
+---
+
+Question 65:
+¿Cuál de las siguientes es la causa más habitual del satelitismo plaquetar?:
+
+Options:
+1. Hemoglobinuria paroxística nocturna.
+2. Enfermedades hepáticas.
+3. Anticoagulante EDTA.
+4. Cuerpos de Pappenheimer.
+
+---
+
+Question 66:
+Señale la afirmación correcta sobre la atrofia muscular espinal:
+
+Options:
+1. La forma más frecuente es la atrofia muscular espinal tipo 1, presente al nacimiento o en los primeros años de vida.
+2. Es una enfermedad ligada al cromosoma X.
+3. Se caracteriza por la presencia de movimientos bruscos y demencia.
+4. Recientemente se ha autorizado una terapia génica, axicabtagene ciloleucel, para su tratamiento.
+
+---
+
+Question 67:
+¿En cuál de las siguientes situaciones se esperaría encontrar una bradicardia?:
+
+Options:
+1. Situación inicial de shock séptico por S. aureus resistente a meticilina.
+2. Ingesta de un fármaco que bloquee los canales HCN (canales activados por la hiperpolarización y modulados por nucleótidos cíclicos) alterando la corriente tipo If.
+3. Situación de hipertiroidismo clínico, con TSH indetectable y T4 elevada.
+4. Paciente varón que presenta una hemoglobina de 7,4 g/dL (rango 13 g/dL - 16 g/dL) secundaria a una hemorragia digestiva.
+
+---
+
+Question 68:
+Una mujer de 61 años ingresa en el hospital por disnea de mínimos esfuerzos y astenia intensa con un NT-proBNP: 1012 pg/mL (normal < 125 pg/mL). En el ecocardiograma se aprecia una fracción de eyección del ventrículo izquierdo (FEVI) del 30%. Se le diagnostica finalmente de insuficiencia cardíaca congestiva. Cuál de las siguientes afirmaciones sería correcta:
+
+Options:
+1. Nos encontramos ante un caso de insuficiencia cardiaca con FEVI preservada.
+2. Un tratamiento domiciliario de elección para esta patología sería la combinación de bisoprolol con ramipril, linagliptina y espironolactona.
+3. El hallazgo de concentraciones muy bajas de NT-proBNP no resulta de utilidad para excluir una causa cardíaca de disnea.
+4. Durante el manejo de la insuficiencia cardíaca congestiva aguda suele ser de utilidad la administración de diuréticos de asa.
+
+---
+
+Question 69:
+¿Cuál de las siguientes afirmaciones con respecto a la fluidoterapia es FALSA?:
+
+Options:
+1. La solución de Ringer lactato es un ejemplo de cristaloide.
+2. Las soluciones coloidales, como la albúmina al 20%, se utilizan para aumentar el volumen intravascular sanguíneo.
+3. La administración de bicarbonato 1/6 molar es una terapia empleada en pacientes que presentan acidosis metabólica.
+4. Las soluciones electrolíticas balanceadas se caracterizan por presentar una cantidad de cloro mayor que el cloruro sódico al 0,9%.
+
+---
+
+Question 70:
+En cuanto a la anticoncepción, señale la respuesta correcta:
+
+Options:
+1. Los dispositivos intrauterinos de liberación de levonorgestrel se caracterizan por mantener unos niveles de progestágenos sistémicos muy semejantes a los obtenidos tras su administración oral.
+2. Los parches anticonceptivos que combinan un derivado estrogénico y un progestágeno parecen presentar una eficacia menor en mujeres con peso de más de 90 kg.
+3. Los implantes anticonceptivos habitualmente liberan un agonista del receptor de GnRH, de forma que al producir una estimulación continua del receptor se produce una desensibilización del mismo.
+4. La anticoncepción de emergencia se realiza principalmente mediante el uso de un derivado estrogénico en monoterapia.
+
+---
+
+Question 71:
+La fibrosis quística es una enfermedad rara que presenta más de 1000 variantes alélicas. Señale cuál de las siguientes afirmaciones es FALSA en relación con esta enfermedad:
+
+Options:
+1. La mutación más frecuentemente hallada es la F508del del gen regulador de la conductancia transmembrana de fibrosis quística (CFTR), que conserva función parcial del conducto transmembrana, pero su degradación está acelerada por ser reconocido como un plegamiento erróneo.
+2. El trasplante pulmonar es una opción terapéutica viable en el caso de insuficiencia pulmonar terminal.
+3. Elexacaftor es un fármaco recientemente aprobado para el tratamiento de la fibrosis quística, con el mismo mecanismo de acción que ivacaftor, pero más eficaz, de forma que ha desplazado su uso y es actualmente la primera opción de tratamiento en monoterapia.
+4. En los pacientes que la padecen, se ve incrementado el riesgo de infección crónica por P. aeruginosa en relación a la población sana, y se pueden emplear aminoglucósidos inhalados para su tratamiento.
+
+---
+
+Question 72:
+En relación a la fisiopatología de la enfermedad de Alzheimer:
+
+Options:
+1. Se relaciona con un procesamiento proteolítico erróneo de la proteína tau.
+2. Los agregados de péptido beta amiloide son un hallazgo característico de la enfermedad, pero no alteran la funcionalidad celular.
+3. La gamma-secretasa es la responsable de la hiperfosforilación de la proteína precursora de amiloide (APP).
+4. La presencia del alelo ε4 del gen de la Apolipoproteína E supone un factor de riesgo importante para el desarrollo de la enfermedad.
+
+---
+
+Question 73:
+Señale la respuesta correcta sobre la enfermedad renal crónica (ERC):
+
+Options:
+1. En las primeras fases de la ERC existe una hiperfiltración renal producida por cambios adaptativos a la pérdida de nefronas.
+2. En estos pacientes se emplean agentes estimulantes de eritropoyetina para conseguir niveles de hemoglobina basales mayores a los límites superiores establecidos para la población sana.
+3. Es típica la disminución de los valores de ácido fólico en estos pacientes debido a su menor activación renal.
+4. El factor 23 de crecimiento de fibroblastos (FGF-23) aumenta la reabsorción renal de fosfato, y es un marcador que se encuentra elevado en la insuficiencia renal crónica avanzada.
+
+---
+
+Question 74:
+Un paciente acude a urgencias con bajo nivel de consciencia y malestar digestivo con estreñimiento asociado. En la analítica, destaca un valor de calcio total de 15 mg/dL (rango normal 8,5 mg/dL - 10,5 mg/dL). ¿Cuál de los siguientes enunciados NO sería cierto en relación al paciente?:
+
+Options:
+1. Es importante conocer los niveles de albúmina, ya que, si estos fueran muy altos, habría que corregir los niveles de calcio total a la baja para compararlos con los intervalos de referencia.
+2. Niveles altos de calcio en sangre se relacionan con intervalos QT cortos en el electrocardiograma.
+3. El uso de calcitonina en combinación con bifosfonatos parenterales, fundamentalmente el ácido zoledrónico, se considera una buena opción terapéutica en la mayoría de casos.
+4. La causa probable de la hipercalcemia podría ser el uso prolongado de furosemida a dosis altas, fármaco que actualmente empleaba el paciente.
+
+---
+
+Question 75:
+En la película “La tumba de las luciérnagas”, Setsuko, hermana pequeña de Seita, fallece tras una alimentación escasa. Entre sus síntomas, presentó dermatitis, diarrea y alucinaciones. Señale la enfermedad y deficiencia asociada que pudo haber sufrido Setsuko:
+
+Options:
+1. Déficit de niacina - pelagra.
+2. Déficit de vitamina C - escorbuto.
+3. Déficit de ácido fólico - Anemia megaloblástica.
+4. Déficit de vitamina B6 - beriberi.
+
+---
+
+Question 76:
+Dentro de la enfermedad inflamatoria intestinal se pueden diferenciar dos etiologías, la Enfermedad de Crohn y la colitis ulcerosa. Señale la afirmación FALSA respecto a estas entidades:
+
+Options:
+1. En la enfermedad de Crohn es poco frecuente encontrar afectación exclusivamente colónica.
+2. La complicación más frecuente de la colitis ulcerosa causante de ingreso hospitalario es la obstrucción intestinal secundaria a una estenosis.
+3. La lactoferrina y la calprotectina fecal son marcadores de seguimiento de la evolución de la enfermedad.
+4. La aparición de fístulas perianales es un factor de mal pronóstico de la enfermedad de Crohn.
+
+---
+
+Question 77:
+Señale cuál de las siguientes afirmaciones es correcta sobre la degeneración macular asociada a la edad (DMAE):
+
+Options:
+1. La DMAE de tipo exudativo se debe fundamentalmente a la aparición de depósitos extracelulares, denominados drusen o drusas, debajo del epitelio del pigmento retiniano.
+2. La susceptibilidad a desarrollar DMAE guarda relación con variantes en el gen para el factor H del complemento, un factor activador de la vía clásica del complemento.
+3. La administración intravítrea de fármacos con acción antiangiogénica, como el faricimab, tiene indicación en la DMAE exudativa, pero no en la seca.
+4. La mayor pérdida de agudeza visual se produce si se ve afectada la fóvea, una parte de la mácula ocupada exclusivamente por bastones.
+
+---
+
+Question 78:
+Una mujer de 45 años con una fatiga importante de corta evolución, tras realizarse las pruebas pertinentes, es diagnosticada de colangitis biliar primaria. ¿Cuál de las siguientes características NO esperaría encontrar?:
+
+Options:
+1. Un aumento de los marcadores de colestasis, como la GGT o la fosfatasa alcalina.
+2. Detección de anticuerpos antimitocondriales (AMA) frente al complejo piruvato deshidrogenasa.
+3. Prurito importante como manifestación clínica.
+4. Una buena respuesta de la enfermedad ante el uso de fármacos inhibidores del transportador SGLT2.
+
+---
+
+Question 79:
+Hay ciertos medicamentos que es importante suspender con la suficiente antelación antes de una cirugía para evitar eventos adversos durante el procedimiento y el periodo postoperatorio. ¿Cuál de las siguientes asociaciones entre fármaco y motivo de suspensión es INCORREC- TA?:
+
+Options:
+1. Insulina aspart - Riesgo de hipoglucemia debido a que el paciente estará en ayunas.
+2. Tirzepatida - Aumento de la velocidad de vaciado gástrico, lo cual es contraproducente en una cirugía.
+3. Prasugrel - Aumento del riesgo de sangrado, a pesar de ser un antiagregante y no un anticoagulante.
+4. Metformina - Riesgo de acidosis láctica en caso de hipovolemia durante la cirugía.
+
+---
+
+Question 80:
+Indique la relación correcta fármaco – diana - indicación:
+
+Options:
+1. Daratumumab - CD38 – Mieloma múltiple.
+2. Rituximab - CD20 - Tumor de unión gastroesofágica.
+3. Isatuximab - CD38 - Cáncer de pulmón.
+4. Obinutuzumab - CD19 - Linfoma Hodgkin.
+
+---
+
+Question 81:
+Indique la respuesta INCORRECTA respecto al fármaco emtricitabina:
+
+Options:
+1. Es un análogo nucleosídico de citidina.
+2. Se puede utilizar de manera combinada con tenofovir disoproxil fumarato en la profilaxis pre-exposición del VIH.
+3. Está contraindicado su uso en el embarazo.
+4. Su administración es por vía oral.
+
+---
+
+Question 82:
+Con respecto a los CAR-T (linfocitos o células T con receptores quiméricos para antígenos), indique la opción INCORRECTA:
+
+Options:
+1. Tisagenlecleucel presenta expresión de CAR contra CD19.
+2. Se puede utilizar tocilizumab para el tratamiento del síndrome de liberación de citoquinas.
+3. La presencia de fiebre, cefalea, náuseas y taquicardia entre otros, son algunos de los síntomas del síndrome de liberación de citoquinas.
+4. La administración de CAR-T no presenta riesgo de toxicidad neurológica.
+
+---
+
+Question 83:
+Paciente varón de 75 años diagnosticado hace un año de fibrilación auricular no valvular. El paciente inició tratamiento con acenocumarol, pero no logra controles adecuados de INR (Ratio Normalizado International), el último valor de INR fue 1,4. Indique la opción más correcta a seguir:
+
+Options:
+1. Suspender tratamiento anticoagulante, ya que dada la edad del paciente el riesgo de sangrado es mayor al beneficio esperado.
+2. Suspender acenocumarol e iniciar tratamiento con un anticoagulante de acción directa como apixabán.
+3. Administrar varias ampollas de vitamina K hasta control del INR y continuar con acenocumarol.
+4. Suspender acenocumarol e iniciar tratamiento con argatrobán.
+
+---
+
+Question 84:
+Paciente de 67 años, diagnosticado de enfermedad de Crohn en tratamiento con infliximab a dosis estándar desde hace 8 años. Recientemente vuelve a tener síntomas de su enfermedad y en la última analítica destacan niveles de fármaco por debajo del límite terapéutico inferior, así como títulos bajos de anticuerpos antifármaco. ¿Cuál de las siguientes opciones considera más acertada?:
+
+Options:
+1. Añadir otro fármaco al tratamiento, como por ejemplo vedolizumab, para hacer biterapia.
+2. Intensificar el tratamiento con infliximab, bien aumentando la dosis o acortando el intervalo terapéutico.
+3. Suspender el tratamiento y esperar tres semividas para reintroducirlo.
+4. Suspender infliximab e iniciar el fármaco oral baricitinib.
+
+---
+
+Question 85:
+Indique la relación INCORRECTA fármaco - enfermedad para la que se usa:
+
+Options:
+1. Tezepelumab - asma grave.
+2. Canakinumab - poliposis nasal.
+3. Tralokinumab - dermatitis atópica.
+4. Siltuximab - enfermedad de Castleman.
+
+---
+
+Question 86:
+¿Cuál de los siguientes fármacos se considera de elección en el tratamiento de la neuralgia del trigémino?:
+
+Options:
+1. Capsaicina.
+2. Lidocaína.
+3. Oxicodona.
+4. Carbamazepina.
+
+---
+
+Question 87:
+¿Qué tratamiento aconsejaría prescribir a una paciente de 30 años diagnosticada de artritis reumatoide grave, que ha fracasado al tratamiento con metotrexato y leflunomida y que expresa deseo de quedarse embarazada?:
+
+Options:
+1. Certolizumab pegol.
+2. Atezolizumab.
+3. Erlotinib.
+4. Natalizumab.
+
+---
+
+Question 88:
+¿Cuál de las siguientes afirmaciones sobre ivabradina es FALSA?:
+
+Options:
+1. Puede ser útil en adultos que presentan intolerancia o una contraindicación al uso de beta-bloqueantes.
+2. Puede provocar taquicardias.
+3. Puede provocar fibrilación auricular.
+4. Puede provocar trastornos oculares.
+
+---
+
+Question 89:
+Natalizumab se relaciona con un incremento del riesgo de desarrollar Leucoencefalopatía Multifocal Progresiva. Señale cuál de los siguientes NO es un factor de riesgo para desarrollarla:
+
+Options:
+1. Tratamiento activo con natalizumab por un periodo superior a 2 años.
+2. Tratamiento concomitante con antidepresivos tricíclicos.
+3. Presencia de anticuerpos frente al virus JC (John Cunningham).
+4. Tratamiento previo con otro fármaco inmunosupresor.
+
+---
+
+Question 90:
+Paciente de 59 años diagnosticada de asma grave. Está en tratamiento con glucocorticoide inhalado + agonista adrenérgico de acción larga (LABA) + montelukast, pero su enfermedad no está controlada. En sus analíticas se objetivan valores de IgE elevados. ¿Cuál de los siguientes tratamientos se le podría prescribir?:
+
+Options:
+1. Omalizumab.
+2. Rituximab.
+3. Ustekinumab.
+4. Nivolumab.
+
+---
+
+Question 91:
+Indique la respuesta correcta respecto al tratamiento de la enfermedad renal crónica (ERC):
+
+Options:
+1. En el tratamiento de la hipertensión es conveniente asociar dos diuréticos ahorradores de potasio a un diurético de asa.
+2. La corrección de la acidosis metabólica con bicarbonato sódico retrasa la progresión de la ERC.
+3. Es necesario el ajuste de dosis de insulina degludec aproximadamente a la mitad.
+4. El acenocumarol es el fármaco de elección en la tromboembolia nefrótica.
+
+---
+
+Question 92:
+Niña prematura de 28 semanas de gestación con 980 g, que desde los primeros días de vida desarrolla apnea del prematuro, con interrupción de la respiración durante un mínimo de 20 segundos acompañado de cianosis y bradicardia (<80 lpm), sin otra patología subyacente grave. Señale la respuesta correcta sobre el tratamiento farmacológico de elección:
+
+Options:
+1. Betametasona.
+2. Óxido nítrico.
+3. Surfactante pulmonar.
+4. Cafeína.
+
+---
+
+Question 93:
+¿Qué efecto adverso está asociado a los fármacos habitualmente utilizados en las exacerbaciones de la enfermedad obstructiva crónica (EPOC)?:
+
+Options:
+1. Sequedad de boca asociada a los inhibidores de la fosfodiesterasa, como roflumilast.
+2. Diarrea, náuseas y dolores de cabeza asociados a los antagonistas colinérgicos muscarínicos.
+3. Hiperpotasemia asociada a los agonistas β2.
+4. Candidiasis orofaríngea asociada al uso de los corticoides inhalados.
+
+---
+
+Question 94:
+Indique cuál de los siguientes fármacos es un antagonista selectivo del receptor de la endotelina tipo A:
+
+Options:
+1. Sildenafilo.
+2. Bosentan.
+3. Macitentan.
+4. Ambrisentan.
+
+---
+
+Question 95:
+Indique la respuesta FALSA sobre los fármacos inhibidores de la PCSK9 (proproteína convertasa subtilisina/kexina tipo 9):
+
+Options:
+1. Alirocumab está indicado para la hipercolesterolemia primaria (familiar heterocigótica y no familiar), dislipidemia mixta, y enfermedad cardiovascular aterosclerótica establecida.
+2. Evolocumab está indicado para la hipercolesterolemia primaria (familiar heterocigótica y no familiar), dislipidemia mixta, hipercolesterolemia familiar homocigótica, y enfermedad cardiovascular aterosclerótica establecida.
+3. Alirocumab y evolocumab son anticuerpos monoclonales que se administran vía subcutánea.
+4. Entre las reacciones adversas más frecuentes de alirocumab y evolocumab se encuentra el aumento de las enzimas hepáticas AST y ALT.
+
+---
+
+Question 96:
+Indique la respuesta INCORRECTA sobre el tratamiento de la Enfermedad de Parkinson (EP):
+
+Options:
+1. La levodopa sigue siendo el tratamiento sintomático más eficaz en la EP.
+2. La levodopa presenta un elevado metabolismo periférico por lo que se administra junto a un inhibidor de la LAAD (L-aminoácido aromáticodescarboxilasa) que aumenta la biodisponibilidad.
+3. Si se presentan náuseas y vómitos en un paciente tratado con levodopa, el antiemético más recomendado es la metoclopramida.
+4. Levodopa/carbidopa/entacapona gel intestinal está indicado en la EP avanzada con fluctuaciones motoras graves e hipercinesia o discinesia cuando las combinaciones de medicamentos orales disponibles no han proporcionado resultados satisfactorios.
+
+---
+
+Question 97:
+Con respecto a tacrolimus indique la respuesta correcta:
+
+Options:
+1. Es un inhibidor de mTOR (diana de rapamicina en células de mamífero).
+2. Debido a la variabilidad farmacocinética entre sujetos, es necesaria una posología individualizada para lograr el tratamiento óptimo.
+3. Favorece la activación del linfocito T al inhibir a la calcineurina.
+4. Se utiliza como profilaxis del rechazo del trasplante en receptores de aloinjertos hepáticos, pero se encuentra contraindicado su uso en los renales y cardiacos.
+
+---
+
+Question 98:
+Durante el embarazo se producen modificaciones fisiológicas que pueden influir en la respuesta a los fármacos, debido a que:
+
+Options:
+1. Aumenta la velocidad del vaciamiento gástrico.
+2. Disminuye progresivamente el volumen de agua corporal y, por tanto, el volumen de distribución.
+3. Hay una disminución de proteínas plasmáticas, principalmente de la albúmina.
+4. Hay una disminución de la filtración glomerular y, por tanto, de la eliminación por esta vía.
+
+---
+
+Question 99:
+¿Cuál es el mecanismo de acción principal de los aminoglucósidos en el tratamiento de infecciones bacterianas?:
+
+Options:
+1. Inhibición de la síntesis proteica al unirse a la subunidad ribosómica 30S.
+2. Inhibición de la síntesis de peptidoglicano en la pared celular bacteriana.
+3. Inhibición de la replicación del ADN bacteriano al interferir con la topoisomerasa II.
+4. Disrupción de la membrana celular bacteriana mediante la inserción de poros.
+
+---
+
+Question 100:
+¿Qué efecto farmacológico tiene el metimazol?:
+
+Options:
+1. Inhibición de la conversión periférica de T4 en T3, reduciendo la actividad biológica de las hormonas tiroideas.
+2. Estimulación de la liberación de hormonas tiroideas almacenadas en la glándula, aumentando los niveles de T3 y T4 en sangre.
+3. Bloqueo de la captación de yodo en las células foliculares, impidiendo la formación de hormonas tiroideas.
+4. Inhibición de la peroxidasa tiroidea, lo que reduce la síntesis de hormonas tiroideas T3 y T4.
+
+---
+
+Question 101:
+¿En cuál de los siguientes órganos efectores los impulsos colinérgicos producen un efecto de relajación?:
+
+Options:
+1. Músculo traqueobronquial.
+2. Músculo detrusor de la vejiga urinaria.
+3. Vesícula biliar.
+4. Esfínteres intestinales.
+
+---
+
+Question 102:
+¿Cuál de los siguientes principios activos antiepilépticos estimula receptores serotoninérgicos?:
+
+Options:
+1. Fenfluramina.
+2. Cannabidiol.
+3. Cenobamato.
+4. Zonisamida.
+
+---
+
+Question 103:
+¿Cuál de los siguientes principios activos actúa como inhibidor selectivo de la miosina cardiaca?:
+
+Options:
+1. Mavacamten.
+2. Bisoprolol.
+3. Verapamilo.
+4. Disopiramida.
+
+---
+
+Question 104:
+Respecto al litio, señale la afirmación verdadera:
+
+Options:
+1. Uno de sus efectos adversos destacados es su capacidad de producir agranulocitosis.
+2. Actúa como agonista de los receptores dopaminérgicos D2.
+3. Bloquea la cascada de señalización de fosfatidilinositol en el cerebro.
+4. Es un fármaco con un amplio margen terapéutico.
+
+---
+
+Question 105:
+Si un fármaco A inhibe el metabolismo de otro fármaco B, teniendo en cuenta que B no rinde metabolitos farmacológicamente activos, puede observarse:
+
+Options:
+1. Una disminución en el efecto de B.
+2. Una pérdida en la eficacia farmacológica de B.
+3. Una disminución en el tiempo de efecto de B.
+4. Un aumento del efecto del fármaco B y en ocasiones de su toxicidad.
+
+---
+
+Question 106:
+Las reacciones adversas a fármacos de tipo B, tienen como característica:
+
+Options:
+1. Estar relacionadas con las acciones farmacológicas del mismo.
+2. Ser predecibles.
+3. Ser impredecibles y no estar relacionadas con las propiedades farmacológicas del mismo.
+4. Tener una probabilidad de aparición muy alta en la población.
+
+---
+
+Question 107:
+¿Cuál de las siguientes características de los fármacos da lugar a una mayor excreción biliar?:
+
+Options:
+1. Sustancias con alto peso molecular.
+2. Sustancias con grupos no polares.
+3. Compuestos ionizables.
+4. Sustancias con bajo peso molecular.
+
+---
+
+Question 108:
+¿Cuál es la razón principal para el uso de un opioide agonista parcial en lugar de un agonista completo en el manejo del dolor?:
+
+Options:
+1. Mayor duración de acción, lo que permite un alivio del dolor más prolongado.
+2. Mayor potencia analgésica, ya que los agonistas parciales activan todos los receptores opioides con alta eficacia.
+3. Menor riesgo de desarrollar tolerancia, debido a la menor afinidad por los receptores opioides.
+4. Menor riesgo de depresión respiratoria, ya que no provocan una inhibición completa del centro respiratorio.
+
+---
+
+Question 109:
+En relación con Podophylum peltatum L., indique la respuesta correcta:
+
+Options:
+1. Se utiliza un extracto de la hoja.
+2. Su principio activo, la podofilotoxina, es de naturaleza alcaloídica.
+3. La acción antimitótica de su principio activo se debe a que inhibe la polimerización de la tubulina.
+4. Pertenece a la familia Araliaceae.
+
+---
+
+Question 110:
+La raíz de valeriana posee una acción sedante e inductora del sueño debido a un mecanismo de incremento de transmisión gabaérgica, atribuida a la presencia de:
+
+Options:
+1. Sesquiterpenos no volátiles.
+2. Ácidos cinámicos y benzoicos.
+3. Alcaloides indólicos.
+4. Antraquinonas hidroxiladas.
+
+---
+
+Question 111:
+Si hablamos de un alcaloide derivado del yohimbano, de tipo indólico, con propiedades antihipertensivas y que carece de propiedades lipolíticas, nos referimos a:
+
+Options:
+1. Coniína.
+2. Reserpina.
+3. Nicergolina.
+4. Arecolina.
+
+---
+
+Question 112:
+En un paciente al que se tenga que administrar de forma sistémica un fármaco irritante, como el cisplatino, ¿qué tipo de catéter elegiría?:
+
+Options:
+1. Un catéter cuya punta se encontrase en la aurícula derecha.
+2. Un catéter cuya punta se encontrase en la vena cefálica.
+3. Un catéter cuya punta se encontrase en la vena radial.
+4. Un catéter cuya punta se encontrase en la arteria femoral.
+
+---
+
+Question 113:
+Un paciente está en tratamiento con meropenem a dosis máxima para tratar una sepsis por bacterias gramnegativas, ¿cuál de las siguientes estrategias podría proponer para intentar mejorar la eficacia del tratamiento?:
+
+Options:
+1. Doblar la dosis del fármaco para conseguir un pico de concentración más alto, recomendado en pacientes críticos.
+2. Añadir al meropenem un inhibidor de citocromos como el ritonavir, para incrementar los niveles plasmáticos de meropenem sin incrementar la dosis.
+3. Administrar el meropenem por vía intramuscular, para conseguir un efecto más sostenido en el tiempo.
+4. Incrementar el tiempo en el que meropenem se administra, como por ejemplo realizar una perfusión extendida de 3 horas.
+
+---
+
+Question 114:
+Acude a urgencias un paciente con taquicardia con QRS ancho, hipotensión y sintomatología anticolinérgica. Recientemente ha aumentado la dosis de clomipramina, si bien sigue en rango de dosis de ficha técnica. Contactan con usted para solicitar una prueba genética del paciente, y evaluar así una posible toxicidad del fármaco. ¿Qué prueba recomendaría?:
+
+Options:
+1. Genotipar el gen de la glicoproteína P, para detectar una posible infraexpresión de la misma.
+2. Genotipar el gen UGT1A1, para detectar una posible actividad baja del mismo.
+3. Genotipar el citocromo CYP3A5, para detectar una posible actividad disminuida del mismo.
+4. Genotipar el citocromo CYP2C19, para detectar una posible expresión alterada del mismo.
+
+---
+
+Question 115:
+Un paciente diagnosticado de intestino corto secundario a una resección tumoral se encuentra en tratamiento con clomipramina, pero no está respondiendo adecuadamente. La clomipramina, fármaco clase I según el sistema de clasificación biofarmacéutica (BCS), está formulada como grageas, destacando entre sus excipientes sacarosa, lactosa, gelatina, glicerol y celulosa microcristalina. ¿Cuál de las siguientes acciones recomendaría a su médico para intentar mejorar la respuesta?:
+
+Options:
+1. Intentar emplear una formulación en forma de cápsula de liberación modificada.
+2. Ofrecer un equivalente terapéutico de clase III según la BCS.
+3. Machacar la gragea y disolverla en agua.
+4. Buscar una alternativa que presente una Tmax>2 horas.
+
+---
+
+Question 116:
+Para el correcto desarrollo de sistemas de liberación modificada por vía oral se debe considerar la semivida biológica intrínseca del principio activo. ¿Cuál de las siguientes vidas medias consideraría más adecuada para el desarrollo de un sistema de liberación modificada?:
+
+Options:
+1. Menor de 10 minutos.
+2. Entre 6 y 8 horas.
+3. Entre 14 y 18 horas.
+4. Entre 20 y 24 horas.
+
+---
+
+Question 117:
+En la administración de fármacos por vía pulmonar, ¿cuál de estas afirmaciones de los inhaladores de polvo seco (DPI) o inhaladores a presión con válvula dosificadora (pMDI) es verdadera?:
+
+Options:
+1. Los DPI requieren una mayor coordinación en su uso correcto por parte de los pacientes que los pMDI.
+2. Los DPI suelen contener excipientes sólidos, como la lactosa.
+3. En los pMDI actuales se han eliminado los gases halogenados como propelentes debido a que dañan la capa de ozono.
+4. En los DPI la dosis respirable suministrada es dependiente del flujo inspiratorio, aumentando cuando se acopla una cámara espaciadora.
+
+---
+
+Question 118:
+Respecto a la monitorización farmacocinética de fármacos, ¿cuál de las siguientes asociaciones farmacocinética - farmacodinamia es FALSA?:
+
+Options:
+1. Concentraciones mínimas de vancomicina superiores a 20 mg/L y riesgo de nefrotoxicidad.
+2. Concentraciones máximas de gentamicina superiores a 15 mg/L y riesgo de ototoxicidad.
+3. Concentraciones mínimas de infliximab indetectables y riesgo de aparición de anticuerpos anti-infliximab.
+4. Concentraciones de digoxina superiores a 2 ng/mL y riesgo de bradicardia.
+
+---
+
+Question 119:
+¿Cómo afecta un aumento en la semivida de eliminación a la concentración en estado estacionario y al tiempo para alcanzarlo en una perfusión intravenosa continua?:
+
+Options:
+1. Un descenso en la concentración de equilibrio alcanzada y en el tiempo necesario para alcanzar el equilibrio.
+2. Un descenso en la concentración de equilibrio alcanzada y un incremento en el tiempo necesario para alcanzar el equilibrio.
+3. Un incremento en la concentración de equilibrio alcanzada y en el tiempo necesario para alcanzar el equilibrio.
+4. Un incremento en la concentración de equilibrio alcanzada y un descenso en el tiempo necesario para alcanzar el equilibrio.
+
+---
+
+Question 120:
+¿Cuál de las siguientes definiciones corresponde al tiempo medio de residencia (MRT) empleado en el cálculo de parámetros farmacocinéticos mediante métodos modelo-independiente?:
+
+Options:
+1. Tiempo al cual se absorbe el 60% de una dosis oral de un fármaco.
+2. Tiempo al cual se elimina del organismo el 62,3% de una dosis endovenosa de un fármaco.
+3. Tiempo al cual se elimina del organismo el 63,2% de una dosis endovenosa de un fármaco.
+4. Tiempo al cual se absorbe el 62,3% de una dosis oral de un fármaco.
+
+---
+
+Question 121:
+Un paciente recibe un bolo intravenoso de 200 mg de un fármaco que presenta una velocidad de eliminación de 10 mg/h y un volumen de distribución de 10 L. ¿Cuál será la concentración de fármaco en el organismo tras 7 h desde su administración?:
+
+Options:
+1. 13 mg/L.
+2. 10 mg/L.
+3. 7 mg/L.
+4. Se habrá eliminado todo el fármaco.
+
+---
+
+Question 122:
+Para un fármaco que presenta baja capacidad de extracción hepática, ¿cuál de las siguientes afirmaciones es correcta?:
+
+Options:
+1. El aclaramiento es dependiente de los cambios de flujo y de la actividad enzimática e independiente de los cambios en la unión a proteínas.
+2. El aclaramiento es independiente de cambios en la unión a proteínas.
+3. El aclaramiento es independiente de los cambios de flujo y dependiente de los cambios en la unión a proteínas plasmáticas.
+4. El aclaramiento es independiente de cambios en la actividad enzimática.
+
+---
+
+Question 123:
+El etanol es una molécula con un metabolismo complejo, que influye en las rutas catabólicas y anabólicas de otras sustancias. ¿Qué cabría esperar en su metabolismo?:
+
+Options:
+1. Un aumento de FADH2, producido mediante la metabolización del etanol por la alcohol deshidrogenasa y la aldehído deshidrogenasa.
+2. Una disminución del pH de la sangre, ya que favorece, entre otros, el aumento del cociente [lactato/piruvato].
+3. Un aumento inmediato de la glucemia, al favorecer la gluconeogénesis e inhibir la glucólisis, para recuperar nucleótidos que se puedan reducir.
+4. Una degradación de los ácidos grasos en el hígado, al aumentar el metabolismo de los triglicéridos en detrimento del metabolismo de la glucosa.
+
+---
+
+Question 124:
+Señale cuál de las siguientes afirmaciones sobre la hemocromatosis es correcta:
+
+Options:
+1. Puede darse un cuadro similar en la porfiria cutánea tardía.
+2. Fármacos como el deferasirox pueden agravar esta patología.
+3. Está involucrado el gen EGFR.
+4. Las flebotomías fueron durante muchos años el tratamiento de elección, pero actualmente su uso está contraindicado.
+
+---
+
+Question 125:
+El glucógeno es la principal forma de almacenamiento de glúcidos en los animales. ¿Cuál de las siguientes características lo representa?:
+
+Options:
+1. Permite movilizar rápidamente muchas unidades de glucosa al presentar múltiples extremos reductores.
+2. Tiene una estructura más semejante a la amilopectina del almidón que a la amilosa.
+3. Al estar formado por múltiples unidades de glucosa, la osmolaridad que presenta el glucógeno es mucho mayor que la que presentarían estas moléculas de glucosa si se almacenasen de forma individual.
+4. Es típico de este polisacárido que se encuentre aminado en sus extremos.
+
+---
+
+Question 126:
+Un paciente presenta intolerancia hereditaria a la fructosa, y requiere de la administración de inmunoglobulinas para tratar una trombocitopenia inmune primaria. ¿Cuál de los siguientes excipientes debería evitar?:
+
+Options:
+1. Sorbitol.
+2. Albúmina.
+3. Prolina.
+4. Glicina.
+
+---
+
+Question 127:
+[Attached image for this question follows this text block.]
+¿Qué molécula de 20 átomos de carbono representa la siguiente estructura?:
+
+Options:
+1. Una prostaglandina.
+2. Una prostaciclina.
+3. Una lipoxina.
+4. Un leucotrieno.
+[IMAGE_SENT_FOR_Q127: images\fir\Q127.png, sha256=3f91c7cdd35ebe1cac945bac56e979ad1b4d2369676ce846ada39dbacf157694]
+
+---
+
+Question 128:
+¿Cuál de las siguientes situaciones NO favorece la activación de la lipasa sensible a hormonas de los adipocitos?:
+
+Options:
+1. Desfosforilación de la enzima.
+2. Administración de corticoides exógenos.
+3. Aumento del AMP cíclico dentro del adipocito.
+4. Disminución de los niveles de insulina.
+
+---
+
+Question 129:
+¿Qué es la termogenina, y cuál es su papel fisiológico?:
+
+Options:
+1. Una lipoproteína que permite la generación de calor en las células musculares.
+2. Una proteína endógena desacopladora de la cadena respiratoria, presente en el tejido adiposo pardo.
+3. Un neurotransmisor hipotalámico con un papel trascendental en el centro termorregulador del hipotálamo.
+4. Una molécula soluble reguladora de la lipogénesis y, con ella, reguladora de la producción de calor corporal.
+
+---
+
+Question 130:
+¿Para cuál de las siguientes enfermedades esperaría que fuese de utilidad la administración de esfingomielinasa ácida recombinante?:
+
+Options:
+1. Enfermedad de Niemann-Pick.
+2. Enfermedad de Hurler.
+3. Enfermedad de Brody.
+4. Enfermedad de Fanconi-Bickel.
+
+---
+
+Question 131:
+A una solución del aminoácido glicina que se encuentra a un determinado pH se le aplica un campo eléctrico. Se observa que las moléculas de glicina se desplazan predominantemente hacia el cátodo. Sabiendo que su punto isoeléctrico es de 5,97, ¿cuál de las siguientes afirmaciones sería correcta?:
+
+Options:
+1. El pH de la solución es inferior al punto isoeléctrico, predominando la forma desprotonada del aminoácido.
+2. El pH de la solución es inferior al punto isoeléctrico, predominando la forma protonada del aminoácido.
+3. El pH de la solución es superior al punto isoeléctrico, predominando la forma protonada del aminoácido.
+4. El pH de la solución es superior al punto isoeléctrico, predominando la forma desprotonada del aminoácido.
+
+---
+
+Question 132:
+[Attached image for this question follows this text block.]
+El lutecio (177Lu) oxodotreotida es un radiofármaco indicado en ciertos tipos de tumores neuroendocrinos. Se debe administrar de forma concomitante una solución de aminoácidos para reducir la reabsorción del radiofármaco en los túbulos contorneados proximales. Sabiendo que esta menor reducción en la reabsorción se debe en parte a que los aminoácidos neutralizan la carga eléctrica derivada del ligando unido al 177Lu (imagen en la parte inferior), ¿qué aminoácidos seleccionaría para la administración? NOTA: Asuma que el 177Lu no aporta carga eléctrica debido a que se encuentra formando un complejo de quelación:
+
+Options:
+1. L-Lisina y L-Arginina.
+2. L-Aspartato y L-Glutamato.
+3. L-Isoleucina y L-Triptófano.
+4. L-Aspartato y L-Arginina.
+[IMAGE_SENT_FOR_Q132: images\fir\Q132.png, sha256=5d800d5df18389263d4069e16057c632814bfc78f3c83b1bea41bf889fee19f4]
+
+---
+
+Question 133:
+En relación con la proteína que une directamente la polimerasa de ARN tipo I al ADN, ¿qué característica es común en las ARN polimerasas de procariotas, pero no en las de eucariotas?:
+
+Options:
+1. La existencia de múltiples factores de transcripción específicos para iniciar la transcripción.
+2. La necesidad de un solo factor sigma para reconocer el promotor y comenzar la transcripción.
+3. La formación de complejos de preiniciación en los promotores de los genes.
+4. La capacidad de transcribir genes que contienen intrones y exones.
+
+---
+
+Question 134:
+El proceso de reparación del ADN por escisión o supresión de una base se inicia por la acción de la enzima:
+
+Options:
+1. ADN topoisomerasa.
+2. ADN primasa.
+3. ADN glucosilasa.
+4. Proteínas SSB.
+
+---
+
+Question 135:
+¿Cuál de las siguientes secuencias de eventos en el proceso de traducción es la correcta?:
+
+Options:
+1. El ribosoma se une al ARN mensajero (mARN), el anticodón del ARN de transferencia (tARN) se empareja con el codón del mARN, y se agrega un aminoácido a la cadena polipeptídica.
+2. El ribosoma se une al tARN, el codón del tARN se empareja con el anticodón del mARN, y se agrega un aminoácido a la cadena polipeptídica.
+3. El ribosoma se une al ADN, el codón del tARN se empareja con el anticodón del mARN, y se agrega un nucleótido a la cadena de mARN.
+4. El ribosoma se une al mARN, el anticodón del tARN se empareja con el codón del ADN, y se agrega un nucleótido a la cadena de ADN.
+
+---
+
+Question 136:
+Durante el proceso de replicación del ADN, se requiere una enzima que sintetice un cebador de ARN para que la ADN polimerasa pueda iniciar la adición de nucleótidos. ¿Cuál es la enzima responsable de este paso crucial?:
+
+Options:
+1. ADN helicasa.
+2. ADN ligasa.
+3. Primasa.
+4. Exonucleasa.
+
+---
+
+Question 137:
+¿Cuál es la principal diferencia funcional entre la heterocromatina y la eucromatina en el contexto de la expresión génica?:
+
+Options:
+1. La eucromatina está asociada con regiones del ADN que son transcripcionalmente activas, mientras que la heterocromatina está asociada con regiones que son transcripcionalmente inactivas.
+2. Los genes que contiene la eucromatina no se expresan, mientras que los que contiene la heterocromatina sí lo hacen.
+3. La heterocromatina permite la transcripción activa de genes, mientras que la eucromatina silencia los genes.
+4. No existe ninguna diferencia funcional entre la heterocromatina y la eucromatina.
+
+---
+
+Question 138:
+Durante la replicación del ADN, la ADN ligasa tiene un papel crucial. ¿Cuál de las siguientes opciones describe mejor su función específica en este proceso?:
+
+Options:
+1. La ADN ligasa añade nucleótidos a la cadena en crecimiento durante la replicación.
+2. La ADN ligasa es responsable de unir los fragmentos de Okazaki en la cadena rezagada para formar una cadena continua.
+3. La ADN ligasa desenrolla la doble hélice de ADN para facilitar la replicación.
+4. La ADN ligasa sintetiza los cebadores de ARN necesarios para iniciar la síntesis de ADN.
+
+---
+
+Question 139:
+¿Cuál de las siguientes afirmaciones es correcta sobre el proceso de introducción de ADN exógeno en las células huésped?:
+
+Options:
+1. El proceso de introducir ADN exógeno en células procariotas se denomina transfección, mientras que en células eucariotas se denomina transformación.
+2. La introducción de ADN exógeno en células eucariotas o procariotas no necesita vectores.
+3. Sólo puede realizarse utilizando cósmidos.
+4. Para que el ADN plasmídico se replique autónomamente dentro de la célula huésped, es necesario que el vector contenga un origen de replicación.
+
+---
+
+Question 140:
+¿Cuál de las siguientes modificaciones postraduccionales es responsable de estabilizar la estructura terciaria de las proteínas mediante la formación de enlaces covalentes entre residuos de cisteína?:
+
+Options:
+1. Metilación.
+2. Fosforilación.
+3. Glucosilación.
+4. Puentes disulfuro.
+
+---
+
+Question 141:
+En relación con los telómeros, ¿qué respuesta es cierta?:
+
+Options:
+1. Están formados por secuencias repetitivas de ADN no codificante que acortan el tamaño en cada replicación celular.
+2. Son estructuras que codifican directamente para proteínas esenciales.
+3. Son el lugar donde los cromosomas se mantienen unidos durante la división celular, de manera que no pierdan sus cromátidas hermanas.
+4. Son regiones que acortan su longitud con cada división celular por la acción de la enzima telomerasa.
+
+---
+
+Question 142:
+El metanol y el etilenglicol son dos moléculas que causan importantes daños tras su ingesta debido a su conversión en metabolitos tóxicos. Escoja la respuesta correcta:
+
+Options:
+1. Ambos alcoholes acaban metabolizándose en oxalato, el cual daña el nervio óptico y provoca ceguera en estas intoxicaciones.
+2. Su tratamiento, basado en el empleo de fomepizol, consiste en la inhibición del CYP3A4.
+3. Tras la ingesta de estos compuestos, cabe esperarse un gap osmolar inicialmente elevado, antes de que los alcoholes se metabolicen.
+4. Intoxicaciones con ambos alcoholes tienden a producir alcalosis metabólicas importantes, que disminuyen la frecuencia respiratoria.
+
+---
+
+Question 143:
+AC es una paciente de 65 años con diabetes mellitus tipo 2 a la que recientemente se le ha diagnosticado una anemia hemolítica autoinmune. Requiere de transfusiones constantes y muy posiblemente comience con corticoides de manera continuada. ¿Cuál sería el parámetro más indicado para hacer seguimiento de su diabetes tipo 2?:
+
+Options:
+1. Fructosamina.
+2. Hemoglobina glicosilada (HbA1c).
+3. Presencia de cetonas en la orina.
+4. Cetonemia en ayunas y capilar.
+
+---
+
+Question 144:
+Señala la afirmación FALSA respecto a la hemofilia:
+
+Options:
+1. La desmopresina es un análogo sintético de la vasopresina que provoca un aumento transitorio en los niveles del Factor IX y del Factor de Von Willebrand, mediante su liberación desde depósitos en las células endoteliales vasculares.
+2. La hemofilia A es una deficiencia de factor VIII, la hemofilia B es una deficiencia del factor IX y la hemofilia C es una deficiencia del factor XI.
+3. La hemartrosis espontánea es un problema característico en la hemofilia y puede conducir a una artritis deformante.
+4. El emicizumab es un anticuerpo biespecífico asimétrico con una región de cadena variable de inmunoglobulina que se une al FIXa y otra que se une al FX. Es eficaz en pacientes con hemofilia A grave con o sin inhibidores.
+
+---
+
+Question 145:
+¿Cuál de los siguientes paneles de pruebas en sangre periférica consideraría el más adecuado para el seguimiento de la eficacia y la seguridad de pacientes con cáncer de mama luminal A metastásico en tratamiento con palbociclib?:
+
+Options:
+1. Neutrófilos en sangre periférica, NTproBNP, troponina T, CA 19-9, CEA.
+2. Neutrófilos en sangre periférica, CA 15-3, CA 27.29.
+3. Neutrófilos en sangre periférica, PDL-1, HER-2.
+4. Neutrófilos en sangre periférica, hemoglobina glicosilada, CA 125.
+
+---
+
+Question 146:
+[Attached image for this question follows this text block.]
+El gen LEP (leptina) presenta un polimorfismo G2478A de interés clínico. La enzima de restricción HhaI reconoce la secuencia GCG^C y se ha utilizado en el genotipado por PCR-RFLP (Polimorfismo en la Longitud de los Fragmentos de Restricción) de la imagen. ¿En qué calles estará presente el alelo G?:
+
+Options:
+1. Solamente en la calle 2.
+2. En las calles 3 y 4.
+3. En las calles 1 y 3.
+4. Solamente en la calle 4.
+[IMAGE_SENT_FOR_Q146: images\fir\Q146.png, sha256=c5a89f74c01b7cc539b9fc9c1139017425cb2760be84e1c26e112783360ff283]
+
+---
+
+Question 147:
+Respecto al análisis del líquido cefalorraquídeo en patologías neurológicas, seleccione la combinación de marcadores más útil para el diagnóstico diferencial entre enfermedad de Creutzfeldt-Jakob y esclerosis múltiple:
+
+Options:
+1. Índice de IgG Delpech-Tibbling y proteína tau fosforilada.
+2. α-sinucleína y proteína 14-3-3.
+3. Proteína 14-3-3 y bandas oligoclonales de IgG.
+4. Adenosina desaminasa y α-sinucleína.
+
+---
+
+Question 148:
+Un paciente es ingresado por una obstrucción intestinal. El paciente lleva 5 días en ayunas, y se le acaba de prescribir una nutrición parenteral total al 100% de los requerimientos calóricos. Al día siguiente, el paciente presenta edema periférico e insuficiencia respiratoria, siendo diagnosticado de un posible síndrome de realimentación. ¿Qué parámetro analítico es más probable encontrar alterado en esta situación?:
+
+Options:
+1. Sodio disminuido.
+2. Cloro disminuido.
+3. Fosfato disminuido.
+4. Calcio disminuido.
+
+---
+
+Question 149:
+Seleccione la afirmación correcta en relación a la transferrina:
+
+Options:
+1. Sus niveles séricos habitualmente se encuentran por debajo del rango normal en la anemia ferropénica.
+2. El índice de saturación de la transferrina estará aumentado en la anemia de las enfermedades crónicas.
+3. Es una proteína que en el proteinograma se encuentra en la banda de las α- globulinas.
+4. En la hemocromatosis la concentración sérica de transferrina está disminuida.
+
+---
+
+Question 150:
+De los siguientes resultados de bilirrubina (Bil) y urobilinógeno (Uro) en el urianálisis, ¿qué combinación sugiere una ictericia prehepática?:
+
+Options:
+1. Bil y Uro negativos.
+2. Bil positiva y Uro negativo.
+3. Bil y Uro positivos.
+4. Bil negativo y Uro positivo.
+
+---
+
+Question 151:
+El Ce4+ se utiliza como reactivo valorante en el análisis cuantitativo de diferentes compuestos en volumetrías de óxido-reducción. ¿Cuál es el indicador apropiado para este tipo de valoraciones?:
+
+Options:
+1. Murexida.
+2. Calmagita.
+3. Eritrosina.
+4. Ferroína.
+
+---
+
+Question 152:
+¿Con qué aplicación relaciona el uso de los gráficos de Gran?:
+
+Options:
+1. Con la evaluación de la robustez de un método analítico.
+2. Con la evaluación de la exactitud de un método analítico.
+3. Con la evaluación de la capacidad amortiguadora de una disolución tampón.
+4. Con la evaluación del punto final en una volumetría.
+
+---
+
+Question 153:
+¿Cuál de los siguientes métodos consiste en una valoración de precipitación con detección del punto final mediante un indicador de adsorción?:
+
+Options:
+1. Método de Mohr.
+2. Método de Volhard.
+3. Método de Fajans.
+4. Método de Kjeldahl.
+
+---
+
+Question 154:
+A partir de las medidas analíticas obtenidas en una serie de alícuotas o réplicas, ¿cuál de los siguientes parámetros informa sobre la precisión del método analítico?:
+
+Options:
+1. Pendiente de la recta de calibrado.
+2. Error absoluto.
+3. Error relativo.
+4. Coeficiente de variación.
+
+---
+
+Question 155:
+El EDTA es un sistema hexaprótico, cuya abreviatura habitual es H6Y2+. Las valoraciones complejométricas con EDTA se realizan a un pH:
+
+Options:
+1. Ácido, para que predomine la especie H6Y2+, que reacciona con el ion metálico para formar el complejo.
+2. Básico, para que predomine la especie H6Y2+, que reacciona con el ion metálico para formar el complejo.
+3. Ácido, para que predomine la especie Y4- que reacciona con el ion metálico para formar el complejo.
+4. Básico, para que predomine la especie Y4-, que reacciona con el ion metálico para formar el complejo.
+
+---
+
+Question 156:
+¿Cómo se puede aumentar el poder de resolución de un monocromador de red de difracción?:
+
+Options:
+1. Incrementado la anchura de las rendijas de entrada y de salida.
+2. Disminuyendo el número de líneas talladas por milímetro.
+3. Incrementando el número de líneas talladas por milímetro.
+4. Disminuyendo el orden de difracción en el que se trabaja.
+
+---
+
+Question 157:
+En espectrometría de emisión atómica con fuente de plasma acoplado inductivamente (ICP), utilizando las mismas condiciones experimentales, se puede realizar el análisis simultáneo de:
+
+Options:
+1. Elementos alcalino-térreos y gases nobles.
+2. Elementos alcalinos y elementos alcalino-térreos.
+3. Elementos alcalinos y elementos de transición.
+4. Elementos alcalino-térreos y elementos de transición.
+
+---
+
+Question 158:
+Las fases estacionarias de poliestirenodivinilbenceno (no ionizables) son apropiadas para la siguiente modalidad de cromatografía de líquidos:
+
+Options:
+1. Cromatografía de intercambio iónico.
+2. Cromatografía por exclusión por tamaño.
+3. Cromatografía de adsorción.
+4. Cromatografía de reparto.
+
+---
+
+Question 159:
+[Attached image for this question follows this text block.]
+En el cromatograma que aparece en la figura:
+
+Options:
+1. Los picos 1 y 3 presentan un factor de selectividad igual a 1 y los picos 5 y 6 una resolución inferior a 1,5.
+2. Los picos 1 y 3 presentan un factor de selectividad superior a 1 y los picos 5 y 6 una resolución inferior a 1,5.
+3. Los picos 1 y 3 presentan un factor de selectividad igual a 1 y los picos 5 y 6 una resolución superior a 1,5.
+4. Los picos 1 y 3 presentan un factor de selectividad superior a 1 y los picos 5 y 6 una resolución superior a 1,5.
+[IMAGE_SENT_FOR_Q159: images\fir\Q159.png, sha256=8194822f7e45b1b2cae34877b37bfb41fd8264e7e40df8691052eabe14b9a687]
+
+---
+
+Question 160:
+En la determinación de contaminantes atmosféricos mediante espectrometría de absorción en el infrarrojo, ¿cuál de los siguientes gases presentes en el aire interferiría en su determinación?:
+
+Options:
+1. O2.
+2. N2.
+3. CO2.
+4. Ar.
+
+---
+
+Question 161:
+[Attached image for this question follows this text block.]
+La figura muestra la titulación espectrofotométrica UV-VIS de Cu2+ con EDTA (ácido etilendiaminotetraacético) obtenida al medir el valor de la absorbancia (A) a la longitud de onda de absorción del complejo Cu-EDTA. Se cumple que:
+
+Options:
+1. El analito (Cu2+) es absorbente a la longitud de onda de trabajo.
+2. El titulador (EDTA) es absorbente a la longitud de onda de trabajo.
+3. El producto de reacción (Cu-EDTA) es absorbente a la longitud de onda de trabajo.
+4. El analito (Cu2+) y el titulador (EDTA) son absorbentes a la longitud de onda de trabajo.
+[IMAGE_SENT_FOR_Q161: images\fir\Q161.png, sha256=4060e4210891be533a43b1deea9484924aff6434d13066c9fa7e87e5067497e1]
+
+---
+
+Question 162:
+Al comparar la adecuación de dos electrodos de membrana de vidrio sensibles a iones hidrógeno, el catión Na+ puede ser una interferencia significativa. Sabiendo que el coeficiente de selectividad potenciométrico para el electrodo A es kH+,Na+ = 10-3 y para el electrodo B es kH+,Na+ = 10-1, se elige:
+
+Options:
+1. El electrodo A porque el error en las determinaciones será menor al tener menor coeficiente de selectividad potenciométrico.
+2. El electrodo A porque el error en las determinaciones será menor al tener mayor coeficiente de selectividad potenciométrico.
+3. El electrodo B porque el error en las determinaciones será menor al tener mayor coeficiente de selectividad potenciométrico.
+4. El electrodo B porque el error en las determinaciones será menor al tener menor coeficiente de selectividad potenciométrico.
+
+---
+
+Question 163:
+La corrección de las interferencias espectrales debidas a la matriz de la muestra es útil en:
+
+Options:
+1. Espectrometría de masas.
+2. Espectrometría de absorción atómica.
+3. Espectrometría de absorción molecular.
+4. Espectrometría Raman.
+
+---
+
+Question 164:
+[Attached image for this question follows this text block.]
+El diseño instrumental que se muestra en la figura corresponde a un:
+
+Options:
+1. Espectrofotómetro de absorción molecular UV visible de haz sencillo.
+2. Espectrofotómetro de absorción molecular UV visible de haz doble.
+3. Espectrofluorímetro de haz sencillo.
+4. Espectrofluorímetro de haz doble.
+[IMAGE_SENT_FOR_Q164: images\fir\Q164.png, sha256=e04d71de55a592f8d72a090f92d496777fd026b766e3066cd8bfa9c2857c685b]
+
+---
+
+Question 165:
+La temperatura óptima de la columna en cromatografía de gases depende del:
+
+Options:
+1. Punto de ebullición de los analitos y del grado de separación requerido.
+2. Punto de fusión de los analitos y del grado de separación requerido.
+3. Punto de ebullición de los analitos y del detector utilizado.
+4. Punto de fusión de los analitos y del detector utilizado.
+
+---
+
+Question 166:
+En una cromatografía líquida de partición (reparto) en fase normal, al incrementar la polaridad de la fase móvil:
+
+Options:
+1. Disminuyen los tiempos de elución ya que la fase estacionaria es más apolar que la fase móvil.
+2. Aumentan los tiempos de elución ya que la fase estacionaria es más apolar que la fase móvil.
+3. Disminuyen los tiempos de elución ya que la fase estacionaria es más polar que la fase móvil.
+4. Aumentan los tiempos de elución ya que la fase estacionaria es más polar que la fase móvil.
+
+---
+
+Question 167:
+Las disoluciones de una serie de solutos no volátiles con diferentes pesos moleculares tienen una concentración de 1 g de soluto en 1 kg de solvente y se comportan como ideales. ¿Qué efecto tiene el peso molecular del soluto sobre la temperatura de ebullición de las disoluciones resultantes?:
+
+Options:
+1. A mayor peso molecular, mayor será el incremento de la temperatura de ebullición de la disolución respecto al disolvente puro.
+2. A menor peso molecular, mayor será el incremento de la temperatura de ebullición de la disolución respecto al disolvente puro.
+3. Como la concentración expresada en g/kg es la misma en todas las disoluciones, no habrá cambios en sus temperaturas de ebullición.
+4. El peso molecular del soluto no afecta a la temperatura de ebullición.
+
+---
+
+Question 168:
+En una reacción de orden 0:
+
+Options:
+1. La velocidad de la reacción es proporcional a la concentración de reactivos.
+2. La representación de la concentración de reactivo frente al tiempo da una línea recta cuya pendiente es proporcional a la constante de velocidad k.
+3. El tiempo de semivida es proporcional a k e inversamente proporcional a la concentración inicial de reactivos.
+4. En el sistema internacional la constante k tiene unidades de (s-1).
+
+---
+
+Question 169:
+Cuando se mezclan dos sustancias que forman una disolución ideal a Temperatura y Presión constantes:
+
+Options:
+1. La variación de la entalpia de mezcla es (Hmez) >1.
+2. La variación del volumen de mezcla (Vmez) >1.
+3. La variación de la entropía de mezcla (Smez) > 1.
+4. La variación de la energía libre de Gibbs de mezcla (Gmez) >1.
+
+---
+
+Question 170:
+¿Cuáles de los siguientes síntomas son característicos de un toxíndrome (síndrome tóxico) serotoninérgico?:
+
+Options:
+1. Alteraciones en el grado de conciencia (agitación, confusión…), hiperactividad autonómica y alteraciones neuromusculares.
+2. Retención urinaria, estreñimiento y broncoespasmo.
+3. Miosis, hipotermia y parálisis.
+4. Depresión respiratoria, sudoración excesiva y bradicardia.
+
+---
+
+Question 171:
+¿Cuál de las siguientes intoxicaciones por hongos ocurre solo si se ingiere alcohol de forma simultánea o al cabo de un tiempo de ingerido el hongo, por producirse un efecto disulfiram?:
+
+Options:
+1. Síndrome hemolítico por Ascomicetos.
+2. Síndrome coprínico por Coprinus.
+3. Síndrome orellánico por Cortinarius.
+4. Síndrome ciclopeptídeo por Amanitas.
+
+---
+
+Question 172:
+Indique cuál de los siguientes NO se considera antídoto frente a una intoxicación por cianuro:
+
+Options:
+1. Agentes metahemoglobinizantes como el nitrato de amilo.
+2. Agentes reductores como el azul de metileno.
+3. Productos con cobalto como la hidroxicobalamina.
+4. Donantes de azufre como el tiosulfato sódico.
+
+---
+
+Question 173:
+¿Para cuál de las siguientes sustancias se recomienda el carbón activado como método de descontaminación digestiva en caso de intoxicación?:
+
+Options:
+1. Alcoholes (etanol, metanol, etilenglicol).
+2. Metales pesados.
+3. Fármacos beta-bloqueantes y antagonistas del calcio.
+4. Disolventes orgánicos.
+
+---
+
+Question 174:
+La toxicidad de los antidepresivos tricíclicos se ve potenciada por la interacción con las siguientes sustancias, EXCEPTO una. ¿Cuál es la excepción?:
+
+Options:
+1. Alcohol.
+2. Fármacos anticolinesterásicos.
+3. Fármacos antipsicóticos.
+4. Fármacos antihistamínicos H1.
+
+---
+
+Question 175:
+[Attached image for this question follows this text block.]
+¿Cuál es el producto mayoritario que se obtiene al calentar la 2,5-hexanodiona en presencia de hidróxido de sodio en metanol?:
+
+Options:
+1. El compuesto I.
+2. El compuesto II.
+3. El compuesto III.
+4. El compuesto IV.
+[IMAGE_SENT_FOR_Q175: images\fir\Q175.png, sha256=c73bfdcdc0da9a179c5dbefb1fd8e103ea681760d9b3e3ddc6ac537d91157293]
+
+---
+
+Question 176:
+[Attached image for this question follows this text block.]
+¿Cuál o cuáles de los siguientes compuestos presentan quiralidad?:
+
+Options:
+1. A.
+2. A y E.
+3. B, C y E.
+4. A, C y E.
+[IMAGE_SENT_FOR_Q176: images\fir\Q176.png, sha256=ec78e1ac4bde47f98a7abeaeef85ff4cc470cc38d11d795426f439061cc052a2]
+
+---
+
+Question 177:
+Clasifique las siguientes aminas heterocíclicas (pirrol, pirrolidina, piridina e imidazol) por orden de basicidad creciente:
+
+Options:
+1. Pirrol < pirrolidina < imidazol < piridina.
+2. Piridina < pirrol < pirrolidina < imidazol.
+3. Pirrol < piridina < imidazol < pirrolidina.
+4. Pirrolidina < pirrol < imidazol < piridina.
+
+---
+
+Question 178:
+[Attached image for this question follows this text block.]
+El proceso que se representa es:
+
+Options:
+1. Una reacción de Diels-Alder.
+2. Una anelación de Robinson.
+3. Una condensación de Claisen.
+4. Una ciclación de Dieckmann.
+[IMAGE_SENT_FOR_Q178: images\fir\Q178.png, sha256=5d663a8e8118eb80ce984816fe197ded707ebc13c6cd7d5409c7a5e086fc5aff]
+
+---
+
+Question 179:
+Seleccione de entre las disoluciones acuosas A- D que se definen a continuación la que mejor y la que peor conduce la electricidad. A) NH3 0,1 M; B) NaCl 0,1M; C) CH3-CO2H 2M; D) CH3- CH2OH 2M:
+
+Options:
+1. La mejor, la B y la peor, la D.
+2. La mejor, la A y la peor, la B.
+3. La mejor, la B y la peor, la C.
+4. La mejor, la A y la peor, la D.
+
+---
+
+Question 180:
+¿Cuál de las siguientes disoluciones acuosas tiene un mayor valor de [SO42-]?:
+
+Options:
+1. H2SO4 0,075 M.
+2. MgSO4 0,22 M.
+3. Na2SO4 0,15 M.
+4. Al2(SO4)3 0,080 M.
+
+---
+
+Question 181:
+¿Cuál de las siguientes moléculas es una especie apolar?:
+
+Options:
+1. NO2.
+2. SO2.
+3. ClF3.
+4. BF3.
+
+---
+
+Question 182:
+En los hospitales se utilizan fuentes radiactivas con fines de diagnóstico y tratamiento. ¿Cuál de las siguientes radiaciones presenta mayor poder de penetración de la materia?:
+
+Options:
+1. Alfa.
+2. Beta.
+3. Gamma.
+4. El poder de penetración es igual en todas las radiaciones.
+
+---
+
+Question 183:
+Indique cuál de estos valores es un estadístico de dispersión:
+
+Options:
+1. Media.
+2. Moda.
+3. Percentil 50.
+4. Rango intercuartílico.
+
+---
+
+Question 184:
+Indique cuál de las siguientes afirmaciones con respecto a los estudios de casos y controles es INCORRECTA:
+
+Options:
+1. Son estudios relativamente baratos comparados con otros tipos de estudios.
+2. Son estudios observacionales.
+3. Resultan adecuados para estudiar exposiciones poco frecuentes.
+4. Es recomendable que los controles provengan de la misma población que los casos.
+
+---
+
+Question 185:
+Indique cuál de los siguientes coeficientes evalúa la reproducibilidad de variables categóricas:
+
+Options:
+1. Coeficiente kappa.
+2. Coeficiente de Bradley-Blackbox.
+3. Coeficiente de correlación de Pearson.
+4. Coeficiente de correlación de Spearman.
+
+---
+
+Question 186:
+Para una determinada prueba diagnóstica:
+
+Options:
+1. La sensibilidad de la prueba aumentará con el aumento de la prevalencia de la enfermedad diagnosticada.
+2. La especificidad de la prueba aumentará con el aumento de la prevalencia de la enfermedad diagnosticada.
+3. El valor predictivo positivo de la prueba aumentará con el aumento de la prevalencia de la enfermedad diagnosticada.
+4. El valor predictivo negativo de la prueba aumentará con el aumento de la prevalencia de la enfermedad diagnosticada.
+
+---
+
+Question 187:
+¿Cuál de las siguientes afirmaciones acerca del sesgo de inclusión es cierta?:
+
+Options:
+1. Se produce al seleccionar casos con patologías relacionadas con la exposición sujeto de estudio.
+2. Se produce al seleccionar casos con patologías no relacionadas con la exposición sujeto de estudio.
+3. Se produce al seleccionar controles con patologías relacionadas con la exposición sujeto de estudio.
+4. Se produce al seleccionar controles con patologías no relacionadas con la exposición sujeto de estudio.
+
+---
+
+Question 188:
+Una variable de confusión:
+
+Options:
+1. Está relacionada tanto con la variable de exposición evaluada como con la variable respuesta.
+2. Está relacionada con la variable respuesta, pero no con la variable de exposición evaluada.
+3. Es una variable intermedia en la vía etiopatogénica entre la variable de exposición evaluada y la variable respuesta.
+4. No produce sesgos en la estimación de la magnitud del efecto de la variable exposición evaluada sobre la variable respuesta.
+
+---
+
+Question 189:
+Según el Reglamento (UE) 2021/2282 del Parlamento Europeo y del Consejo sobre evaluación de las tecnologías sanitarias, ¿cuál de las siguientes se consideran tecnologías sanitarias?:
+
+Options:
+1. Medicamentos y productos sanitarios.
+2. Productos sanitarios y procedimientos médicos.
+3. Medicamentos, productos sanitarios, productos sanitarios para diagnóstico in vitro, procedimientos médicos y medidas para la prevención, diagnóstico o tratamiento de enfermedades.
+4. Medicamentos, productos sanitarios, y productos sanitarios para diagnóstico in vitro.
+
+---
+
+Question 190:
+¿Qué norma regula la adquisición de un medicamento extranjero?:
+
+Options:
+1. Real Decreto Legislativo 1/2015, de 24 julio, Texto refundido de la Ley de Garantías y uso racional de los medicamentos y productos sanitarios.
+2. Real Decreto 1015/2009, de 19 de junio, por el que se regula la disponibilidad de medicamentos en situaciones especiales.
+3. Real Decreto 782/2013, de 11 octubre, sobre distribución de medicamentos de uso humano.
+4. Real Decreto 824/2010, de 25 de junio, por el que se regulan los laboratorios farmacéuticos, los fabricantes de principios activos de uso farmacéutico y el comercio exterior de medicamentos y medicamentos en investigación.
+
+---
+
+Question 191:
+¿En cuál de las siguientes circunstancias se puede solicitar el uso compasivo de un medicamento?:
+
+Options:
+1. Cuando el medicamento está autorizado en España, pero no registrado.
+2. Cuando el medicamento se va a utilizar en una indicación no autorizada en ficha técnica.
+3. Cuando el medicamento está en fase de investigación clínica.
+4. Cuando el medicamento es de Uso Hospitalario y se va a utilizar en pacientes no ingresados en un hospital.
+
+---
+
+Question 192:
+¿Qué deducción se tiene que aplicar en las compras de medicamentos huérfanos realizadas por los servicios sanitarios del Sistema Nacional Público de Salud?:
+
+Options:
+1. 4%.
+2. 5%.
+3. 6,5%.
+4. 7,5%.
+
+---
+
+Question 193:
+Según la ley de Pareto:
+
+Options:
+1. El 20% de los medicamentos suponen el 80% del gasto farmacéutico.
+2. El 25% de los medicamentos suponen el 75% del gasto farmacéutico.
+3. El 30% de los medicamentos suponen el 70% del gasto farmacéutico.
+4. El 40% de los medicamentos suponen el 60% del gasto farmacéutico.
+
+---
+
+Question 194:
+¿Cuál de los siguientes mecanismos relacionados con la inmunidad innata es INCORREC- TO?:
+
+Options:
+1. En la respuesta antiviral son clave los Interferones de tipo I.
+2. La defensa contra las bacterias fagocitadas e intracelulares está mediada por células NK.
+3. Los neutrófilos liberan redes de cromatina llamadas trampas extracelulares del neutrófilo (NET).
+4. Los neutrófilos y los macrófagos generan una respuesta conocida como estallido oxidativo.
+
+---
+
+Question 195:
+¿Para qué sirve la prueba de Crossmatch (prueba cruzada) en el trasplante de órganos sólidos?:
+
+Options:
+1. Para determinar la cantidad de anticuerpos anti-receptor que tiene el donante.
+2. Para comprobar si el tipaje para los alelos de los antígenos menores de histocompatibilidad es correcto.
+3. Para determinar la presencia de anticuerpos contra el donante que tiene el receptor.
+4. Para comprobar que el tipaje para los alelos de los loci DR y DQ es correcto.
+
+---
+
+Question 196:
+Complete la siguiente frase con la opción más apropiada. La memoria inmunológica...
+
+Options:
+1. Es una función esencial de la respuesta inmune y sirve para inhibir respuestas excesivas a antígenos que ya han estado en contacto con el sistema.
+2. Depende de la concentración del antígeno que entra en contacto con el sistema inmunitario.
+3. Es responsable de la respuesta secundaria y reside en las APC profesionales: macrófagos, células dendríticas y linfocitos B.
+4. Es una característica de la respuesta inmune adaptativa que reside en los linfocitos.
+
+---
+
+Question 197:
+Indique la opción correcta sobre el cambio de isotipo de las inmunoglobulinas:
+
+Options:
+1. Consiste en el recambio de la región constante de la cadena pesada por una de la cadena ligera.
+2. Consiste en el cambio de la región constante de la cadena pesada y ligera de una inmunoglobulina en un mismo linfocito B.
+3. Consiste en el cambio de la región constante de la cadena pesada de las inmunoglobulinas expresadas por un linfocito B maduro.
+4. Consiste en la adición aleatoria de nucleótidos a las regiones hipervariables de los genes de las inmunoglobulinas.
+
+---
+
+Question 198:
+Indique qué subpoblación de linfocitos T CD4 efectores se caracteriza por ser abundante en las mucosas, inducir inflamación con reclutamiento de neutrófilos e inducir la producción de péptidos antimicrobianos:
+
+Options:
+1. TH1, T colaboradores tipo 1.
+2. THF, T colaboradores foliculares.
+3. TH17, T colaboradores tipo 17.
+4. Treg, T reguladores.
+
+---
+
+Question 199:
+¿En cuál de los siguientes síndromes existe ausencia total o parcial de timo, y por ello, el paciente padece un defecto en la producción de linfocitos T?:
+
+Options:
+1. Síndrome de DiGeorge.
+2. Síndrome de la Inmunodeficiencia Adquirida Humana.
+3. Síndrome de Bruton.
+4. Síndrome de Chédiak-Higashi.
+
+---
+
+Question 200:
+En algunos pacientes con infección avanzada por el virus de la inmunodeficiencia humana (VIH), el inicio del tratamiento combinado con varios fármacos antirretrovirales, conocido como tratamiento antirretroviral de gran actividad (TARGA), tiene el efecto paradójico de la aparición de un cuadro inflamatorio conocido como:
+
+Options:
+1. Tormenta de citocinas (o hipercitoquinemia).
+2. Síndrome de choque tóxico (TSS).
+3. Síndrome inflamatorio de reconstitución inmunitaria (SIRI).
+4. Eventos adversos relacionados con el sistema inmunológico (irAEs).
+
+---
+
+Question 201:
+Un paciente de 35 años presenta dolor abdominal, pancreatitis recurrente y niveles de calcio elevados. En los análisis de laboratorio se observa: Calcio total: 11,8 mg/dL (valores de referencia: 8,5-10,5 mg/dL) PTH: 120 pg/mL (valores de referencia: 10-65 pg/mL) Fósforo: 2,4 mg/dL (valores de referencia: 2,5- 4,5 mg/dL) ¿Cuál es el diagnóstico más probable?:
+
+Options:
+1. Hiperparatiroidismo subclínico.
+2. Hiperparatiroidismo primario.
+3. Hiperparatiroidismo secundario a hipercalcemia maligna.
+4. Hiperparatiroidismo secundario a insuficiencia renal crónica.
+
+---
+
+Question 202:
+¿En cuál de estas patologías el colágeno NO es la proteína involucrada?:
+
+Options:
+1. Síndrome de Ehlers-Danlos.
+2. Síndrome de Goodpasture.
+3. Síndrome de Kearns-Sayre.
+4. Osteogénesis imperfecta.
+
+---
+
+Question 203:
+Un individuo con una lesión en la corteza cerebral muestra no comprender el lenguaje hablado ni tampoco el escrito de palabras o frases, sin embargo, su producción de lenguaje es fluida, pero llena de incorrecciones. ¿Qué zona de la corteza cerebral puede estar dañada?:
+
+Options:
+1. Corteza parietal superior.
+2. Lóbulo occipital.
+3. Área de Wernicke.
+4. Área de Broca.
+
+---
+
+Question 204:
+Señale la respuesta correcta en relación con el tratamiento con antifúngicos:
+
+Options:
+1. La flucitosina se utiliza principalmente asociada a anfotericina B para la meningitis por Aspergillus.
+2. Voriconazol presenta menor toxicidad hepática, ocular y cutánea que posaconazol.
+3. Anfotericina B presenta un mecanismo de acción fungicida siendo el tratamiento de elección en la mucormicosis invasiva.
+4. Las equinocandinas son fungicidas frente a especies de Aspergillus y fungistáticos frente a especies de Candida.
+
+---
+
+Question 205:
+El dietilestilbestrol es un estrógeno no esteroídico útil en el tratamiento de trastornos menopáusicos y postmenopáusicos. El transdietilestilbestrol es 14 veces más activo que el cis-dietilestilbestrol. Estos compuestos son:
+
+Options:
+1. Enantiómeros.
+2. Diastereómeros.
+3. Epímeros.
+4. Fármacos me-too.
+
+---
+
+Question 206:
+Mujer de 40 años con artritis psoriásica grave no controlada y sin otros antecedentes clínicos de interés, que ha fracasado al tratamiento con adalimumab. Su trabajo, muy demandante, le exige viajar mucho, además, refiere temor a las agujas. ¿Qué tratamiento podría ofrecérsele a la paciente?:
+
+Options:
+1. Ruxolitinib.
+2. Dupilumab.
+3. Upadacitinib.
+4. Ponatinib.
+
+---
+
+Question 207:
+¿Cuál de los siguientes está relacionado con el Parvovirus B19?:
+
+Options:
+1. Linfoma de Burkitt.
+2. Enfermedad de Castleman.
+3. Eritema infeccioso.
+4. Manchas de Koplik.
+
+---
+
+Question 208:
+¿Cuál de los siguientes virus NO forma parte de la familia de los virus herpes?:
+
+Options:
+1. Virus de Epstein-Barr.
+2. Citomegalovirus.
+3. Virus de la varicela-zóster.
+4. Enterovirus.
+
+---
+
+Question 209:
+¿Cuál de las siguientes estrategias disminuirá la solubilidad en agua de un candidato a fármaco?:
+
+Options:
+1. La introducción de un grupo hidroxilo.
+2. La sustitución de un grupo hidroxilo por un metilo.
+3. La reducción de un grupo cetona a alcohol.
+4. La oxidación de un grupo aldehído a ácido.
+
+---
+
+Question 210:
+Indique cuál de estas afirmaciones sobre el modelo de regresión de Cox NO es correcta:
+
+Options:
+1. También se denomina modelo de regresión de riesgos proporcionales.
+2. Es un modelo semiparamétrico que no requiere supuestos sobre la distribución de los tiempos de supervivencia.
+3. Los coeficientes estimados en la regresión de Cox se interpretan como logaritmos de razón de riesgos.
+4. El modelo asume que las observaciones son independientes entre sí.
+
+---
+
+Now return the answers for all questions included above as valid JSON only, using exactly:
+{"answers":[{"question_number":1,"answer":"1|2|3|4|blank"}]}
+Do not include rationales or any other fields.

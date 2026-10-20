@@ -1,0 +1,26 @@
+You are taking the Spanish FIR examination for Clinical Physics residency access.
+
+This is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct. In the official exam, correct answers score +1 point, incorrect answers score -1/3 points, and blank answers score 0 points. Act as a human candidate and try to obtain the highest possible final score.
+
+You will receive the complete exam in a single message. Some questions include one or more images, figures, graphs, diagrams, equation screenshots, or tables. When an image is attached immediately after a question, it belongs to that question and must be used to answer it.
+
+Answer only from your own knowledge and the supplied question text and images. Do not use web search, tools, external references, other files, retrieval, or an answer key.
+
+Return only valid JSON with exactly this shape:
+{
+  "answers": [
+    {"question_number": 1, "answer": "1|2|3|4|blank"},
+    {"question_number": 2, "answer": "1|2|3|4|blank"}
+  ]
+}
+
+Output rules:
+- Return exactly one answer object for every question included in the input.
+- Use the integer question number shown in the input.
+- Preserve the same question order as in the input.
+- The value of "answer" must be exactly one string: "1", "2", "3", "4", or "blank".
+- Do not return multiple options.
+- If you cannot choose one single best option, return "blank".
+- Do not include rationales, explanations, comments, markdown, or any other fields.
+
+FULL EXAM:

@@ -1,0 +1,59 @@
+{
+  "run_name": "bir2024_claude_opus_4_8_itemwise_TOOL_2runs_20260723T095721Z",
+  "created_utc": "20260723T095721Z",
+  "provider": "Anthropic Claude",
+  "interface": "API",
+  "api_endpoint": "Messages API with forced client-side tool schema",
+  "model_requested": "claude-opus-4-8",
+  "prompt_template_version": "bir2024_text_itemwise_examlike_blank_tool_schema_short_rationale_v1",
+  "script_version": "bir2024_claude_opus48_itemwise_tool_schema_no_sampling_params_v1",
+  "generation_parameters": {
+    "temperature": "not_sent",
+    "top_p": "not_sent",
+    "max_tokens": 300,
+    "structured_output": "forced_tool_use_input_schema",
+    "rationale_max_chars": 160,
+    "stream": false,
+    "external_tools_enabled": false,
+    "web_search_enabled": false,
+    "file_input_enabled": false,
+    "image_input_enabled": false,
+    "reasoning_effort": "not_sent"
+  },
+  "answer_tool_schema": {
+    "name": "record_answer",
+    "description": "Record the answer to a multiple-choice examination question.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string",
+          "enum": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "blank"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "answer",
+        "rationale"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "n_replicates": 2,
+  "n_questions_attempted": 210,
+  "questions_file": "bir2024_questions_210.csv",
+  "answer_key_file": "bir2024_answer_key_210.csv",
+  "questions_file_sha256": "f7032407751cb83b62bafea409a2f2e6d753506e4c1603463102c9035d37f03e",
+  "answer_key_file_sha256": "f1ff673628e80e5b6e2cd1dd03130681cc299d24aa1fb0af550c05cac9e852d1",
+  "tools_or_web_search_provided_to_model": false,
+  "structured_output_note": "A forced client-side tool schema is used only to obtain structured output. No external tools, web search, file access, or answer key are provided."
+}

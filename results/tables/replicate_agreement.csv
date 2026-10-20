@@ -1,0 +1,25 @@
+condition_id,model,exam,strategy,n_items,n_discordant,exact_answer_agreement_pct
+deepseek_bir_item_wise,DeepSeek V4 Pro,BIR,item-wise,200,1,99.5
+deepseek_bir_whole_exam,DeepSeek V4 Pro,BIR,whole-exam,200,1,99.5
+deepseek_fir_item_wise,DeepSeek V4 Pro,FIR,item-wise,200,1,99.5
+deepseek_fir_whole_exam,DeepSeek V4 Pro,FIR,whole-exam,200,0,100.0
+gpt52_bir_item_wise,GPT-5.2,BIR,item-wise,200,3,98.5
+gpt52_bir_whole_exam,GPT-5.2,BIR,whole-exam,200,0,100.0
+gpt52_fir_item_wise,GPT-5.2,FIR,item-wise,200,3,98.5
+gpt52_fir_whole_exam,GPT-5.2,FIR,whole-exam,200,2,99.0
+grok_bir_item_wise,Grok 4.3,BIR,item-wise,200,0,100.0
+grok_bir_whole_exam,Grok 4.3,BIR,whole-exam,200,0,100.0
+grok_fir_item_wise,Grok 4.3,FIR,item-wise,200,4,98.0
+grok_fir_whole_exam,Grok 4.3,FIR,whole-exam,200,0,100.0
+kimi_bir_item_wise,Kimi K2.6,BIR,item-wise,200,5,97.5
+kimi_bir_whole_exam,Kimi K2.6,BIR,whole-exam,200,2,99.0
+kimi_fir_item_wise,Kimi K2.6,FIR,item-wise,200,7,96.5
+kimi_fir_whole_exam,Kimi K2.6,FIR,whole-exam,200,8,96.0
+opus_bir_item_wise,Claude Opus 4.8,BIR,item-wise,200,0,100.0
+opus_bir_whole_exam,Claude Opus 4.8,BIR,whole-exam,200,2,99.0
+opus_fir_item_wise,Claude Opus 4.8,FIR,item-wise,200,2,99.0
+opus_fir_whole_exam,Claude Opus 4.8,FIR,whole-exam,200,5,97.5
+qwen_bir_item_wise,Qwen3-VL-235B-A22B-Instruct,BIR,item-wise,200,2,99.0
+qwen_bir_whole_exam,Qwen3-VL-235B-A22B-Instruct,BIR,whole-exam,200,0,100.0
+qwen_fir_item_wise,Qwen3-VL-235B-A22B-Instruct,FIR,item-wise,200,5,97.5
+qwen_fir_whole_exam,Qwen3-VL-235B-A22B-Instruct,FIR,whole-exam,200,0,100.0

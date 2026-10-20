@@ -1,0 +1,6 @@
+{
+  "files_scanned": 250,
+  "exact_original_secret_values_checked": 7,
+  "findings": [],
+  "scope": "Exact credential-value matching against excluded .env in memory, common secret patterns and nonredacted Windows user paths. Not proof of universal absence of sensitive content."
+}

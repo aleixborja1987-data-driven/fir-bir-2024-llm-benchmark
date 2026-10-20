@@ -1,0 +1,30 @@
+{
+  "status": "offline_data_checks_passed",
+  "generated_answer_positions": 10080,
+  "scored_responses": 9600,
+  "conditions": 24,
+  "replicate_runs": 48,
+  "unique_answer_recoveries_scored": 43,
+  "correct_recovered": 37,
+  "multiple_option_recodes_scored": 11,
+  "unused_reserve_recoveries": 1,
+  "minimum_api_attempts_from_supplied_evidence": 5099,
+  "original_image_files_verified": 20,
+  "multimodal_condition_image_rows": 200,
+  "image_hash_comparisons": 180,
+  "image_hash_mismatches": 0,
+  "request_image_hashes_not_logged": 20,
+  "bootstrap": {
+    "executed": true,
+    "resamples": 10000,
+    "seed": 2026,
+    "method": "item-cluster percentile; source-supplied implementation"
+  },
+  "limitations": [
+    "Estimated costs use documented standard uncached rates; they are not a billing ledger.",
+    "No official final-answer-key PDF included: official-200 selection follows supplied answer-key CSV and supplied scoring algorithm.",
+    "Historical API acquisition is not re-executed; source logs and provenance are retained.",
+    "This is a reanalysis/reproducibility package, not an author-approved publication release."
+  ]
+}
+Offline reproduction completed. Inspect results/validation.json and docs/OPEN_ITEMS.md.

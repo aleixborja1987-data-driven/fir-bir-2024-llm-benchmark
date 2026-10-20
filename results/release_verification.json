@@ -1,0 +1,30 @@
+{
+  "version": "0.3.0-rc",
+  "tests": 12,
+  "published_cost_cells_checked": 24,
+  "source_conditions": 24,
+  "replicate_runs": 48,
+  "checks": [
+    {
+      "file": "data/official_200_scored_items.csv",
+      "identical_to_independently_verified_scoring_and_bootstrap": true
+    },
+    {
+      "file": "data/all_210_responses_rescored.csv",
+      "identical_to_independently_verified_scoring_and_bootstrap": true
+    },
+    {
+      "file": "results/tables/bootstrap_official_200.csv",
+      "identical_to_independently_verified_scoring_and_bootstrap": true
+    },
+    {
+      "file": "results/tables/bootstrap_fir_text_only_180.csv",
+      "identical_to_independently_verified_scoring_and_bootstrap": true
+    },
+    {
+      "file": "results/tables/bootstrap_fir_image_20.csv",
+      "identical_to_independently_verified_scoring_and_bootstrap": true
+    }
+  ],
+  "scope": "Offline pipeline rerun after source cleanup and price-table completion; independent scoring/bootstrap results unchanged from audited candidate."
+}

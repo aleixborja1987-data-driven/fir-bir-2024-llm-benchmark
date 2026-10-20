@@ -1,0 +1,49 @@
+condition_id,model,exam,strategy,replicate,n_items,correct,score,blank,incorrect,missing_or_invalid,accuracy_pct
+deepseek_bir_item_wise,DeepSeek V4 Pro,BIR,item-wise,1,200,197,196.0,0,3,0,98.5
+deepseek_bir_item_wise,DeepSeek V4 Pro,BIR,item-wise,2,200,196,194.66666666666666,0,4,0,98.0
+deepseek_bir_whole_exam,DeepSeek V4 Pro,BIR,whole-exam,1,200,197,196.0,0,3,0,98.5
+deepseek_bir_whole_exam,DeepSeek V4 Pro,BIR,whole-exam,2,200,196,194.66666666666666,0,4,0,98.0
+deepseek_fir_item_wise,DeepSeek V4 Pro,FIR,item-wise,1,200,184,179.0,1,15,0,92.0
+deepseek_fir_item_wise,DeepSeek V4 Pro,FIR,item-wise,2,200,183,177.66666666666666,1,16,0,91.5
+deepseek_fir_whole_exam,DeepSeek V4 Pro,FIR,whole-exam,1,200,175,173.33333333333334,20,5,0,87.5
+deepseek_fir_whole_exam,DeepSeek V4 Pro,FIR,whole-exam,2,200,175,173.33333333333334,20,5,0,87.5
+gpt52_bir_item_wise,GPT-5.2,BIR,item-wise,1,200,196,194.66666666666666,0,4,0,98.0
+gpt52_bir_item_wise,GPT-5.2,BIR,item-wise,2,200,197,196.0,0,3,0,98.5
+gpt52_bir_whole_exam,GPT-5.2,BIR,whole-exam,1,200,197,196.0,0,3,0,98.5
+gpt52_bir_whole_exam,GPT-5.2,BIR,whole-exam,2,200,197,196.0,0,3,0,98.5
+gpt52_fir_item_wise,GPT-5.2,FIR,item-wise,1,200,191,188.0,0,9,0,95.5
+gpt52_fir_item_wise,GPT-5.2,FIR,item-wise,2,200,189,185.66666666666666,1,10,0,94.5
+gpt52_fir_whole_exam,GPT-5.2,FIR,whole-exam,1,200,189,185.33333333333334,0,11,0,94.5
+gpt52_fir_whole_exam,GPT-5.2,FIR,whole-exam,2,200,188,184.0,0,12,0,94.0
+grok_bir_item_wise,Grok 4.3,BIR,item-wise,1,200,194,192.33333333333334,1,5,0,97.0
+grok_bir_item_wise,Grok 4.3,BIR,item-wise,2,200,194,192.33333333333334,1,5,0,97.0
+grok_bir_whole_exam,Grok 4.3,BIR,whole-exam,1,200,197,196.0,0,3,0,98.5
+grok_bir_whole_exam,Grok 4.3,BIR,whole-exam,2,200,197,196.0,0,3,0,98.5
+grok_fir_item_wise,Grok 4.3,FIR,item-wise,1,200,184,179.66666666666666,3,13,0,92.0
+grok_fir_item_wise,Grok 4.3,FIR,item-wise,2,200,185,181.33333333333334,4,11,0,92.5
+grok_fir_whole_exam,Grok 4.3,FIR,whole-exam,1,200,187,182.66666666666666,0,13,0,93.5
+grok_fir_whole_exam,Grok 4.3,FIR,whole-exam,2,200,187,182.66666666666666,0,13,0,93.5
+kimi_bir_item_wise,Kimi K2.6,BIR,item-wise,1,200,194,192.0,0,6,0,97.0
+kimi_bir_item_wise,Kimi K2.6,BIR,item-wise,2,200,193,190.66666666666666,0,7,0,96.5
+kimi_bir_whole_exam,Kimi K2.6,BIR,whole-exam,1,200,196,194.66666666666666,0,4,0,98.0
+kimi_bir_whole_exam,Kimi K2.6,BIR,whole-exam,2,200,196,194.66666666666666,0,4,0,98.0
+kimi_fir_item_wise,Kimi K2.6,FIR,item-wise,1,200,185,180.0,0,15,0,92.5
+kimi_fir_item_wise,Kimi K2.6,FIR,item-wise,2,200,181,174.66666666666666,0,19,0,90.5
+kimi_fir_whole_exam,Kimi K2.6,FIR,whole-exam,1,200,188,184.0,0,12,0,94.0
+kimi_fir_whole_exam,Kimi K2.6,FIR,whole-exam,2,200,185,180.0,0,15,0,92.5
+opus_bir_item_wise,Claude Opus 4.8,BIR,item-wise,1,200,199,198.66666666666666,0,1,0,99.5
+opus_bir_item_wise,Claude Opus 4.8,BIR,item-wise,2,200,199,198.66666666666666,0,1,0,99.5
+opus_bir_whole_exam,Claude Opus 4.8,BIR,whole-exam,1,200,195,193.33333333333334,0,5,0,97.5
+opus_bir_whole_exam,Claude Opus 4.8,BIR,whole-exam,2,200,197,196.0,0,3,0,98.5
+opus_fir_item_wise,Claude Opus 4.8,FIR,item-wise,1,200,195,193.33333333333334,0,5,0,97.5
+opus_fir_item_wise,Claude Opus 4.8,FIR,item-wise,2,200,196,194.66666666666666,0,4,0,98.0
+opus_fir_whole_exam,Claude Opus 4.8,FIR,whole-exam,1,200,189,185.33333333333334,0,11,0,94.5
+opus_fir_whole_exam,Claude Opus 4.8,FIR,whole-exam,2,200,186,181.33333333333334,0,14,0,93.0
+qwen_bir_item_wise,Qwen3-VL-235B-A22B-Instruct,BIR,item-wise,1,200,193,191.0,1,6,0,96.5
+qwen_bir_item_wise,Qwen3-VL-235B-A22B-Instruct,BIR,item-wise,2,200,193,190.66666666666666,0,7,0,96.5
+qwen_bir_whole_exam,Qwen3-VL-235B-A22B-Instruct,BIR,whole-exam,1,200,194,192.0,0,6,0,97.0
+qwen_bir_whole_exam,Qwen3-VL-235B-A22B-Instruct,BIR,whole-exam,2,200,194,192.0,0,6,0,97.0
+qwen_fir_item_wise,Qwen3-VL-235B-A22B-Instruct,FIR,item-wise,1,200,177,171.0,5,18,0,88.5
+qwen_fir_item_wise,Qwen3-VL-235B-A22B-Instruct,FIR,item-wise,2,200,178,172.33333333333334,5,17,0,89.0
+qwen_fir_whole_exam,Qwen3-VL-235B-A22B-Instruct,FIR,whole-exam,1,200,177,169.33333333333334,0,23,0,88.5
+qwen_fir_whole_exam,Qwen3-VL-235B-A22B-Instruct,FIR,whole-exam,2,200,177,169.33333333333334,0,23,0,88.5

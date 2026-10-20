@@ -1,0 +1,131 @@
+{
+  "run_id": "fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z",
+  "created_utc": "20260805T104404Z",
+  "provider": "Moonshot AI / Kimi",
+  "interface": "API",
+  "endpoint": "OpenAI-compatible Chat Completions",
+  "base_url": "https://api.moonshot.ai/v1",
+  "model_requested": "kimi-k2.6",
+  "condition": "itemwise_textplusimage_nonthinking",
+  "prompt_template_version": "fir2024_itemwise_textplusimage_examlike_blank_strict_v1",
+  "script_version": "fir2024_kimi_k2_6_itemwise_images_nonthinking_2reps_v1",
+  "truststore_status": "enabled",
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "questions_file_sha256": "30e469a1c741af42ea980e16c6e9b56f6476d81c0c2809e9631c1809cec9b175",
+  "answer_key_file_sha256": "b4e4732364103cffedae8ddb1aee12bdb7185650138cf4c8b0e389392c5da587",
+  "images_dir": "C:\\Users\\REDACTED_USER\\Desktop\\APItest1\\fir2024_images",
+  "n_questions_in_file": 210,
+  "n_questions_selected": 210,
+  "is_full_definitive_selection": true,
+  "n_image_questions_detected": 20,
+  "n_declared_image_questions_missing": 0,
+  "replicates": 2,
+  "start_q": null,
+  "end_q": null,
+  "thinking": {
+    "requested": {
+      "type": "disabled"
+    },
+    "policy": "explicitly_disabled",
+    "reasoning_audit_rule": {
+      "abort_if_reasoning_content_nonempty": true,
+      "abort_if_reasoning_tokens_above": 1,
+      "residual_reasoning_token_allowance": 1
+    }
+  },
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "sampling_parameter_note": "Provider-constrained settings for Kimi K2.6 non-thinking mode.",
+  "presence_penalty": 0.0,
+  "frequency_penalty": 0.0,
+  "max_tokens": 500,
+  "response_format": "json_schema_strict",
+  "stream": true,
+  "stream_options": {
+    "include_usage": true
+  },
+  "tools": "not_provided",
+  "web_search": "not_provided",
+  "file_input": false,
+  "pdf_input": false,
+  "image_input": true,
+  "image_transport": "local_base64_data_url",
+  "rationales_requested": true,
+  "rationale_max_chars": 160,
+  "request_timeout_seconds": 600.0,
+  "retry_policy": {
+    "max_total_attempts": 7,
+    "retry_transient_api_failures": true,
+    "retry_invalid_structured_outputs": true,
+    "retry_unexpected_finish_reason": true,
+    "retry_valid_but_incorrect_answers": false
+  },
+  "between_calls_sleep_seconds": 0.15,
+  "between_replicates_sleep_seconds": 2.0,
+  "scoring": {
+    "correct": 1,
+    "incorrect": -0.3333333333333333,
+    "blank": 0,
+    "missing_or_invalid": 0,
+    "questions_without_official_answer_excluded": true
+  },
+  "system_prompt": "You are taking the Spanish FIR examination for Clinical Physics residency access.\n\nThis is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct.\n\nSome questions may include an image, figure, graph, diagram, equation screenshot, or table. If an image is provided, use it as part of the question.\n\nScoring rule:\n- Correct answer: +1 point.\n- Incorrect answer: -1/3 points.\n- Blank answer: 0 points.\n\nAct as a human candidate trying to maximize the final score. Answer from your own knowledge and the provided question/images only. Do not use web search, external tools, files beyond the provided image, retrieval, or any answer key.\n\nReturn only valid JSON matching the required schema:\n{\"answer\":\"1|2|3|4|blank\",\"rationale\":\"brief rationale, max 160 characters\"}\n",
+  "system_prompt_sha256": "737a50f36a98ca7d559b365459c413c074e89a31256f6786fed471ea579234b4",
+  "answer_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "fir2024_mcq_answer",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "answer": {
+            "type": "string",
+            "enum": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "blank"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 160
+          }
+        },
+        "required": [
+          "answer",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "output_files": {
+    "metadata": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_metadata.json",
+    "raw_results": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_raw_results.jsonl",
+    "results": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_results.csv",
+    "summary": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_summary.csv",
+    "discordances": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_discordances.csv",
+    "image_detection": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_image_detection.csv",
+    "image_manifest": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_image_manifest.csv",
+    "prompt_preamble": "outputs\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z\\fir2024_kimi_k2_6_itemwise_images_nonthinking_2r_STRICT_20260805T104404Z_prompt_preamble.txt"
+  },
+  "completed_utc": "20260805T110638Z",
+  "definitive_run_completed_as_prespecified": true,
+  "observed_reasoning_audit": {
+    "n_calls_accepted": 420,
+    "n_calls_with_reasoning_content": 0,
+    "n_calls_with_any_reasoning_tokens": 420,
+    "n_calls_with_residual_reasoning_token_only": 420,
+    "n_calls_with_substantive_reasoning": 0,
+    "n_protocol_violations": 0,
+    "total_reasoning_tokens": 420.0,
+    "reasoning_token_distribution": {
+      "1": 420
+    },
+    "residual_reasoning_token_allowance": 1
+  }
+}

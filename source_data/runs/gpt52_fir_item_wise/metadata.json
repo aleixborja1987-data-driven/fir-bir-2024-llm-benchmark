@@ -1,0 +1,24 @@
+{
+  "provider": "OpenAI",
+  "interface": "API",
+  "api_endpoint": "Responses API",
+  "model_requested": "gpt-5.2-2025-12-11",
+  "prompt_template_version": "fir2024_itemwise_textplusimage_examlike_blank_v1",
+  "generation_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_output_tokens": 300,
+    "reasoning_effort": "not_sent",
+    "stream": false,
+    "store": false,
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "image_input_enabled": true,
+    "image_transport": "local_png_base64_data_url"
+  },
+  "n_replicates": 2,
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "run_timestamp_utc": "20260702T101940Z",
+  "important_note": "Correct answers are never included in model inputs. The answer key is merged locally after generation for offline scoring. Image-containing items are sent as text plus a local base64-encoded PNG data URL."
+}

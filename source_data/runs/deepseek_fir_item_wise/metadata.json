@@ -1,0 +1,30 @@
+{
+  "provider": "DeepSeek",
+  "interface": "API",
+  "api_endpoint": "Chat Completions API - OpenAI-compatible",
+  "base_url": "https://api.deepseek.com",
+  "model_requested": "deepseek-v4-pro",
+  "prompt_template_version": "fir2024_itemwise_text_only_examlike_blank_v1",
+  "generation_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 300,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": "disabled",
+    "reasoning_effort": "not_sent",
+    "store": "not_applicable",
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "image_input_enabled": false,
+    "image_handling": "image_blind_text_only_for_has_image_items"
+  },
+  "n_replicates": 2,
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "run_timestamp_utc": "20260702T141605Z",
+  "truststore_enabled": true,
+  "important_note": "DeepSeek V4 thinking mode defaults to enabled. This script explicitly disables thinking mode so that temperature and top_p are effective in the controlled primary benchmark. FIR items with has_image=True are deliberately run without image input; the has_image flag is preserved for stratified analysis. This is an image-blind/text-only DeepSeek V4 Pro API run."
+}

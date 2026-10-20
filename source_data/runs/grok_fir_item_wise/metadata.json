@@ -1,0 +1,168 @@
+{
+  "run_name": "fir24_grok43_itemimg_nr_2r_20260805T150247Z",
+  "created_utc": "20260805T150247Z",
+  "provider": "xAI",
+  "interface": "API",
+  "api_endpoint": "OpenAI-compatible Chat Completions",
+  "base_url": "https://api.x.ai/v1",
+  "model_requested": "grok-4.3",
+  "condition": "itemwise_text_plus_image_rationale_nonthinking",
+  "prompt_template_version": "fir2024_itemwise_textplusimage_examlike_blank_strict_json_short_rationale_nonthinking_v1",
+  "script_version": "fir2024_grok43_itemwise_images_nonthinking_strict_json_reasoning_audit_rationale_recovery_v1",
+  "generation_parameters": {
+    "reasoning_effort": "none",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 300,
+    "stream": false,
+    "store": false,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "fir_exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "blank"
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer",
+            "rationale"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "rationales_requested": true,
+    "rationale_requested_max_chars": 160,
+    "rationale_length_policy": "Valid answer retained and scored; overlength rationale marked as recovered and not retried.",
+    "image_detail": "high",
+    "image_transport": "base64_data_url_in_chat_completions_image_url_block",
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "x_search_enabled": false,
+    "file_input_enabled": false,
+    "retrieval_enabled": false,
+    "truststore_status": "enabled"
+  },
+  "answer_schema": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "blank"
+        ]
+      },
+      "rationale": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer",
+      "rationale"
+    ],
+    "additionalProperties": false
+  },
+  "reasoning_audit_rule": {
+    "reasoning_effort_sent": "none",
+    "require_explicit_numeric_reasoning_tokens": true,
+    "required_reasoning_tokens_per_call": 0,
+    "require_empty_reasoning_content": true,
+    "abort_on_violation": true
+  },
+  "rationale_length_recovery_rule": {
+    "requested_max_chars": 160,
+    "overlength_rationale_is_parse_error": false,
+    "valid_answer_is_retained_and_scored": true,
+    "retry_due_only_to_overlength_rationale": false,
+    "audit_flag": "rationale_length_violation_recovered"
+  },
+  "connection_configuration": {
+    "truststore_status": "enabled",
+    "truststore_injected_before_openai_import": true,
+    "store": false
+  },
+  "image_configuration": {
+    "images_dir": "C:\\Users\\REDACTED_USER\\Desktop\\APItest1\\images\\fir",
+    "supported_extensions": [
+      ".png",
+      ".jpg",
+      ".jpeg"
+    ],
+    "transport": "base64_data_url_in_image_url_block",
+    "detail": "high",
+    "expected_image_questions_full_exam": 20,
+    "n_image_questions_detected": 20,
+    "n_declared_image_questions_missing": 0
+  },
+  "n_replicates": 2,
+  "n_questions_in_file": 210,
+  "n_questions_attempted": 210,
+  "selection": {
+    "limit": null,
+    "start_q": null,
+    "end_q": null
+  },
+  "is_full_definitive_selection": true,
+  "questions_file": "fir2024_questions_210.csv",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "questions_file_sha256": "30e469a1c741af42ea980e16c6e9b56f6476d81c0c2809e9631c1809cec9b175",
+  "answer_key_file_sha256": "b4e4732364103cffedae8ddb1aee12bdb7185650138cf4c8b0e389392c5da587",
+  "prompt_preamble_sha256": "1f5c1c6b649c4ae4a18cd54e31ba514d0bfc86e51b61490cce6a1cb53385c584",
+  "retry_policy": {
+    "max_attempts_per_call": 5,
+    "retry_transient_api_errors": true,
+    "retry_invalid_structured_outputs": true,
+    "retry_valid_but_incorrect_answers": false,
+    "retry_overlength_rationale_only": false
+  },
+  "tools_or_web_search_provided_to_model": false,
+  "notes": "The official answer key is merged only after inference for local scoring. Question images are the only external input supplied when applicable.",
+  "completed_utc": "20260805T150958Z",
+  "definitive_run_completed_as_prespecified": true,
+  "observed_reasoning_audit": {
+    "n_calls_completed": 420,
+    "all_reasoning_token_values_explicit": true,
+    "unique_reasoning_token_values": [
+      0
+    ],
+    "total_reasoning_tokens": 0,
+    "calls_with_positive_reasoning_tokens": 0,
+    "calls_with_nonempty_reasoning_content": 0,
+    "protocol_violations": 0
+  },
+  "observed_rationale_audit": {
+    "n_overlength_rationales_recovered": 15,
+    "maximum_observed_rationale_length_chars": 219,
+    "overlength_rationales_retried_due_to_length_only": 0
+  },
+  "output_files": {
+    "raw_outputs": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\raw.jsonl",
+    "scored_results": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\results.csv",
+    "summary_by_replicate": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\summary.csv",
+    "summary_by_image_status": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\image_summary.csv",
+    "discordances": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\discordances.csv",
+    "image_detection": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\image_detection.csv",
+    "image_manifest": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\image_manifest.csv",
+    "prompt_preamble": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\prompt_preamble.txt",
+    "run_metadata": "outputs\\fir24_grok43_itemimg_nr_2r_20260805T150247Z\\metadata.json"
+  }
+}

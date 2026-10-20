@@ -1,0 +1,13 @@
+model,exam,n_question_replicate_pairs,correctness_agreement_pct,gwet_ac1_binary_two_raters,interpretation
+Claude Opus 4.8,BIR,400,98.5,0.9846203140019224,descriptive; paired replicates retained; no superiority testing
+Claude Opus 4.8,FIR,400,93.5,0.9292411109145587,descriptive; paired replicates retained; no superiority testing
+DeepSeek V4 Pro,BIR,400,98.5,0.9844658183277454,descriptive; paired replicates retained; no superiority testing
+DeepSeek V4 Pro,FIR,400,93.75,0.9232213260444779,descriptive; paired replicates retained; no superiority testing
+GPT-5.2,BIR,400,98.25,0.9819220128547402,descriptive; paired replicates retained; no superiority testing
+GPT-5.2,FIR,400,96.75,0.9638196688803927,descriptive; paired replicates retained; no superiority testing
+Grok 4.3,BIR,400,98.5,0.9843098285848773,descriptive; paired replicates retained; no superiority testing
+Grok 4.3,FIR,400,97.25,0.9683053063400192,descriptive; paired replicates retained; no superiority testing
+Kimi K2.6,BIR,400,97.75,0.9762877872224107,descriptive; paired replicates retained; no superiority testing
+Kimi K2.6,FIR,400,94.25,0.9330716824105834,descriptive; paired replicates retained; no superiority testing
+Qwen3-VL-235B-A22B-Instruct,BIR,400,97.5,0.9733223065533754,descriptive; paired replicates retained; no superiority testing
+Qwen3-VL-235B-A22B-Instruct,FIR,400,94.75,0.9342416852916655,descriptive; paired replicates retained; no superiority testing

@@ -1,0 +1,54 @@
+{
+  "run_name": "fir2024_qwen235b_ti2r_STRICT_20260703T124240Z",
+  "created_utc": "20260703T124240Z",
+  "provider": "Alibaba Cloud Model Studio / Qwen",
+  "interface": "API",
+  "api_endpoint": "OpenAI-compatible Chat Completions",
+  "model_requested": "qwen3-vl-235b-a22b-instruct",
+  "prompt_template_version": "fir2024_itemwise_textplusimage_examlike_blank_strict_single_answer_v1",
+  "prompt_preamble_hash_sha256": "73a4a5b5561d6e210e5d99f78dd1c0804a0eb46d265106f3e656644e91470452",
+  "prompt_preamble": "You are taking an examination for Pharmacy residency access.\n\nThis is a multiple-choice exam. Each question has four options, numbered 1 to 4, and only one is correct. In the official exam, correct answers score +1 point, incorrect answers score -1/3 points, and blank answers score 0 points. Act as a human candidate and try to get the highest score possible.\n\nFor image-containing questions, use both the question text and the attached image. Do not use web search, tools, external references, or an answer key.\n\nReturn only valid JSON with exactly this shape:\n{\"answer\": \"1|2|3|4|blank\", \"rationale\": \"brief explanation\"}\n\nOutput rules:\n- The value of \"answer\" must be exactly one single string: \"1\", \"2\", \"3\", \"4\", or \"blank\".\n- Do not return multiple options.\n- Do not return values such as \"1,2\", \"1 or 2\", \"3/4\", \"4,\", lists, arrays, ranges, or explanations inside the \"answer\" field.\n- If you cannot choose one single best option, return \"blank\".\n- Keep the rationale brief and do not include alternative final answers.\n",
+  "script_version": "fir2024_qwen3_vl_235b_a22b_instruct_itemwise_textplusimage_2runs_strict_v1",
+  "questions_file": "fir2024_questions_210.csv",
+  "questions_file_sha256": "30e469a1c741af42ea980e16c6e9b56f6476d81c0c2809e9631c1809cec9b175",
+  "answer_key_file": "fir2024_answer_key_210.csv",
+  "answer_key_file_sha256": "b4e4732364103cffedae8ddb1aee12bdb7185650138cf4c8b0e389392c5da587",
+  "image_root": "images\\fir",
+  "image_manifest_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_image_manifest.csv",
+  "n_replicates": 2,
+  "n_questions_attempted": 210,
+  "n_image_questions_attempted": 20,
+  "generation_parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 300,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "tools_enabled": false,
+    "web_search_enabled": false,
+    "file_input_enabled": false,
+    "image_input_enabled": true,
+    "image_transport": "base64_data_url_via_image_url",
+    "enable_thinking": false
+  },
+  "scoring": {
+    "correct": 1,
+    "incorrect": -0.3333333333333333,
+    "blank": 0,
+    "missing_or_invalid": 0,
+    "invalid_answer_field": 0,
+    "questions_without_official_answer_excluded": true
+  },
+  "base_url_logged": "https://ws-r2nuxvt0sqipcxo0.eu-central-1.maas.aliyuncs.com/compatible-mode/v1",
+  "truststore_enabled": true,
+  "completed_utc": "20260703T130146Z",
+  "outputs": {
+    "raw_outputs_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_raw_outputs.jsonl",
+    "scored_results_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_scored_results.csv",
+    "summary_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_summary_by_replicate.csv",
+    "summary_by_image_status_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_summary_by_image_status.csv",
+    "metadata_file": "outputs\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z\\fir2024_qwen235b_ti2r_STRICT_20260703T124240Z_run_metadata.json"
+  }
+}
