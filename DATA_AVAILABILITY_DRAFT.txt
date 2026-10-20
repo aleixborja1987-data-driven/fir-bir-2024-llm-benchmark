@@ -1,0 +1,5 @@
+DRAFT — use only after the public release exists and remaining checks have been completed.
+
+The item-level model responses, answer-extraction and reclassification audit, model-specific prompts and configurations, run metadata, and analysis code supporting this study are available in [actual repository citation]. The release corresponding to the reported analyses is archived at [actual version-specific DOI]. Documentation and instructions for reproducing the deposited analyses from the recorded outputs are included. [State any specific third-party content restrictions or omitted cost inputs truthfully.]
+
+Do not replace these placeholders until the archive and the exact material being promised have been verified. This draft does not assert that deposition or all manuscript revisions have already occurred.

@@ -1,0 +1,23 @@
+{
+  "title": "Benchmarking Open- and Closed-Weight Large Language Models on Spanish Specialized Health Examinations: Reproducibility Package",
+  "version": "0.3.0-rc",
+  "publication_date": "2026-10-12",
+  "description": "Draft metadata only. Authors must approve licensing, creator metadata, related manuscript identifier and version DOI before deposit.",
+  "creators": [
+    {
+      "name": "Calvera-Rayo, Alejandro"
+    },
+    {
+      "name": "Verd\u00fa, Gonzalo"
+    },
+    {
+      "name": "Morales-Ruiz, Manuel"
+    },
+    {
+      "name": "Fabregat-Bolufer, Aleix B."
+    }
+  ],
+  "license": "AUTHOR_DECISION_REQUIRED",
+  "related_manuscript": "JMIR AI submission 91300; do not treat manuscript ID as a DOI",
+  "status": "NOT_FOR_AUTOMATIC_DEPOSIT"
+}

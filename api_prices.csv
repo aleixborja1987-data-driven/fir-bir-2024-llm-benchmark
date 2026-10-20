@@ -1,0 +1,7 @@
+model,input_usd_per_million,output_usd_per_million,price_date,source,status,verification_note
+Claude Opus 4.8,5.0,25.0,2026-08-17,https://www.anthropic.com/news/claude-sonnet-5,author_verified,Official publication corroborates rates; consultation date supplied by authors.
+DeepSeek V4 Pro,0.435,0.87,2026-08-17,"Author confirmation, 2026-10-12",author_verified,Rates confirmed by corresponding author and reproduce published costs; independent historical applicability on 2026-08-17 not verified.
+GPT-5.2,1.75,14.0,2026-08-17,https://openai.com/index/introducing-gpt-5-2/,author_verified,Official publication corroborates rates; consultation date supplied by authors.
+Grok 4.3,1.25,2.5,2026-08-17,https://docs.x.ai/developers/migration/may-15-retirement,author_verified,Official documentation corroborates rates; consultation date supplied by authors.
+Kimi K2.6,0.95,4.0,2026-08-17,https://platform.kimi.ai/,author_verified,Official model pricing corroborates rates; consultation date supplied by authors.
+Qwen3-VL-235B-A22B-Instruct,0.287,1.147,2026-08-17,https://www.alibabacloud.com/help/en/model-studio/model-pricing,author_verified,Official model pricing corroborates rates; consultation date supplied by authors.

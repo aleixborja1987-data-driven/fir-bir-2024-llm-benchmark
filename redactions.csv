@@ -1,0 +1,17 @@
+file,category,occurrences
+source_data/runs/grok_fir_item_wise/image_detection.csv,local_windows_user,20
+source_data/runs/grok_fir_item_wise/image_manifest.csv,local_windows_user,20
+source_data/runs/grok_fir_item_wise/metadata.json,local_windows_user,1
+source_data/runs/grok_fir_item_wise/raw.jsonl,local_windows_user,40
+source_data/runs/grok_fir_whole_exam/image_detection.csv,local_windows_user,20
+source_data/runs/grok_fir_whole_exam/image_manifest.csv,local_windows_user,20
+source_data/runs/grok_fir_whole_exam/metadata.json,local_windows_user,1
+source_data/runs/kimi_bir_item_wise/raw.jsonl,account_identifiers,7
+source_data/runs/kimi_fir_item_wise/image_detection.csv,local_windows_user,20
+source_data/runs/kimi_fir_item_wise/image_manifest.csv,local_windows_user,20
+source_data/runs/kimi_fir_item_wise/metadata.json,local_windows_user,1
+source_data/runs/kimi_fir_item_wise/raw.jsonl,local_windows_user,109
+source_data/runs/kimi_fir_item_wise/raw.jsonl,account_identifiers,20
+source_data/runs/kimi_fir_whole_exam/image_detection.csv,local_windows_user,20
+source_data/runs/kimi_fir_whole_exam/image_manifest.csv,local_windows_user,20
+source_data/runs/kimi_fir_whole_exam/metadata.json,local_windows_user,1

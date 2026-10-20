@@ -1,0 +1,8 @@
+{
+  "primary_archive": "APItest1.zip(1).zip",
+  "sha256": "50da533bdfebc8a558ff8e151fe1b5144f433ae967b48ba73f1e1622222f12fb",
+  "selected_conditions": 24,
+  "secondary_archive": "FIR_BIR_2024_Reproducibility(2).zip",
+  "secondary_usage": "Historical scoring/bootstrap scripts, sanitized selected-source copies, and offline adapters from the prior audit.",
+  "scope": "Only the 24 manuscript conditions and their 48 definitive replicate runs are included."
+}
